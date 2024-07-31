@@ -1,0 +1,48 @@
+.global-settings-watermark {
+  width: calc(100% - 7.5rem);
+  min-width: 340px;
+  height: 100%;
+  flex: 1;
+  .content {
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding: 40px 0.83rem 0 1.65rem;
+    
+    .watermark-list {
+      .watermark-item {
+        width: 223px;
+        height: 223px;
+        border: 1px solid #D8D8D8;
+        .watermark-pic {
+          width: 223px;
+          height: 180px;
+          img {
+            width: 100%;
+          }
+        }
+        .watermark-name {
+          height: 43px;
+          line-height: 43px;
+          padding-left: 10px;
+          font-size: 14px;
+          font-weight:500;
+          color: #3A3A3A;
+        }
+      }
+    }
+    .watermark-tip {
+      display: flex;
+      align-items: baseline;
+      margin-top: 16px;
+      .tip-msg {
+        height: 14px;
+        line-height: 14px;
+        font-size: 12px;
+        color: #7B7B7B;
+        display: inline-block;
+        max-width: calc(100% - 88px);
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.template-input-wrap {
+  width: 766px;
+  padding: 51px !important;
+  
+  
+}
+
+.modal-title{
+	color: red;
+}
+.save{
+  font-size: 20px;
+  // color: red;
+  cursor: pointer;
+  width: 121px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  margin: 41px auto 0;
+
+}
+.modal-body-email{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+  .left{
+    margin-right: 43px;
+    .title{
+      margin-bottom: 18px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #3a3a3a;
+
+    }
+    .input-area{
+      .template-name-input{
+        width: 288px;
+        height: 48px;
+      }
+
+    }
+  }
+  .right{
+    .title{
+      margin-bottom: 18px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #3a3a3a;
+
+    }
+    .text-area{
+      .template-textarea{
+        width: 326px;
+        height: 268px;
+        resize:none;
+        border: 1px solid #d8d8d8;
+      }
+
+    }
+
+  }
+}

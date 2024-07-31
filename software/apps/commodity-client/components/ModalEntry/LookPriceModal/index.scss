@@ -1,0 +1,27 @@
+.look-price-modal {
+  width: 340px;
+  height: 284px;
+  .look-price-modal-wrap {
+    .price-item {
+      font-size: 16px;
+      font-weight: 400;
+      color: #222222;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+  }
+  .look-confirm-button {
+    width: 260px;
+    height: 40px;
+    background: #222222;
+    margin-top: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

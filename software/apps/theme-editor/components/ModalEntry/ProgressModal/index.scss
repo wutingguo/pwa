@@ -1,0 +1,29 @@
+.x-progress-modal {
+  width: 460px;
+  height: 300px;
+  position: relative;
+  .modal-title {
+    user-select: none;
+  }
+
+  .modal-body {
+    text-align: center;
+    .icon {
+      margin-top: 30px;
+      width: 40px;
+      height: 40px;
+    }
+    .progress-container {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    .loading-text{
+      color: #3a3a3a;
+      margin-top: 30px;
+      font-size: 14px;
+      span {
+        display: block;
+      }
+    }
+  }
+}

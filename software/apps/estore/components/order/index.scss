@@ -1,0 +1,19 @@
+.order_content{
+    margin-top: 24px;
+    position: relative;
+    min-height: calc(100vh - 210px);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: auto;
+    // padding: 50px;
+    .order_title{
+        border-bottom: 1px solid #E5E5E5;
+        padding-bottom: 16px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .order_list{
+        padding: 40px;
+    }
+}

@@ -1,0 +1,28 @@
+.estore-alert-tip {
+  box-sizing: border-box;
+  display: inline-block;
+  &__image-container {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    overflow: hidden;
+
+    & > img {
+      height: 100% !important;
+      width: unset !important;
+      object-fit: contain;
+    }
+  }
+}
+
+.estore-alert-tip-popover {
+  padding: 10px 19px;
+  &__message {
+    box-sizing: border-box;
+
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+  }
+}

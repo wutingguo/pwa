@@ -1,0 +1,101 @@
+.FavoriteDetail {
+    padding: 14px 0px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-bottom: 140px;
+
+    .commonFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ellipsis {
+        width: 261px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .header {
+        font-size: 15px;
+        color: #222220;
+        padding: 0px 12px;
+        background-color: #fff;
+        border-radius: 3px;
+        margin: 0 12px;
+        box-sizing: border-box;
+
+        .name,
+        .desc {
+            height: 50px;
+            justify-content: space-between;
+        }
+
+        .desc {
+            border-top: 1px solid #EEEEEE;
+        }
+    }
+
+    .listContainer {
+        height: fit-content;
+        max-height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0 12px;
+        padding-right: 8px;
+        padding-bottom: 40px;
+
+        .listBox {
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 3px;
+            overflow: hidden;
+
+            .imgBox {
+                width: 100%;
+                height: 180px;
+
+                .lazyload-container {
+                    height: 100%;
+                }
+            }
+
+            .remark {
+                font-size: 16px;
+                color: #222220;
+                margin-top: 14px;
+            }
+
+            .labelList {
+                margin-top: 10px;
+                margin-bottom: 16px;
+                justify-content: flex-start;
+
+                div {
+                    width: 31px;
+                    height: 17px;
+                    font-size: 11px;
+                    color: #0077CC;
+                    background: #F6FCFF;
+                    border-radius: 1px;
+                    border: 1px solid #6AB4FF;
+                    margin-right: 4px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    padding: 1px;
+                    text-align: center;
+                }
+            }
+
+            .name {
+                font-size: 12px;
+                color: #a7a7a7;
+                justify-content: space-between;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.productPricingWrapper {
+  .selectionTitle {
+    display: flex;
+    justify-content: space-between;
+    .actionWrapper {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0077CC;
+      transition: all 0.3s;
+      font-size: 14px;
+      img {
+        margin-right: 8px;
+        width: 12px;
+      }
+      .expanded {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .pricingWrapper {
+    overflow: hidden;
+  }
+  .pricing {
+    display: flex;
+    font-size: 14px;
+    min-width: 1000px;
+    margin-bottom: 20px;
+    .pricing-title {
+        color: #3A3A3A;
+        font-weight: 500;
+        width: 100px;
+    }
+
+    .pricing-title-container {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 230px;
+
+        .a {
+            display: flex;
+            justify-content: center;
+            width: 100px;
+            margin-left: 100px;
+        }
+
+        .b {
+            display: flex;
+            justify-content: center;
+            width: 100px;
+            margin-left: 100px;
+        }
+
+        .c {
+            display: flex;
+            justify-content: center;
+            width: 130px;
+            margin-left: 100px;
+        }
+    }
+
+
+    .self-pricing-title-container {
+        display: flex;
+        justify-content: space-around;
+        font-weight: 500;
+        margin-left: 333px;
+        .price {
+            display: flex;
+            justify-content: center;
+            width: 130px;
+            margin-left: 100px;
+        }
+
+        .shipping {
+            display: flex;
+            justify-content: center;
+            margin-left: 115px;
+            width: 200px;
+            text-align: center;
+        }
+        .visibility {
+          display: flex;
+          justify-content: center;
+          margin-left: 115px;
+          text-align: center;
+        }
+    }
+}
+  .grid {
+    width: 100%;
+    table-layout: auto;
+    margin-bottom: 24px;
+    .row {
+        display: table-row;
+    }
+    .cell {
+        display: table-cell;
+        padding: 16px 40px 0px 0px;
+        font-size: 14px;
+        .ReactCollapse--collapse {
+          margin-left: 30px;
+          transition: height 200ms;
+      }
+      .estore-pricing-collapse {
+        padding-top: 0;
+      }
+    }
+  }
+}

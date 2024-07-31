@@ -1,0 +1,14 @@
+.print-store-page {
+  background-color: #fff;
+  overflow: hidden;
+  &__header {
+  }
+
+  &__content {
+    width: 100%;
+    // overflow: auto;
+    &.fullHeight {
+      height: 100vh;
+    }
+  }
+}

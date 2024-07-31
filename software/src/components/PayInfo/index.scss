@@ -1,0 +1,86 @@
+.payInfo {
+    .payFlex {
+        display: flex;
+        align-items: center;
+    }
+
+    .payInfoTitle {
+        justify-content: flex-start;
+        font-weight: 400;
+        font-size: 0.29rem;
+        color: #3A3A3A;
+
+        div a {
+            color: #0077CC;
+            margin-left: 0.78rem;
+            cursor: pointer;
+        }
+    }
+
+    .switchList {
+        font-weight: 400;
+        font-size: 0.29rem;
+        color: #3A3A3A;
+        margin-top: 0.67rem;
+
+        .switchBox {
+            width: 7.92rem;
+            height: 1.67rem;
+            box-sizing: border-box;
+            background: #F6F6F6;
+            border-radius: 0.08rem;
+            margin-bottom: 0.27rem;
+            padding: 0 0.33rem;
+            justify-content: space-between;
+
+            .switch-box {
+                // margin-left: 4rem;
+
+                .switch-label {
+                    margin-bottom: 0;
+
+                    .switch-text {
+                        right: -0.8rem;
+
+                        &.off {
+                            right: -0.3rem;
+                        }
+                    }
+
+                    .fa-switch-unchecked,
+                    .fa-switch-checked {
+                        width: 30px;
+                    }
+
+                    .label-text,
+                    .fa-icon:last-child {
+                        visibility: hidden;
+                    }
+
+
+                }
+            }
+
+            .switchBoxLeft {
+                .fa-icon {
+                    .fa {
+                        width: 0.63rem;
+                        height: 0.63rem;
+                    }
+                }
+            }
+
+            .progressBtn {
+                cursor: pointer;
+                // background-color: #3A3A3A;
+                border-radius: 4px;
+                padding: 5px 10px;
+                color: #0077CC;
+            }
+        }
+
+        // .swithDesc {
+        //     ma
+        // }
+    }
+}

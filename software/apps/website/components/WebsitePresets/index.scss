@@ -1,0 +1,55 @@
+.zno-website-designer-page {
+  height: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+
+  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &-options-bar {
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &-filters-bar {
+    margin-bottom: 16px;
+  }
+
+  &-body {
+    position: relative;
+    height: calc(100% - 123px);
+  }
+
+  &-scroll-container {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    padding-right: 8px;
+  }
+
+  &-presets {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 395px);
+    grid-auto-rows: max-content;
+    gap: 18px;
+    margin-bottom: 16px;
+  }
+
+  &-pagination-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+
+
+
+
+}

@@ -1,0 +1,28 @@
+.ai-matting-book-page {
+  position: relative;
+  display            : inline-block;
+  background         : white;
+  background-image   : linear-gradient(45deg, #eee 25%, transparent 0, transparent 75%, #eee 0, #eee), linear-gradient(45deg, #eee 25%, transparent 0, transparent 75%, #eee 0, #eee);
+  background-size    : 19px 19px;
+  background-position: 0 0, 9px 9px;
+  &-loading-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240,240,240,0.94);
+  }
+  &-loading-icon {
+    width: 90px;
+    height: 90px;
+  }
+  &-loading-text {
+    font-size: 22px;
+    color: #3a3a3a;
+  }
+}

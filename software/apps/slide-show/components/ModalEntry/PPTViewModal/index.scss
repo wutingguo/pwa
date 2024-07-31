@@ -1,0 +1,48 @@
+.slide-show-center-preview-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  .slide-show-center-preview-modal-backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .slide-show-center-preview-modal-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 700px;
+    height: 450px;
+    background: black;
+    box-shadow: 0 6px 12px 0px rgba(0, 0, 0, 0.16);
+    transform: translate(-50%, -50%);
+    .icon-close {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      width: 16px;
+      height: 16px;
+      z-index: 12;
+      cursor: pointer;
+      background: url("close.png");
+      &.hide {
+        display: none;
+      }
+    }
+    .low-resolution-text {
+      position: absolute;
+      left: 50%;
+      text-align: center;
+      transform: translateX(-50%);
+      top: 9px;
+      font-size: 14px;
+      color: #fff;
+    }
+
+  }
+}

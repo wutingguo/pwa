@@ -1,0 +1,58 @@
+.bind-email-modal-wrap-cn {
+  width: 420px;
+  border-radius: 8px;
+  .modal-body {
+    margin: 20px 0;
+  }
+  &.content {
+    .modal-title {
+      font-size: 24px;
+      font-weight: 500;
+      color: #222222;
+      text-align: center;
+    }
+  }
+
+  .email-wrap {
+    position: relative;
+    .input-with-clear {
+      height: 56px;
+      .input-container {
+        .input {
+          height: 36px;
+        }
+        .tip-content {
+          margin: 0;
+          line-height: 10px;
+          position: relative;
+          top: -5px;
+        }
+      }
+    }
+    .msg {
+      font-size: 14px;
+      font-weight: 400;
+      color: #3a3a3a;
+      line-height: 18px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .modal-footer {
+    height: 32px;
+    text-align: left !important;
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    span {
+      display: inline-block;
+      line-height: 32px;
+    }
+    .button {
+      width: 155px;
+      height: 36px;
+      background: #222222;
+    }
+  }
+}

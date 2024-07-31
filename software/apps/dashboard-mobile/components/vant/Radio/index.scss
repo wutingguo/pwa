@@ -1,0 +1,21 @@
+.cxRadio{
+    .checked-radio {
+        margin-top: 30%;
+        margin-right: 2px;
+        display: flex;
+        border-radius: 12px;
+        padding: 10%;
+        justify-content: center;
+        align-items: center;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #222;
+
+        .checked-radio-bg {
+            width: 80%;
+            height: 80%;
+            border-radius: 100%;
+            background: #222;
+        }
+    }
+}

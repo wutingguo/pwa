@@ -1,0 +1,102 @@
+.export_ai_groups_modal {
+  width: 471px;
+  height: 510px;
+  .react-tabs {
+    margin-bottom: 40px;
+    .react-tabs__tab-list {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+      .react-tabs__tab {
+        font-size: 14px;
+        color: #AAAAAA;
+        margin-right: 34px;
+        outline-style: none;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.react-tabs__tab--selected {
+          color: #3A3A3A;
+          border-bottom: 1px solid #3A3A3A;
+        }
+      }
+    }
+    .sharding-tool{
+      height: 315px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+  }
+  .export-text {
+    font-size: 16px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    color: #3a3a3a;
+    &.download {
+      margin-top: 15px;
+    }
+  }
+  .click-filter-export {
+    padding-left: 20px;
+    .click-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .click-select-all {
+      font-size: 15px;
+      color: #128bac;
+      margin-bottom: 10px;
+      cursor: pointer;
+      width: 65px;
+    }
+    .tips-text {
+      font-size: 14px;
+      color: #aaa;
+    }
+    .click-select {
+      font-size: 15px;
+      color: #3a3a3a;
+      height: 115px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      padding: 8px;
+      .choose-checkbox-container {
+        margin-bottom: 3px;
+        width: 110px;
+      }
+      .options {
+        .sub-text {
+          font-size: 14px;
+          width: 85px;
+          height: 30px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .download-filter-radio-content {
+    display: flex;
+    padding-left: 20px;
+    .choose-radio-item {
+      font-size: 14px;
+      color: #3a3a3a;
+      margin-bottom: 14px;
+      margin-right: 30px;
+    }
+  }
+
+  .footer-btn {
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+    .white {
+      margin-right: 24px;
+    }
+  }
+}

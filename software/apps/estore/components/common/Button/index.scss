@@ -1,0 +1,49 @@
+.store-components-button {
+  box-sizing: border-box;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  white-space: nowrap;
+
+  &__icon {
+    display: inline-block;
+    margin-right: 8px;
+    img {
+      display: inline-block;
+    }
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+  }
+
+  &--normal {
+    background: #ffffff;
+    color: #3a3a3a;
+    border: 1px solid #3a3a3a;
+  }
+
+  &--primary {
+    background: #3a3a3a;
+    color: #ffffff;
+  }
+
+  &.size-large {
+    padding: 10px 25px;
+    .store-components-button__label {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .store-components-button__icon {
+      span {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+}

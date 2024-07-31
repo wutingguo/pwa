@@ -1,0 +1,54 @@
+.manage-pv {
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 35px;
+
+    &-base-pv-wrap {
+        display: flex;
+    }
+
+    &-label {
+        color    : #222222;
+        font-size: 16px;
+    }
+
+    &-base-pv-label {
+        height      : 40px;
+        line-height : 40px;
+        margin-right: 20px;
+    }
+
+    &-base-pv-input-wrap {
+        display       : flex;
+        flex-direction: column;
+        user-select: none;
+    }
+
+    &-base-pv-tip {
+        margin-top: 16px;
+        color     : #7B7B7B;
+        font-size : 14px;
+        user-select: text;
+    }
+
+    &-exposure-wrap {
+        display       : flex;
+        flex-direction: column;
+        margin-top    : 40px;
+    }
+
+    &-exposure-label {
+        margin-bottom: 20px;
+    }
+
+    &-bottom {
+        padding         : 20px 0;
+        position        : fixed;
+        bottom          : 0;
+        width           : 100%;
+        left            : 204px;
+        background-color: #fff;
+        box-shadow      : 0px -2px 4px 0px rgba(0, 0, 0, 0.1);
+        padding-left    : 76px;
+    }
+}

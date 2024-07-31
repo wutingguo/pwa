@@ -1,0 +1,31 @@
+.payment-success-page {
+  .payment-success-page-content {
+    color: #3a3a3a;
+    padding: 3rem 0 2.25rem;
+    background-color: #ffffff;
+    
+    .payment-success-title {
+      font-size: 0.71rem;
+      text-align: center;
+    }
+    .payment-success-subtitle {
+      margin-top: 0.23rem;
+      font-size: 0.31rem;
+      font-weight: 300;
+      text-align: center;
+    }
+   
+    .product-list{
+      text-align: center;
+      margin-top: 60px;
+
+      img{
+        width: 345px;
+      }
+
+      .mar-right-20{
+        margin-right: 20px;
+      }
+    }
+  }
+}

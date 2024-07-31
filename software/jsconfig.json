@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@resource/*": ["../resource/*"],
+      "@apps/*": ["./apps/*"],
+      "@gallery/*": ["./apps/gallery/*"],
+      "@common/*": ["./common/*"]
+    }
+  },
+  "include": ["src/**/*", "common/**/*", "apps/**/*"],
+  "exclude": ["node_modules", "dist", "public"]
+}

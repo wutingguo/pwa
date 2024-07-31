@@ -1,0 +1,131 @@
+.post-card-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 150px;
+
+  .form-container {
+    padding-top: 40px;
+    .input-container {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 16px;
+
+      .label {
+        width: 134px;
+        text-align: left;
+        line-height: 17px;
+        margin-right: 16px;
+        font-weight: 500;
+        .red {
+          color: #C20200;
+          margin-left: 4px;
+        }
+      }
+      .post-card-radio {
+        margin-right: 40px;
+        .native-radio {
+          &:checked + .icon.black {
+            background-size: 16px 16px;
+          }
+          &:checked ~ .text {
+            color: #222222;
+          }
+        }
+        .text {
+          font-weight: 400;
+          margin-left: 16px;
+          color: #7B7B7B;
+        }
+      }
+      &.contact-time {
+        margin-bottom: 40px;
+        .label {
+          width: 120px;
+        }
+        .customer-radio {
+          margin-right: 32px;
+        }
+      }
+      input[type="text"] {
+        box-sizing: border-box;
+        border: 1px solid #D8D8D8;
+        width: 360px;
+        height: 32px;
+        padding-left: 20px;
+        outline: none;
+      }
+      input[type="radio"] {
+        -webkit-appearance: button;
+      }
+      input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #7B7B7B;
+      }
+      input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #7B7B7B;
+      }
+      input:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #7B7B7B;
+      }
+      &.question-container {
+        .label {
+          margin-bottom: 16px;
+        }
+
+        textarea {
+          width: 360px;
+          height: 100px;
+          box-sizing: border-box;
+          padding: 6px 0 0 20px;
+          border: 1px solid #D8D8D8;
+          outline: none;
+        }
+      }
+    }
+    .upload-list {
+      display: flex;
+      margin-bottom: 40px;
+      justify-content: space-between;
+    }
+    .warn-text {
+      font-size: 12px;
+      font-weight: 300;
+      color: #ff5454;
+      margin-bottom: 30px;
+      //bottom: -18px;
+    }
+    .form-bottom {
+      display: flex;
+      justify-content: center;
+      .cancel-button, .submit-button {
+        width: 180px;
+        height: 32px;
+        box-sizing: border-box;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 32px;
+      }
+      .cancel-button {
+        color: #222222;
+        border: 1px solid #7B7B7B;
+        background-color: #ffffff;
+        margin-right: 40px;
+      }
+      .submit-button {
+        color: #fff;
+        background-color: #222222;
+
+        &.enabled {
+          background-color: #222222;
+        }
+      }
+    }
+
+  }
+}
+

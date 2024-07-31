@@ -1,0 +1,55 @@
+.CouponFormInfo {
+    .commonFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .x-imgage-loading {
+        position: fixed;
+    }
+
+    .header {
+        justify-content: space-between;
+
+        .back {
+            font-weight: normal;
+            font-size: 20px;
+            color: #3A3A3A;
+            cursor: pointer;
+
+            .fa-icon .fa.fa-back-2 {
+                width: 23px;
+                // height: 0.29rem;
+                margin-right: 4px;
+            }
+        }
+
+        .title {
+            font-weight: 500;
+            font-size: 24px;
+            color: #3A3A3A;
+        }
+
+        .SaveBtn {
+            width: 130px;
+            height: 41px;
+            background: #222222;
+            font-size: 16px;
+            font-weight: 500;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+
+    .formContent {
+        padding-left: 4.58rem;
+
+        .sectionTitle {
+            padding: 1.25rem 0 0.33rem;
+            font-weight: normal;
+            font-size: 20px;
+            color: #3A3A3A;
+        }
+    }
+}

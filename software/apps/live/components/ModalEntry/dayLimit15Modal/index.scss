@@ -1,0 +1,32 @@
+.dayLimit15 {
+    .dayLimit15Title {
+
+        font-size: 0.5rem;
+        color: #222222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            width: 0.5rem;
+            height: 0.5rem;
+            background: #CC0200;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.42rem;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            margin-right: 0.21rem;
+        }
+    }
+
+    .dayLimit15Body {
+        text-align: center;
+        font-size: 0.33rem;
+        color: #222222;
+    }
+}

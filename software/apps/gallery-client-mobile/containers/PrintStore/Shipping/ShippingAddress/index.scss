@@ -1,0 +1,124 @@
+.checkout-shipping-address-wrap {
+  .checkout-shipping-address-content {
+    &.empty-address {
+      width: 100%;
+    }
+    .checkout-shipping-address-email {
+      display: block;
+      margin-top: 4px;
+    }
+
+    .address-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      margin-bottom: 8px;
+      .detail-address {
+        margin-right: 24px;
+        &.empty-tip {
+          color: red;
+        }
+        &.warn-tip {
+          .valid-address-tip {
+            position: relative;
+            padding-left: 10px;
+            img {
+              width: 15px;
+            }
+            .tip-content {
+              position: absolute;
+              top: -25px;
+              left: 8px;
+              width: 212px;
+              height: 20px;
+              padding: 0 8px;
+              background-color: #f6f6f6;
+              border: 1px solid #aaa;
+              font-size: 12px;
+              color: #7b7b7b;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+      .edit-address {
+        cursor: pointer;
+        font-weight: 500;
+        color: #0077cc;
+      }
+    }
+  }
+
+  .order-address-list {
+    padding: 22px 40px 32px;
+    box-sizing: border-box;
+
+    li {
+      cursor: pointer;
+      line-height: 16px;
+
+      &.address-item {
+        display: flex;
+        align-items: center;
+
+        .address-label {
+          width: 100px;
+          height: 34px;
+          text-align: center;
+          margin-right: 16px;
+          font-size: 12px;
+          color: #262626;
+          line-height: 34px;
+          border-radius: 2px;
+          overflow: hidden;
+          border: 1px solid #ddd;
+        }
+
+        .address-content {
+          max-width: 85%;
+        }
+
+        .address-action {
+          flex: 1;
+          text-align: right;
+
+          .edit-address {
+            padding: 10px 0 10px 10px;
+          }
+        }
+
+        .mt2 {
+          margin-top: 2px;
+        }
+
+        & + .address-item {
+          margin-top: 10px;
+        }
+      }
+
+      &:hover {
+        .address-label {
+          border-color: #222;
+        }
+      }
+
+      &.selected {
+        .address-label {
+          border-color: #222;
+          position: relative;
+        }
+      }
+
+      &:last-child {
+        margin-top: 16px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .loading {
+    position: relative;
+    height: 141px;
+  }
+}

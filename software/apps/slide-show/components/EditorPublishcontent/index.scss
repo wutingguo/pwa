@@ -1,0 +1,9 @@
+.slide-show-publish-container {
+  height: calc(100% - 45px);
+  background: #f6f6f6;
+
+  .slide-show-video-container {
+    height: calc(100% - 86px);
+    margin-top: 18px;
+  }
+}

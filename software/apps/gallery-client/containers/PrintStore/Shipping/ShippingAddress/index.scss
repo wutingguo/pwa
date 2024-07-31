@@ -1,0 +1,57 @@
+.checkout-shipping-address-wrap {
+  .checkout-shipping-address-content {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 40px;
+    &.empty-address {
+      width: 70%;
+      max-width: 1000px;
+      min-width: 650px;
+    }
+    .checkout-shipping-address-email {
+      display: block;
+      margin-top: 4px;
+    }
+
+    .address-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      margin-bottom: 8px;
+      .detail-address {
+        margin-right: 24px;
+        &.empty-tip {
+          color: red;
+        }
+        &.warn-tip {
+          .valid-address-tip {
+            position: relative;
+            padding-left: 10px;
+            img {
+              width: 15px;
+            }
+            .tip-content {
+              position: absolute;
+              top: -25px;
+              left: 8px;
+              width: 212px;
+              height: 20px;
+              padding: 0 8px;
+              background-color: #f6f6f6;
+              border: 1px solid #aaa;
+              font-size: 12px;
+              color: #7b7b7b;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+      .edit-address {
+        cursor: pointer;
+        font-weight: 500;
+        color: #0077cc;
+      }
+    }
+  }
+}

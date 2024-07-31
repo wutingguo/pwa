@@ -1,0 +1,22 @@
+.order-info {
+  .value {
+    .pay {
+      width: 120px;
+      height: 26px;
+      line-height: 26px;
+      text-align: center;
+      display: block;
+      border: 1px solid #7b7b7b;
+      color: #f00;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    span {
+      color: #f00;
+      font-size: 12px;
+      &.left-time {
+        margin-left: 60px;
+      }
+    }
+  }
+}

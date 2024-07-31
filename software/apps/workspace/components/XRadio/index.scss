@@ -1,0 +1,45 @@
+.x-radio {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    float: left;
+
+    background: url('icons/unselect.png') center center no-repeat;
+    background-size: 18px 18px;
+  }
+
+  .text {
+    display: inline-block;
+    float: left;
+    height: 18px;
+    line-height: 18px !important;
+    font-size: 16px;
+    color: #3a3a3a;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .native-radio {
+    position: absolute;
+    top: -50px;
+
+    &:checked + .icon {
+      background: url('icons/selected.png') center center no-repeat;
+      background-size: 18px 18px;
+    }
+    &:checked + .icon.blue {
+      background: url('icons/blue-selected.png') center center no-repeat;
+      background-size: 18px 18px;
+    }
+    &:checked + .icon + .text {
+      color: #3a3a3a;
+    }
+  }
+}

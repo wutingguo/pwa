@@ -1,0 +1,56 @@
+.checkout-pin-container {
+  display: flex;
+  flex-direction: column;
+  .checkout-pin-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3A3A3A;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  .checkout-pin-desc {
+    font-size: 14px;
+    font-weight: 300;
+    color: #3A3A3A;
+    line-height: 18px;
+    margin-bottom: 16px;
+  }
+  .checkout-pin-input-wrapper {
+    width: 520px;
+    height: 40px;
+    input {
+      &[type=number]::-webkit-inner-spin-button, 
+      &[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        margin: 0; 
+      }
+      &[type=number] {
+        -moz-appearance:textfield;
+      }
+    }
+  }
+  .checkout-pin-btn-wrapper {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    .checkout-pin-btn {
+      width: 140px;
+      height: 32px;
+      line-height: 32px;
+      box-sizing: border-box;
+      transition: opacity 0.3s;
+      &.white {
+        background: #FFFFFF;
+        border: 1px solid #7B7B7B;
+        color: #3A3A3A;
+      }
+      &.black {
+        background: #3A3A3A
+      }
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@import '~sass-rem';
+
+$rem-baseline: 48px;
+html {
+  @include rem-baseline;
+}

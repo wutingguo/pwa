@@ -1,0 +1,33 @@
+.SubdomainModal {
+    .nameLabel {
+        font-size: 14px;
+        color: #3A3A3A;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    .tip-content {
+        display: block;
+        text-align: left;
+        position: absolute;
+    }
+
+    .desc {
+        font-size: 14px;
+        text-align: left;
+        color: #A6A6A6;
+        margin-top: 24px;
+
+        span {
+            color: #CC0200;
+        }
+    }
+
+    .modal-footer {
+        margin-top: 30px;
+
+        .button {
+            width: 160px;
+        }
+    }
+}

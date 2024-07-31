@@ -1,0 +1,69 @@
+@import '@src/styles/rem';
+@import '@resource/static/styles/public/mixin';
+
+.gllery-editor-sidebar-wrapper {
+  width: 7.5rem;
+  flex: none;
+  height: 100%;
+  .react-tabs {
+    height: 100%;
+    border-right: 1px solid #d8d8d8;
+    background: #f6f6f6;
+  }
+  // tab
+  .react-tabs__tab-list {
+    height: 40px;
+    display: flex;
+    margin-bottom: 24px;
+    .react-tabs__tab {
+      @include flex-center();
+      @include fw-book;
+      flex: 1;
+      border-right: 1px solid #d8d8d8;
+      border-bottom: 1px solid #d8d8d8;
+      background: #ffffff;
+      cursor: pointer;
+      font-size: 14px;
+      color: #3a3a3a;
+      font-weight: 400;
+      &:last-child {
+        border-right: none;
+      }
+      &--selected {
+        border-bottom-color: transparent;
+        background: #f6f6f6;
+      }
+      @media screen and (max-width: 1470px) {
+        .text {
+          display: none;
+        }
+      }
+    }
+  }
+  // panel
+  .react-tabs__tab-panel--selected {
+    height: calc(100% - 64px);
+  }
+  .collection-cover {
+    position: relative;
+    .collection-change-cover {
+      width: 100%;
+      height: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      background: #000000;
+      background: #000000;
+      opacity: 0.3;
+      font-size: 18px;
+      font-weight: 500;
+      color: #ffffff;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+    }
+    &:hover .collection-change-cover {
+      opacity: 0.6;
+    }
+  }
+}

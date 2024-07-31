@@ -1,0 +1,90 @@
+.liveItemCardWrapper {
+  // transition: all 0.3s;
+  height: max-content;
+  border: 1px solid #E5E5E5;
+  // max-width: 520px;
+  min-width: 250px;
+  width: calc((100% - 46px) / 3);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  .imgWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    // transition: all 0.3s;
+    min-height: 165px;
+    .loading {
+      width: 60px;
+    }
+    img {
+      width: 100%;
+    }
+    .liveItemInfo {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+      height: 50px;
+      line-height: 50px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0 10px;
+      .liveName {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .photoNum {
+        white-space: nowrap;
+      }
+    }
+    .tip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #FFA929;
+      color: #fff;
+      padding: 8px 20px;
+    }
+    .tip-timeout {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #FFA929;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 4px;
+    }
+  }
+  .liveActionBarWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background: #F6F6F6;
+    padding: 12px 0;
+    .actionItem {
+      white-space: break-spaces;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #222222;
+      text-align: center;
+      line-height: 14px;
+      img {
+        width: 22px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

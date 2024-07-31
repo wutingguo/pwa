@@ -1,0 +1,16 @@
+.horizontalWaterFallBox {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .hlistbox {
+        margin-right: 6px;
+        margin-bottom: 6px;
+        position: relative;
+    }
+
+    .largeSpace {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}

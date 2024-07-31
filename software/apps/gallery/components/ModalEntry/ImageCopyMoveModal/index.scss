@@ -1,0 +1,55 @@
+.image-copy-move-wrap {
+  .modal-title {
+    user-select: none;
+  }
+
+  .desc {
+    height: 18px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #3A3A3A;
+    line-height: 18px;
+    margin-bottom: 16px;
+  }
+
+  .modal-body {
+    max-height: 450px;
+    overflow-y: auto;
+
+    .sets-wrap {
+      display: flex;
+      flex-direction: column;
+
+      .set-item {
+        max-width: 350px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 14px;
+        color: #3a3a3a;
+        padding-left: 10px;
+        border-bottom: 1px solid #EDEDED;
+
+        &:first-child {
+          border-top: 1px solid #EDEDED;
+        }
+
+        &:hover {
+          background-color: #EEEEEE;
+        }
+
+        &.actived {
+          background-color: #DDDDDD;
+        }
+      }
+    }
+  }
+
+  .tips-content {
+    font-size: 12px;
+    color: #C20200;
+    text-align: left;
+    margin: 8px 0 0;
+    line-height: 14px;
+    display: inline-block;
+  }
+}

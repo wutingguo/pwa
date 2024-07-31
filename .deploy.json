@@ -1,0 +1,59 @@
+{
+  "lab": "http://gitlab.artisanstate.com/front/H5/zno-pwa.git",
+  "submodules": {
+    "resource": {
+      "lab": "http://gitlab.artisanstate.com/front/H5/shared.git",
+      "parentpath": "./",
+      "subDep": true
+    },
+    "saas-portal": {
+      "lab": "http://gitlab.artisanstate.com/front/H5/saas-portal.git",
+      "parentpath": "./",
+      "language": "cn",
+      "deps": true
+    },
+    "saas-portal-zno": {
+      "lab": "http://gitlab.artisanstate.com/front/H5/sass-portal-zno.git",
+      "parentpath": "./",
+      "language": "en",
+      "deps": true
+    },
+    "cn:pc": {
+      "parentpath": "./saas-portal",
+      "language": "cn",
+      "deps": true
+    },
+    "cn:wap": {
+      "parentpath": "./saas-portal",
+      "language": "cn",
+      "deps": true
+    },
+    "znoplus": {
+      "parentpath": "./saas-portal-zno",
+      "language": "en",
+      "deps": true
+    },
+    "znoplus-m": {
+      "parentpath": "./saas-portal-zno",
+      "language": "en",
+      "deps": true
+    },
+    "saasportal:resource": {
+      "parentpath": "./saas-portal-zno",
+      "language": "en",
+      "lab": "http://gitlab.artisanstate.com/front/H5/shared.git"
+    },
+    "software": {
+      "deps": true,
+      "subDep": true
+    },
+    "navbar": {
+      "deps": true
+    }
+  },
+  "deploy": {
+    "deploypath": "./deploy",
+    "distpath": "./build",
+    "subjectdistpath": "./software/dist"
+  }
+}

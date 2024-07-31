@@ -1,0 +1,35 @@
+.editProductOptions {
+  .inputWrapper {
+    margin-bottom: 32px;
+    .label {
+      font-weight: normal;
+      color: #3A3A3A;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .controlWrapper {
+      overflow: auto;
+      width: 400px;
+      max-height: 300px;
+      .errText {
+        color: #c20200;
+        font-size: 12px;
+      }
+
+      .rti--container {
+        --rti-main: #ccc;
+        padding: 8px;
+        border-radius: 4px;
+        &:focus-within, &:focus {
+          border-color: #3A3A3A;
+        }
+        .rti--input {
+          width: 100%;
+        }
+      }
+    }
+    .tagsInputComp {
+
+    }
+  }
+}

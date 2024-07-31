@@ -1,0 +1,55 @@
+.email-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -16px;
+  > .item {
+    width: 223px;
+    height: 223px;
+    margin: 16px;
+    border: 1px solid #d8d8d8;
+    > .pic {
+      width: 223px;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #f7f7f9;
+      img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    > .name {
+      height: 43px;
+      line-height: 43px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #3a3a3a;
+      display: flex;
+      justify-content: space-between;
+      .text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 10px;
+        width: 146px;
+      }
+      .fa-icon {
+        margin-left: 4px;
+      }
+    }
+    &.default {
+    }
+    &.add {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .add-watemark-upload {
+        padding: 9px 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.store-shipping {
+  min-width: 900px;
+  * {
+    box-sizing: border-box;
+  }
+  display: flex;
+  flex-direction: column;
+  & > :not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .store-shipping-tab {
+    height: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3a3a3a;
+    line-height: 19px;
+    margin-right: 40px;
+    &.active {
+      position: relative;
+      &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -16px;
+        height: 2px;
+        width: 100%;
+        background-color: #3a3a3a;
+      }
+    }
+  }
+
+  .store-shipping-content {
+    position: relative;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: auto;
+    // 暂定 等代码合并时修改
+    // header-wrap header-wrap-en 48px
+    // workspace-content page-software-e-store-dashboard-taxes margin-top 8px
+    // estore-header 、 margin-bottom  76px 、 20px
+    // store-common-header 、 margin-bottom 56px、40px
+
+    .store-shipping-content__automatic-fulfillment {
+      box-sizing: border-box;
+      height: calc(100vh - 240px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        display: inline-block;
+        width: 1245px;
+        height: 52px;
+        font-size: 16px;
+        font-weight: normal;
+        color: #3a3a3a;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+  }
+}

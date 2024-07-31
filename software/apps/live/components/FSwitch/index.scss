@@ -1,0 +1,45 @@
+.switch-box {
+  width: 64px;
+  opacity: 1;
+  transition: 0.3s ease opacity;
+  &.disabled {
+    opacity: 0.45;
+    .switch-label {
+      cursor: not-allowed;
+    }
+    .fa-icon {
+      cursor: not-allowed;
+    }
+  }
+  .switch-label {
+    position: relative;
+    display: block;
+    height: 32px;
+    cursor: pointer;
+    user-select: none;
+
+    .switch-text {
+      position: absolute;
+      right: -50px;
+      top: 0;
+      &.off {
+        right: -30px;
+      }
+    }
+  }
+  .switch-checkbox {
+    display: none;
+  }
+}
+#label {
+  width: 26px;
+  height: 13px;
+  .switch-text {
+    position: absolute;
+    right: -10px;
+    top: -3px;
+    &.off {
+      right: -10px;
+    }
+  }
+}

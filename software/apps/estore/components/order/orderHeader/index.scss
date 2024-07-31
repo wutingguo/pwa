@@ -1,0 +1,12 @@
+.order_header {
+  display: flex;
+  flex-wrap: nowrap;
+  background: #F9F9F9;
+  height: 40px;
+  line-height: 40px;
+
+  .header_item {
+    flex: 1;
+    text-align: center;
+  }
+}

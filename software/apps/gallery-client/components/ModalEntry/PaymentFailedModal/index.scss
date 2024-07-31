@@ -1,0 +1,57 @@
+.print-store-payment-failed-modal-wrap {
+  width: 652px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .modal-band-c {
+    width: 40px;
+    height: 40px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    margin-bottom: 20px;
+  }
+
+  .modal-title-c {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3a3a3a;
+    line-height: 30px;
+    div {
+      text-align: center;
+    }
+    margin-bottom: 30px;
+  }
+
+  .modal-body-c {
+    font-size: 14px;
+    font-weight: normal;
+    color: #3a3a3a;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+
+  .modal-footer-c {
+    height: 40px;
+    text-align: center;
+    //display: flex;
+    //align-items: center;
+    //justify-content: space-between;
+    overflow: hidden;
+    span {
+      display: inline-block;
+      line-height: 32px;
+    }
+    .button {
+      font-size: 16px;
+
+      font-weight: normal;
+      color: #ffffff;
+      line-height: 40px;
+      padding:0 36px;
+      height: 40px;
+    }
+  }
+}

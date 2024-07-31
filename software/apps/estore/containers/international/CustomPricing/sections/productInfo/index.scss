@@ -1,0 +1,9 @@
+.productInfoWrapper {
+  min-width: 550px;
+  width: 50%;
+  .fullWidth.singleSection {
+    .sectionControl {
+      width: 100%!important;
+    }
+  }
+}

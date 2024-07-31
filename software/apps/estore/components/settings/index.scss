@@ -1,0 +1,155 @@
+.store-settings {
+  * {
+    box-sizing: border-box;
+  }
+  & > :not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .store-settings-payment {
+    &__title {
+      height: 14px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #3a3a3a;
+      line-height: 17px;
+    }
+    &__sub-title {
+      height: 14px;
+      font-size: 14px;
+      font-weight: normal;
+      color: #3a3a3a;
+      line-height: 17px;
+      margin-bottom: 24px;
+    }
+    &__method {
+      width: 100%;
+      min-height: 107px;
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+      padding: 0 40px;
+      margin-bottom: 16px;
+      background: #f9f9f9;
+      &__img-container {
+        flex-shrink: 0;
+        width: 102px;
+        // height: 27px;
+
+        img {
+          width: 100%;
+        }
+      }
+      &__text-logo-container {
+        text-align: center;
+        width: 105px;
+        height: 30px;
+        line-height: 36px;
+        .offline-logo {
+          display: inline-block;
+          width: 100%;
+          font-size: 30px;
+          font-weight: 900;
+          color: #3a3a3a;
+          &.size {
+            font-size: 26px;
+          }
+        }
+      }
+
+      &__desc {
+        flex: 1 0 390px;
+        overflow: hidden;
+        // min-width: 721px;
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        color: #3a3a3a;
+        line-height: 20px;
+      }
+      &__setup-button {
+        appearance: none;
+        border: none;
+        cursor: pointer;
+        width: 181px;
+        min-width: 103px;
+        height: 40px;
+        background: #3a3a3a;
+        outline: none;
+
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 19px;
+        letter-spacing: 2px;
+        font-family: 'Gotham SSm A', 'Gotham SSm B';
+
+        &.paypal {
+          background-color: #3a3a3a;
+          color: #ffffff;
+          &.disconnect {
+            background-color: #dddddd;
+            color: #7b7b7b;
+          }
+        }
+
+        &.offline {
+          background-color: #3a3a3a;
+          color: #ffffff;
+          &.disconnect {
+            background-color: #dddddd;
+            color: #7b7b7b;
+          }
+        }
+      }
+    }
+  }
+
+  .store-settings-currency {
+    & > * {
+      display: block;
+    }
+    & > :not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &__title {
+      height: 14px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #3a3a3a;
+      line-height: 17px;
+    }
+    &__value {
+      height: 14px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #3a3a3a;
+      line-height: 17px;
+    }
+    &__tips {
+      height: 14px;
+      font-size: 14px;
+      font-weight: normal;
+      color: #3a3a3a;
+      line-height: 17px;
+    }
+  }
+}
+
+.store-settings-payment-method-confirm-modal {
+  .modal-title {
+    height: 30px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: #3a3a3a !important;
+    line-height: 30px !important;
+  }
+  .modal-body {
+    text-align: left !important;
+  }
+  .modal-footer {
+    .button {
+      text-transform: capitalize;
+    }
+  }
+}

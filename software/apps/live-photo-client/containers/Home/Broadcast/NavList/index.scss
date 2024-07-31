@@ -1,0 +1,30 @@
+
+
+.nav_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .nav {
+        display: flex;
+        width: 80%;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .nav_item{
+            border-radius: 4px;
+            color: #222222;
+            background: #F0F0F0;
+            margin-right: 20px;
+            padding: 8px 18px;
+            font-weight: 400;
+            font-size: 16px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .active {
+            background: #222222;
+            color: #fff;
+        }
+    }
+}

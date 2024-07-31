@@ -1,0 +1,74 @@
+.select-size-wrap {
+  width: 600px;
+  padding: 51px !important;
+
+  .modal-title-select {
+    color: #3a3a3a;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 36px;
+  }
+
+
+}
+
+
+.save {
+  font-size: 14px;
+  cursor: pointer;
+  width: 179px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  margin: 41px auto 0;
+
+}
+
+.modal-body-size {
+  .tips-info {
+    color: red;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .resolution-wrap {
+    .HD-wrap {
+      width: 450px;
+
+      .rad-item {
+        margin-bottom: 15px;
+      }
+
+      .hd-disable {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .upgrade-link{
+        color: #0077CC;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+    }
+
+    .fourK-wrap {
+      width: 450px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 18px;
+      .upgrade-link {
+        color: #0077CC;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,76 @@
+.main-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.coverImg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.email-input-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  .guest-access-tip {
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .email-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 500px;
+    .email-name{
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .input-with-clear {
+      text-align: left;
+      height: 96px;
+
+      .tip-content {
+        display: block;
+        font-size: 24px;
+        margin: 16px 0;
+        font-weight: 200;
+      }
+    }
+
+    .enter-email {
+      height: 48px;
+      box-sizing: border-box;
+      padding: 10px 30px 10px 10px;
+      line-height: 1;
+      font-size: 24px;
+      min-width: 460px;
+      font-size: 16px;
+    }
+
+    .button {
+      height: 48px;
+      background: transparent;
+      border: 2px solid #fff;
+      box-sizing: border-box;
+    }
+   
+  }
+}

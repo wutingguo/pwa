@@ -1,0 +1,79 @@
+{
+  "globals": {
+    "window": "readonly",
+    "t": "readonly",
+    "logEvent": "readonly",
+    "__isDZ__": "readonly",
+    "__isCN__": "readonly",
+    "__SINGLE_SPA__": "readonly",
+    "__DEVELOPMENT__": "readonly",
+    "__LANGUAGE__": "readonly",
+    "__DRAG_DATA": "readonly",
+    "__app": "readonly",
+    "gtag": "readonly",
+    "fbq": "readonly",
+    "onconnect": "readonly",
+    "loadWasm": "readonly",
+    "removeBeforeUnload": "readonly"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": false
+    }
+  },
+  "rules": {
+    "react/jsx-quotes": 0,
+    // "jsx-quotes": [
+    //   2,
+    //   "prefer-double"
+    // ],
+    "react/require-extension": 0,
+    "comma-dangle": 0,
+    "class-methods-use-this": 0,
+    "linebreak-style": 0,
+    "arrow-body-style": 0,
+    "global-require": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "new-cap": 0,
+    "import/first": 0,
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "no-unused-vars": 0,
+    "no-undef": 2,
+    "no-redeclare": 2,
+    "no-debugger": 2,
+    "no-const-assign": 2,
+    "no-constant-condition": 2,
+    "no-dupe-keys": 2,
+    "no-dupe-args": 2,
+    "no-else-return": 2,
+    "no-empty": 2,
+    "no-func-assign": 2,
+    "prefer-const": 0,
+    "camelcase": 0,
+    "prettier/prettier": 0
+  }
+}

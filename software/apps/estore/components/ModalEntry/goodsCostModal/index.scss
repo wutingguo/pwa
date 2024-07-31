@@ -1,0 +1,37 @@
+.estore_cost {
+  width: 600px;
+  .item_list {
+    .es_cost_title,
+    .es_cost_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      padding: 10px 16px;
+      color: #3a3a3a;
+    }
+    .es_cost_title {
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: 16px;
+      
+    }
+    .es_cost_content{
+      font-weight: 300;
+      margin-bottom: 12px;
+      &:last-child{
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 28px;
+
+      }
+
+    }
+    .es_cost_total{
+      text-align: right;
+      font-weight: 500;
+      .bold{
+        font-size: 20px;
+        
+      }
+    }
+  }
+}

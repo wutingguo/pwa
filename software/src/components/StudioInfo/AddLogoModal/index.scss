@@ -1,0 +1,103 @@
+.add-logo-modal {
+  width: 500px !important;
+  padding-bottom: 30px;
+  .title {
+    text-align: center !important;
+    padding: 40px 0 0 !important;
+  }
+  .content {
+    width: 240px;
+    height: 240px;
+    margin: 30px auto;
+    position: relative;
+    >input {
+      position: absolute;
+      visibility: hidden;
+    }
+    .upload-box {
+      width: 240px;
+      height: 240px;
+      background: #F6F6F6;
+      position: relative;
+      border: 1px solid #d6d6d6;
+      overflow: hidden;
+      &.hover {
+        border: 1px solid #222;
+      }
+      .upload-tip {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        img  {
+          width: 57px;
+        }
+        .tip {
+          font-size: 12px;
+          color: #7b7b7b;
+          text-align: center;
+          margin-top: 8px;
+          white-space: nowrap;
+        }
+      }
+      .uploading-tip {
+        color: #222;
+        font-size: 12px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+      .replace-tip {
+        position: absolute;
+        color: #3a3a3a;
+        width: 68px;
+        padding: 3px 0;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-align: center;
+        left: 50%;
+        margin-left: -34px;
+        bottom: 12px;
+        z-index: 9999;
+        cursor: pointer;
+        background: #F6F6F6;
+      }
+      .error-tip {
+        position: absolute;
+        bottom: 8px;
+      }
+      > img {
+        width: 100%;
+        display: block;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .btns {
+    text-align: center;
+    position: relative;
+    .add-cart {
+      width: 200px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background: #222;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0 auto;
+      border: none;
+      cursor: pointer;
+      display: block;
+    }
+  }
+}

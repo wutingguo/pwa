@@ -1,0 +1,75 @@
+.website-custom-modal {
+  width: 762px;
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+
+  .modal-title {
+    margin-bottom: 40px;
+  }
+
+  .modal-body {
+    padding: 16px 40px;
+    text-transform: capitalize;
+  }
+
+
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      margin-right: 0 !important;
+    }
+  }
+
+  .custom-content{
+    width: 100%;
+    .introduce{
+      .table{
+        display: table;
+        padding: 20px 0;
+        padding-right: 1.5rem;
+        background-color: rgb(246,246,246);
+        line-height: 40px;
+        width: calc(100% - 80px);
+        .row-2{
+          flex-basis: 50%;
+        }
+        .title {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          padding-left: 50px;
+          padding-right: 50px;
+          font-weight: 500;
+        }
+        .body {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+      }
+      .mt-3{
+        margin-top: 20px;
+      }
+    }
+  }
+  .custom-btns{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    .footer-btn{
+      width: 140px;
+      height: 32px;
+      line-height: 32px;
+      background: #3A3A3A;
+    }
+    .cancel-btn{
+      background-color: #fff;
+      color: #3a3a3a;
+      border: 1px solid #3a3a3a;
+    }
+  }
+}

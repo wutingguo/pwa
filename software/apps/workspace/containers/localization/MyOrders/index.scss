@@ -1,0 +1,254 @@
+@import '../../../styles/rem';
+
+.my-orders-container {
+  min-height: 600px;
+
+  .orders-header {
+    height: 76px;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-size: 18px;
+    }
+
+    .btn {
+      cursor: pointer;
+
+      img {
+        width: 21px;
+        height: 19px;
+        vertical-align: sub;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .download-button {
+    padding: 19px 0 24px;
+    display: flex;
+    justify-content: flex-end;
+
+    .btn {
+      width: 124px;
+      height: 32px;
+      background: #222222;
+      border-radius: 2px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .order-content {
+    .my-orders {
+      font-size: 12px;
+
+      //padding: 0 5rem;
+      .pagination-container {
+        height: 20px;
+        margin-top: 14px;
+        text-align: right;
+
+      }
+
+      .filter-container {
+        margin: 24px 0;
+
+        .group-item {
+          display: inline-block;
+          margin-right: rem(120px);
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .select-label {
+            font-size: 16px;
+            line-height: 18px;
+          }
+
+          .select-label,
+          .select-container {
+            margin-top: 0;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .select-container {
+            margin-left: 16px;
+            width: rem(240px);
+            height: 24px;
+            line-height: 24px;
+
+            .Select-control {
+              height: 24px !important;
+            }
+
+            .Select.is-focused:not(.is-open)>.Select-control {
+              border-color: #DBDBDB;
+              box-shadow: none;
+            }
+
+            .Select-value {
+              height: 24px;
+              line-height: 24px;
+              font-size: 12px;
+              padding-left: 8px;
+            }
+
+            .Select-option {
+              padding: 8px;
+              font-size: 12px;
+            }
+
+            .Select-menu-outer {
+              max-height: 500px;
+
+              .Select-menu {
+                max-height: 500px;
+
+                .Select-option {
+                  height: 24px;
+                  line-height: 24px;
+                  padding: 0 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+      .loading-img {
+        margin: 30px 0;
+      }
+    }
+
+  }
+
+  .download-model{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    .close-container{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+    .download-container{
+      width: 438px;
+      height: 330px;
+      font-size: rem(26px);
+      color: #2B2B2B;
+      background: #FFFFFF;
+      margin: 200px auto;
+      text-align: center;
+      position: relative;
+      .close-icon {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+      }
+      .title{
+        font-size: rem(18px);
+        font-weight: 500;
+        padding-top: 32px;
+        margin-bottom: 24px;
+
+      }
+      .date-type-select{
+        font-size: rem(14px);
+        margin: 0 32px 18px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        span {
+          height: 40px;
+          line-height: 40px;
+        }
+        .type-button{
+          //float: right;
+          display: inline-block;
+          font-size: rem(14px);
+          color: #aaaaaa;
+          width:120px;
+          height:40px;
+          background:#ffffff;
+          border-radius:24px;
+          text-align: center;
+          line-height: 40px;
+          border:1px solid rgba(204,204,204,1);
+          margin-left: 32px;
+          cursor: pointer;
+          &.selected{
+            background:rgba(240,240,240,1);
+            color: #222222;
+            border: none;
+          }
+        }
+
+      }
+      .data-picker{
+        position: absolute;
+        top: 16px;
+        right: -341px;
+      }
+      .start-time{
+        font-size: rem(14px);
+        margin: 0 32px 24px;
+        text-align: left;
+
+        .start-time-button{
+          color: #222222;
+          float: right;
+          font-size: rem(14px);
+          cursor: pointer;
+        }
+      }
+      .end-time{
+        font-size: rem(14px);
+        margin: 0 32px 59px;
+        text-align: left;
+        .end-time-button{
+          color: #222222;
+          float: right;
+          font-size: rem(14px);
+          cursor: pointer;
+        }
+      }
+      .download-button2{
+        font-size: rem(14px);
+        background-color: #222222;
+        color: #FFFFFF;
+        height: 32px;
+        width: 120px;
+        display: inline-block;
+        text-align: center;
+        line-height: 32px;
+        font-weight: 300;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .empty {
+    text-align: center;
+    padding: 180px 0;
+    color: #7B7B7B;
+    font-size: 20px;
+  }
+}

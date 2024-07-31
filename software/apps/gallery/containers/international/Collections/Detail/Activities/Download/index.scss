@@ -1,0 +1,100 @@
+@import "@resource/static/styles/public/mixin";
+
+.editor-activities-download-container {
+  .content {
+    .tab-layout {
+      display: flex;
+      color: #7b7b7b;
+      font-weight: 500;
+      font-size: 18px;
+      height: 38px;
+      margin-top: 41px;
+      border-bottom: 1px solid #d8d8d8;
+      .tab-item {
+        display: block;
+        margin-right: 60px;
+        cursor: pointer;
+        &.active {
+          color: #3a3a3a;
+          border-bottom: 2px solid #3a3a3a;
+        }
+      }
+    }
+    .editor-activities-download-table-wrapper {
+      height: calc(100% - 88px);
+      .download-show-empty-content {
+        padding-top: 3.75rem;
+        text-align: center;
+        font-size: 18px;
+        color: #424242;
+      }
+    }
+    .editor-activities-download-table {
+      margin-top: 40px;
+      height: calc(100% - 43px - 0.83rem);
+      overflow-y: scroll;
+      .rc-table-container {
+        text-align: left;
+        table {
+          width: 100%;
+          border-spacing: 0;
+          border: 1px solid #e8e8e8;
+          border-bottom: none;
+        }
+        .rc-table-thead tr {
+          @include fw-medium;
+          height: 40px;
+          color: #222222;
+          background-color: #f6f6f6;
+        }
+        .rc-table-tbody {
+          @include fw-book;
+          .rc-table-row {
+            height: 80px;
+          }
+        }
+        th.rc-table-cell,
+        td.rc-table-cell {
+          padding-left: 20px;
+          padding-right: 20px;
+          border-bottom: 1px solid #e8e8e8;
+          .thumbnail-image {
+            width: 40px;
+          }
+        }
+        .download-list-image-wrapper {
+          display: flex;
+          align-items: center;
+          .download-list-image {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            img {
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+          .download-list-name {
+            margin-left: 20px;
+            white-space: nowrap;
+            font-size: 14px;
+            color: #0077CC;
+            cursor: pointer;
+          }
+        }
+        .set-item {
+          color: #52a4fa;
+          cursor: pointer;
+          .set-separator {
+            color: #222222;
+          }
+          &.disabled {
+            color: #7b7b7b;
+            cursor: auto;
+          }
+        }
+      }
+    }
+  }
+}

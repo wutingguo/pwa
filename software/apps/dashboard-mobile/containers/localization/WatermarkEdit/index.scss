@@ -1,0 +1,143 @@
+@import '@apps/workspace/styles/rem';
+
+$bgc: #fff;
+$borderRadius: 3px;
+.creat-watemark-modal {
+  padding: 16px 12px;
+  background-color: #f6f6f6;
+  .flex-content {
+    width: 100%;
+    .header-box {
+      width: calc(100% - 24px);
+      height: 238px;
+      padding: 20px 12px;
+      border-radius: $borderRadius;
+      background-color: $bgc;
+      overflow: hidden;
+    }
+    .preview {
+      font-size: 16px;
+      font-weight: normal;
+      color: #3a3a3a;
+      line-height: 28px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .canvas-box {
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+      .bgimg {
+        width: 100%;
+        height: 206px;
+      }
+    }
+  }
+
+  .option-name {
+    padding: 12px;
+    margin: 20px 0;
+    display: flex;
+    background-color: $bgc;
+    border-radius: $borderRadius;
+    label {
+      width: 25%;
+      font-size: 16px;
+      font-weight: 500;
+      color: #3a3a3a;
+      line-height: 40px;
+    }
+    .input-container {
+      flex: 1;
+      margin-top: -20px;
+      .edit-input {
+        padding: 0 18px 0 10px;
+        border: 0px solid #d8d8d8;
+        text-align: right;
+      }
+    }
+  }
+
+  .option-box {
+    width: calc(100% - 24px);
+    border-radius: $borderRadius;
+    background-color: $bgc;
+    padding: 0 12px;
+    padding-bottom: 40px;
+    .option-item {
+      padding: 12px 0;
+      display: flex;
+      border-bottom: 1px solid #eeeeee;
+
+      label {
+        width: 40%;
+        font-size: 16px;
+        font-weight: 500;
+        color: #3a3a3a;
+      }
+
+      .percent {
+        width: 20%;
+        font-size: 16px;
+        color: #878787;
+        margin-top: 5px;
+        text-align: right;
+      }
+      .rc-slider {
+        height: 2px;
+        width: 70%;
+        margin-left: -10%;
+        margin-top: 7px;
+        background-color: unset;
+        .rc-slider-track {
+          // display: none;
+          background-color: #313131;
+        }
+
+        .rc-slider-handle {
+          flex: 1;
+          background-color: #3a3a3a;
+          border-color: #3a3a3a;
+        }
+      }
+      &.fullscreen {
+        display: block;
+        .watemark-edit {
+          position: relative;
+          .icon {
+            width: 25px;
+            height: 25px;
+          }
+          .options {
+            .text {
+              line-height: 25px;
+              font-size: 16px;
+              font-weight: 500;
+              color: #3a3a3a;
+            }
+          }
+        }
+      }
+    }
+    .option-item:last-child {
+      border-bottom: 0px solid #eeeeee;
+    }
+  }
+
+  .w-footer {
+    position: fixed;
+    bottom: 10px;
+    width: calc(100% - 24px);
+    text-align: center;
+
+    > .save-btn {
+      width: 100%;
+      height: 44px;
+      line-height: 44px;
+      border-radius: $borderRadius;
+      font-size: 20px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  }
+}

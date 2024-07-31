@@ -1,0 +1,134 @@
+@import '~sass-rem';
+
+.spuListContentWrapper {
+  .spuItem {
+    .title {
+      color: #3a3a3a;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    .spuItemList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      .listItem {
+        position: relative;
+        transition: all 0.2s;
+        margin-bottom: 30px;
+
+        .store-price-sheet-price-alert {
+          box-sizing: border-box;
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          padding: 10px;
+        }
+        &.hideProduct {
+          .image-box,
+          .productName,
+          .fa-more-label {
+            opacity: 0.5;
+          }
+        }
+        &.col-6 {
+          margin-right: 0.5rem;
+          > div {
+            flex: 0 0 14.5%;
+          }
+        }
+        &.cnListItem {
+          .image-box {
+            &:hover {
+              &::before {
+                content: '编辑价格';
+              }
+            }
+          }
+        }
+        .image-box {
+          cursor: pointer;
+          margin-bottom: 0;
+          &:hover {
+            position: relative;
+            &::before {
+              content: 'Edit Price';
+              display: flex;
+              pointer-events: none;
+              position: absolute;
+              align-items: center;
+              justify-content: center;
+              background: rgba(0, 0, 0, 0.3);
+              color: #fff;
+              font-weight: 500;
+              z-index: 1;
+              font-size: 20px;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+            }
+          }
+        }
+        .productNameWrapper {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 16px;
+          padding-left: 2px;
+          .productName {
+            overflow: hidden;
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 4.5rem;
+          }
+          .collection-handler {
+            &.open {
+              .dropdown-menu.arrow-right:after,
+              .dropdown-menu.arrow-right:before {
+                left: 135px;
+              }
+              .dropdown-menu.arrow-right:after {
+                border-width: 6px;
+              }
+            }
+            &.cnDropdown {
+              &.open {
+                .dropdown-menu.arrow-right:after,
+                .dropdown-menu.arrow-right:before {
+                  left: 110px;
+                }
+              }
+            }
+            .drop-down-content {
+              a {
+                padding: 6px 12px;
+                .hide_product, .delete_product {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  img {
+                    width: 20px;
+                  }
+                }
+                .delete_product {
+                  img {
+                    width: 15px;
+                    height: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.empt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

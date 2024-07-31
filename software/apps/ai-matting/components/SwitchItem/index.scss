@@ -1,0 +1,25 @@
+$prefixCls: 'ai-matting-switch-item';
+
+.#{$prefixCls} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    &-label {
+        font-size: 14px;
+        color: #3a3a3a;
+    }
+    .switch-box {
+        .switch-label {
+            margin-bottom: 0;
+            .switch-text.off {
+                right: -50px;
+            }
+            .fa-icon {
+                .fa-switch-on {
+                    display: none;
+                }
+            }
+        }
+    }
+}

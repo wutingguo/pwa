@@ -1,0 +1,91 @@
+// .app {
+//     width: 750px;
+//     background-color: red;
+//     height: 40px;
+//     text-align: center;
+// }
+#app,
+body {
+    height: 100%;
+}
+
+.commonFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    background: #F6F6F6;
+    height: 100%;
+
+
+    .header {
+        background-color: #222222;
+
+        // .serchContainer {
+        //     width: 100%;
+        // }
+        .rv-search__field {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: transparent;
+        }
+
+        .btn {
+            height: 30px;
+            width: 40px;
+            font-size: 14px;
+            border-radius: 3px;
+            background-color: #7B7B7B;
+            color: #fff;
+            margin-left: 10px;
+        }
+
+        .creatCollect {
+            font-size: 13px;
+            color: #FFFFFF;
+            padding: 15px 10px 20px;
+            position: relative;
+
+            span {
+                font-size: 20px;
+                margin-right: 3px;
+                vertical-align: middle;
+            }
+
+        }
+
+        .bootom {
+            border-radius: 10px 10px 0px 0px;
+            overflow: hidden;
+            height: 6px;
+            position: absolute;
+            background: #F6F6F6;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .content {
+        // background-color: #222;
+        height: fit-content;
+
+        .tabs {
+            // border-radius: 10px 10px 0px 0px;
+            // overflow: hidden;
+            padding: 4px 12px 0;
+            background: #F6F6F6;
+        }
+
+        .cardContanerList {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 100%;
+            padding-top: 25px;
+            padding-bottom: 100px;
+        }
+    }
+}

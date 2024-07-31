@@ -1,0 +1,54 @@
+.favoriteSetting {
+    padding: 16px 12px;
+    font-size: 14px;
+    color: #222222;
+
+    .commonFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .desc {
+        font-size: 12px;
+        color: #A3A3A3;
+        background-color: #fff;
+        padding: 12px;
+    }
+
+    .itemList {
+        height: 52px;
+        background-color: #FFFFFF;
+        border-radius: 3px;
+        padding: 0 12px;
+        box-sizing: border-box;
+
+        .label_name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 210px;
+            width: fit-content;
+            display: inline-block;
+        }
+    }
+
+    .customize {
+        background-color: #fff;
+        padding: 0px 12px;
+
+        .title {
+            padding: 16px 0px;
+        }
+
+        .itemList {
+            padding: 0;
+            border-bottom: 1px solid #EEEEEE;
+
+            .icon {
+                margin-left: 8px;
+            }
+        }
+    }
+
+}

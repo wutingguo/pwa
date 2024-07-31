@@ -1,0 +1,461 @@
+@import '../../../styles/rem';
+$color-3A: #3a3a3a;
+$color-F6: #f6f6f6;
+$color-7B: #7b7b7b;
+$color-FF: #ffffff;
+$color-D8: #d8d8d8;
+$color-CC: #cccccc;
+$color-66: #666666;
+$color-F3: #f3f3f3;
+
+.my-labs-container {
+  .tipImg {
+    &.show {
+      z-index: 99999999;
+      opacity: 1;
+    }
+    cursor: pointer;
+    transition: all 0.3s;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    img {
+      width: 70vw;
+    }
+  }
+  .custom_standard_tip {
+    user-select: none;
+    cursor: pointer;
+    float: right;
+    color: #0077cc;
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .labs-container-btn {
+    float: right;
+    height: 32px;
+    width: rem(160px);
+    background-color: #222222;
+    color: #ffffff;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .react-tabs__tab-list {
+    overflow: hidden;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #d6d6d6;
+    li {
+      float: left;
+      font-size: rem(16px);
+      padding: 8px 0;
+      outline: none;
+      position: relative;
+      -webkit-appearence: none;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+      &.react-tabs__tab--selected {
+        font-weight: 500;
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background: #222;
+        }
+      }
+      & + li {
+        margin-left: 64px;
+      }
+    }
+  }
+
+  .fw-medium {
+    font-weight: 500;
+  }
+  .fw-book {
+    font-weight: 400;
+  }
+  .disabled-style {
+    color: $color-66;
+    background-color: $color-F3;
+    opacity: 0.72;
+  }
+
+  // 空页面
+  .empty-custom-products-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .empty-page-text {
+      font-size: 18px;
+      color: $color-3A;
+    }
+    .create-btn {
+      width: rem(160px);
+      height: 40px;
+      margin-top: 20px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      color: $color-FF;
+      background-color: $color-3A;
+    }
+  }
+  // 自定义配置页面
+  .custom-product-page-wrapper {
+    height: 100%;
+    display: flex;
+    .custom-product-tree-wrapper {
+      width: rem(460px);
+      height: 680px;
+      position: relative;
+      flex: none;
+      border-radius: 1px;
+      border: 1px solid #e5e5e5;
+      .custom-product-title {
+        margin-top: 24px;
+        padding-left: 24px;
+        font-size: 16px;
+      }
+      .custom-product-tree {
+        margin-top: 24px;
+        padding-left: 20px;
+        height: calc(100% - 180px);
+        overflow-y: auto;
+        line-height: 25px;
+        .level-2 {
+          padding-left: 4px;
+          padding-right: 20px;
+        }
+        .tree-item-active {
+          background-color: #dcdcdc;
+        }
+        .fa-icon {
+          background-color: #dcdcdc;
+        }
+        .chevron-down {
+          border-color: #222222 transparent transparent;
+          border-style: solid;
+          border-width: 4px 4px 2px;
+          display: inline-block;
+          margin-right: 5px;
+          cursor: pointer;
+          vertical-align: middle;
+        }
+        .rc-tree-list-holder-inner {
+          .rc-tree-treenode {
+            margin-top: 5px;
+            .rc-tree-node-selected {
+              background-color: #f6f6f6;
+              border: none;
+              opacity: 1;
+              font-weight: 600;
+            }
+            .rc-tree-title {
+              @extend .fw-book;
+              font-size: 14px;
+              color: $color-3A;
+              width: 100%;
+              display: inline-block;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            &:first-child .rc-tree-title {
+              @extend .fw-medium;
+            }
+          }
+        }
+        .rc-tree-indent-unit {
+          padding-left: 0;
+        }
+      }
+      .custom-product-btn {
+        line-height: 32px;
+        text-align: center;
+        font-size: 13px;
+        height: 32px;
+        background: #f6f6f6;
+        border-bottom: 1px solid #e5e5e5;
+        cursor: pointer;
+        color: #3a3a3a;
+        width: 100%;
+        img {
+          width: 16px;
+          height: 16px;
+          margin-right: 12px;
+          vertical-align: sub;
+        }
+      }
+    }
+    .custom-product-empty-content {
+      padding: 0 20px;
+      margin: auto;
+      font-size: 18px;
+      color: $color-3A;
+    }
+    .custom-setting-form-container {
+      flex: 1;
+      padding-left: rem(200px);
+      padding-right: 0;
+      .custom-setting-header {
+        @extend .fw-medium;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-D8;
+        &-title {
+          font-size: 16px;
+          color: $color-3A;
+          max-width: 400px;
+          padding: 8px 0;
+        }
+        .custom-setting-header-save-btn {
+          width: rem(96px);
+          height: 32px;
+          line-height: 32px;
+          border-radius: 2px;
+          text-align: center;
+          background: $color-3A;
+          .text {
+            margin-left: 7px;
+            color: $color-FF;
+          }
+        }
+      }
+      .custom-setting-fields {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .x-form-item-label {
+          @extend .fw-medium;
+          width: rem(160px);
+          height: 40px;
+          line-height: 40px;
+          white-space: nowrap;
+          font-size: rem(14px);
+          color: $color-3A;
+        }
+        & > .x-form-item {
+          margin-bottom: 40px;
+          flex-direction: column;
+          .x-form-item-control-input {
+            width: rem(480px);
+            height: 40px;
+          }
+        }
+        .x-input,
+        .rc-input-number {
+          width: 100%;
+          height: 40px;
+          box-sizing: border-box;
+        }
+        .x-input,
+        .x-textarea {
+          &[disabled] {
+            @extend .disabled-style;
+          }
+        }
+        .rc-input-number {
+          border-radius: 0;
+          &-disabled input {
+            cursor: default;
+          }
+        }
+        .x-labs-select {
+          outline: none;
+          &.Select.is-focused:not(.is-open) > .Select-control {
+            border-color: $color-D8;
+            box-shadow: none;
+          }
+          .Select-control {
+            border-radius: 0;
+            border-color: $color-D8;
+          }
+          .Select-multi-value-wrapper {
+            height: 38px;
+            .Select-placeholder,
+            .Select-value {
+              line-height: 38px;
+            }
+            .Select-placeholder {
+              color: $color-CC;
+            }
+          }
+          &.is-disabled .Select-value {
+            @extend .disabled-style;
+          }
+        }
+        input::-webkit-input-placeholder {
+          color: $color-CC;
+        }
+        // fields
+        .custom-setting-height .x-form-item-control {
+          margin-left: 160px;
+        }
+        .custom-setting-description .x-form-item-control .x-textarea {
+          width: rem(480px);
+          height: 160px;
+          box-sizing: border-box;
+        }
+        .custom-setting-spreadsType {
+          .rc-radio-group-wrapper {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            .rc-radio-wrapper {
+              margin-right: 40px;
+              .rc-radio {
+                line-height: 10px;
+                .rc-radio-inner {
+                  border-color: #3a3a3a;
+                  background-color: #ffffff;
+                }
+                &.rc-radio-checked {
+                  .rc-radio-inner {
+                    background-color: #3a3a3a;
+                  }
+                }
+              }
+            }
+            .rc-radio-wrapper-disabled {
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1800px) {
+      .custom-setting-form-container {
+        padding-left: rem(80px);
+      }
+    }
+  }
+
+  .create-form-modal {
+    width: rem(1100px) !important;
+    padding: 30px;
+    padding-left: 0;
+    .custom-setting-form-container {
+      padding-left: rem(80px);
+      padding-right: rem(40px);
+    }
+    .save-btn {
+      margin-top: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        width: rem(160px);
+        height: 40px;
+        line-height: 40px;
+        margin: 0 20px;
+        background: #ffffff;
+        border: 1px solid #222222;
+        font-size: 14px;
+        font-weight: 400;
+        color: #222222;
+        cursor: pointer;
+        text-align: center;
+        &.black {
+          background-color: #222222;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .x-form-wrapper {
+    .x-form-item-group {
+      align-items: flex-end;
+      margin-bottom: 40px;
+      .x-form-item {
+        display: block;
+        &:nth-child(3) {
+          margin-left: rem(20px);
+        }
+      }
+      .x-labs-select {
+        width: rem(80px);
+      }
+      .x-form-item-label {
+        width: rem(150px) !important;
+      }
+      .x-input-select {
+        width: rem(400px) !important;
+      }
+      .x-input-select.half {
+        width: rem(150px) !important;
+        &.height-label,
+        &.width-label {
+          width: rem(90px) !important;
+          &::before {
+            content: '高';
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: left;
+            position: absolute;
+            line-height: 40px;
+            height: 100%;
+            font-size: rem(14px);
+            left: 0;
+            width: rem(60px);
+          }
+        }
+        &.height-label {
+          width: rem(120px) !important;
+          &::before {
+            width: rem(30px);
+          }
+        }
+        &.width-label {
+          &::before {
+            content: '宽(跨页)';
+          }
+        }
+      }
+      .Select-control {
+        border-left: none;
+      }
+      .x-form-item-control {
+        position: relative;
+        &.height-label-control {
+          padding-left: rem(30px);
+        }
+        &.width-label-control {
+          padding-left: rem(60px);
+        }
+        // &:has(div.height-label) {
+        //   padding-left: rem(30px);
+        // }
+        // &:has(div.width-label) {
+        //   padding-left: rem(60px);
+        // }
+        .x-form-item-errtext {
+          position: absolute;
+          width: rem(150px);
+        }
+      }
+    }
+  }
+}

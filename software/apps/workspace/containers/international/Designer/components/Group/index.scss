@@ -1,0 +1,12 @@
+$color-3A: #3A3A3A;
+
+.group-box {
+  display: flex;
+
+  .group-name {
+    text-align: center;
+    margin-bottom: 14px;
+
+    color: $color-3A;
+  }
+}

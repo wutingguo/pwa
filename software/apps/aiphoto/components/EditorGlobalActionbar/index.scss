@@ -1,0 +1,43 @@
+.editor-global-action-bar {
+  .editor-aiphoto-action-bar-upload {
+    padding: 0 30px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 2px;
+    border: 1px solid #222222;
+    background: #ffffff;
+    .fa-add {
+      display: none;
+    }
+    .text {
+      color: #222222;
+    }
+  }
+  .collection-detail-header-left {
+    display: flex;
+  }
+  .photo-detail-global-action-bar-title {
+    max-width: 6rem;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 30px;
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: -14px;
+    padding-bottom: 10px;
+    span {
+      font-size: 16px;
+    }
+    &.active {
+      font-weight: 500;
+      border-bottom: 2px solid #222222;
+    }
+  }
+  &-img-only,
+  &-show-filename {
+    margin-left: 0.33rem !important;
+    i {
+      padding: 0 !important;
+    }
+  }
+}

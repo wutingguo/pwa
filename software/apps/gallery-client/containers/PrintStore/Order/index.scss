@@ -1,0 +1,87 @@
+.order-payment-page {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 50px 0;
+  height: 100%;
+  .load-mask {
+    opacity: 1;
+  }
+  .shipping-breadcrumb {
+    padding: 0 5rem;
+  }
+  .order-payment-page-wrapper {
+    color: #3a3a3a;
+    margin: 0 auto;
+    width: 30rem;
+    min-width: 800px;
+    font-size: 14px;
+    padding-bottom: 50px;
+    .message-container {
+      margin-top: 16px;
+      text-align: right;
+      .check-out-disabled-message {
+        color: #e32943;
+      }
+    }
+    .billingInfo {
+      overflow: hidden;
+      background: #F6F6F6;
+      padding: 24px 40px;
+      .address {
+        border-bottom: 1px solid #d6d6d6;
+        padding-bottom: 14px;
+        margin-bottom: 24px;
+        .addressItem {
+          display: flex;
+          justify-content: end;
+          margin-bottom: 5px;
+          .label {
+            margin-right: 10px;
+          }
+        }
+      }
+      .amount {
+        .amountItem {
+          display: flex;
+          justify-content: end;
+          margin-bottom: 16px;
+          &.bold {
+            font-weight: 500;
+          }
+          &.total {
+            font-weight: 500;
+            font-size: 18px;
+            margin-top: 32px;
+            .value {
+              .suffix {
+                font-weight: 600;
+                font-size: 12px;
+                margin-left: 6px;
+              }
+            }
+          }
+          .label {
+            text-align: right;
+            margin-right: 10px;
+            width: 170px;
+          }
+          .value {
+            text-align: right;
+            min-width: 150px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .btnWrapper {
+      display: flex;
+      justify-content: end;
+    }
+    .orderBtn {
+      margin-top: 40px;
+      .button-text-wrapper {
+        padding: 0 20px;
+      }
+    }
+  }
+}

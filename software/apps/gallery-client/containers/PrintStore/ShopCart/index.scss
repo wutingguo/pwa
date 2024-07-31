@@ -1,0 +1,70 @@
+.print-store-page-content-shop-cart {
+  box-sizing: border-box;
+  position: relative;
+  padding: 25px 230px;
+  min-height: 100%;
+  min-width: 1255px;
+
+  &--empty {
+    height: 100%;
+    display: grid;
+    place-content: center;
+  }
+
+  .shopping-cart-list {
+    font-size: 14px;
+
+    .right-section {
+      display: flex;
+      align-items: center;
+      float: right;
+      .right-section-item {
+        width: 120px;
+        text-align: right;
+        &.middle-item {
+          width: 120px;
+          margin-left: 40px;
+          text-align: center;
+        }
+      }
+    }
+
+    .shopping-cart-list-header {
+      height: 40px;
+      margin-top: 20px;
+      padding: 0 40px;
+      color: #222222;
+      font-weight: 500;
+      line-height: 40px;
+      background: #f6f6f6;
+    }
+  }
+
+  .checkout-button-container {
+    margin-top: 24px;
+    padding: 0 40px;
+    overflow: hidden;
+    text-align: right;
+
+    .button {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .to-shipping-button {
+      display: inline-block;
+      padding: 0 8px;
+      &.disabled {
+        cursor: not-allowed;
+        pointer-events: auto;
+      }
+    }
+  }
+  .message-container {
+    margin-top: 16px;
+    text-align: right;
+    .check-out-disabled-message {
+      color: #e32943;
+    }
+  }
+}

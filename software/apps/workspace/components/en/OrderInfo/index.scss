@@ -1,0 +1,38 @@
+.order-info {
+  .value {
+    .pay {
+      width: 20%;
+      height: 26px;
+      line-height: 26px;
+      text-align: center;
+      display: block;
+      border: 1px solid #7b7b7b;
+      color: #f00;
+      margin-bottom: 10px;
+    }
+    span {
+      color: #f00;
+      font-size: 12px;
+      &.left-time {
+        margin-left: 60px;
+      }
+    }
+  }
+  
+  .li-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .track-package{
+    margin-left:20px;
+    text-align: center;
+    line-height: 26px;
+    width: 120px;
+    height: 26px;
+    background-color: #393939;
+    float: left;
+    color: #fff;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,147 @@
+.coupon {
+    .comonFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        height: 55px;
+        justify-content: space-between;
+        border-bottom: 1px solid #D8D8D8;
+
+        .title {
+            align-self: flex-end;
+            padding: 0 0px 16px 16px;
+            font-size: 16px;
+            height: 16px;
+            font-weight: 500;
+            color: #3a3a3a
+        }
+
+        .headerBtn {
+            width: 180px;
+            height: 40px;
+            background: #222222;
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFFFFF;
+            align-self: flex-start;
+            cursor: pointer;
+        }
+    }
+
+    .contentBox {
+        .contentHeader {
+            justify-content: flex-start;
+            margin-top: 32px;
+            margin-bottom: 30px;
+
+            .chBtnList {
+                height: 32px;
+                padding: 0 16px;
+                background: #F6F6F6;
+                border-radius: 2px;
+                border: 1px solid #DCDCDC;
+                box-sizing: border-box;
+                margin-right: 8px;
+                font-weight: 500;
+                font-size: 16px;
+                color: #3A3A3A;
+                cursor: pointer;
+            }
+
+            .active {
+                background-color: #3A3A3A;
+                border-color: #3A3A3A;
+                color: #FFFFFF;
+            }
+        }
+
+        .content {
+            .emptyList {
+                margin-top: 4.77rem;
+                text-align: center;
+                font-size: 16px;
+                color: #3A3A3A;
+                font-weight: normal;
+            }
+
+            .couponListTable {
+                .rc-table-container {
+                    text-align: left;
+
+                    table {
+                        width: 1179px;
+                        border-spacing: 0;
+                        // border: 1px solid #E8E8E8;
+                        border-bottom: 0;
+                    }
+
+                    .rc-table-thead tr {
+                        // font-weight: 500;
+                        height: 60px;
+                        background-color: #F9F9F9;
+
+                        .rc-table-cell {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #3a3a3a;
+                        }
+                    }
+
+                    .rc-table-tbody {
+                        // @include fw-book;
+
+                        .rc-table-row {
+                            height: 130px;
+                            font-size: 16px;
+                            color: #3A3A3A;
+                            font-weight: normal;
+                        }
+                    }
+
+                    th.rc-table-cell,
+                    td.rc-table-cell {
+                        padding-left: 20px;
+                        padding-right: 20px;
+
+                        &:last-child {
+                            text-align: right;
+                        }
+                    }
+
+                    td.rc-table-cell {
+                        border-bottom: 1px solid #E8E8E8;
+                    }
+                }
+            }
+
+            .couponActions {
+                .coupon-edit-icon {
+                    margin-right: 0.4rem;
+                }
+
+                .dropdownLabel {
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #3A3A3A;
+                    margin-left: 17px;
+                }
+
+                .dropdown-menu {
+                    z-index: 99 !important;
+                }
+
+                .couponDropdownicon {
+                    margin-bottom: 2px;
+
+                    .fa {
+                        width: 14px !important;
+                        height: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+}

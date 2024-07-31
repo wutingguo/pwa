@@ -1,0 +1,65 @@
+.flex-space {
+  flex: 1;
+}
+
+.print-store-header {
+  display: flex;
+  align-items: center;
+  padding: 43px 40px 16px;
+  border-bottom: 1px solid #d8d8d8;
+
+  &__title {
+    cursor: pointer;
+    display: inline-block;
+    max-width: calc(100% - 420px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3a3a3a;
+    line-height: 20px;
+    letter-spacing: 2px;
+    height: 20px;
+  }
+
+  &__bar {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+
+    .home {
+      cursor: pointer;
+      height: 16px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #3a3a3a;
+      line-height: 16px;
+      letter-spacing: 1px;
+    }
+    .gallery {
+      cursor: pointer;
+      height: 18px;
+      font-size: 16px;
+      font-weight: normal;
+      color: #3a3a3a;
+      line-height: 16px;
+      letter-spacing: 1px;
+    }
+    .split {
+      width: 1px;
+      height: 18px;
+      background: #d8d8d8;
+    }
+    .buttons {
+      & > :not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+}

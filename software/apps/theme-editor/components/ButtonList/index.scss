@@ -1,0 +1,78 @@
+.button-list {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  min-height: 32px;
+  justify-content: center;
+  .button-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    li {
+      &.disabled {
+        color: #ccc;
+        pointer-events: none;
+      }
+    }
+    .action-item {
+      cursor: pointer;
+      position: absolute;
+      font-size: 13px;
+      .icon {
+        width: 13px;
+        height: 14px;
+        background: url('icon/redo.svg') no-repeat center center;
+        background-size: contain;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      &.set-photo {
+        width: 118px;
+        height: 32px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 32px;
+        text-align: center;
+      }
+      &.undo {
+        right: 80px;
+        .icon {
+          background-image: url('./icon/undo.svg');
+        }
+
+        &.disabled {
+          .icon {
+            background-image: url('./icon/undoDisabled.svg');
+          }
+
+          .text {
+            color: #3a3a3a;
+          }
+        }
+      }
+
+      &.redo {
+        right: 0px;
+        .icon {
+          background-image: url('./icon/redo.svg');
+        }
+
+        &.disabled {
+          cursor: pointer;
+
+          .icon {
+            background-image: url('./icon/redoDisabled.svg');
+          }
+
+          .text {
+            color: #3a3a3a;
+          }
+        }
+      }
+    }
+  }
+}

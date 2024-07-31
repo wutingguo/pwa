@@ -1,0 +1,66 @@
+@import '@src/styles/rem';
+@import '@resource/static/styles/public/mixin';
+
+.aiphoto-editor-sidebar-wrapper {
+  width: 7.5rem;
+  height: 100%;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  .aiphoto-editor-sidebar-photos-set {
+    width: 100%;
+    .title {
+      height: 40px;
+      color: #3a3a3a;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      .back {
+        padding-left: 20px;
+        padding-right: 30px;
+        cursor: pointer;
+        width: 52px;
+      }
+      .name {
+        width: calc(100% - 100px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .list {
+      .item {
+        font-weight: 500;
+        padding: 0 20px;
+        height: 48px;
+        color: #3a3a3a;
+        cursor: pointer;
+        box-sizing: border-box;
+        line-height: 48px;
+      }
+      .active {
+        background: #e8e8e8;
+        &::before {
+          content: '';
+          width: 0;
+          height: 48px;
+          position: absolute;
+          left: 8px;
+          border-left: 4px solid #3a3a3a;
+        }
+      }
+    }
+  }
+  .aiphoto-editor-sidebar-photos-cover {
+    height: 5.88rem;
+    padding: 0.5rem 0.42rem 0.83rem;
+    box-sizing: border-box;
+    background: #e8e8e8;
+  }
+}

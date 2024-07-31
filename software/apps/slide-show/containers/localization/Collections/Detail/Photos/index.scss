@@ -1,0 +1,22 @@
+.slide-show-collection-detail-photo {
+    .action-bar-container {
+        display: flex;
+        margin: 0.5rem 0;
+        .slide-show-editor-selection-action-bar-no-select,
+        .slide-show-editor-selection-action-bar {
+            flex-grow: 1;
+            margin: 0;
+        }
+        .image-sort-action-bar {
+            margin-left: 9px;
+            .btn-white {
+                padding: 10px 9px;
+            }
+        }
+    }
+    .editor-image-list {
+        &.editor-image-hide-bar {
+            height: calc(100% - 150px - 1.83rem);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.bankAccountInfo {
+    .areaBox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .areaList {
+            width: 3.21rem;
+            margin-right: 0.29rem;
+
+            .dropdown-menu {
+                width: fit-content;
+            }
+        }
+    }
+
+
+}

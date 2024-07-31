@@ -1,0 +1,31 @@
+
+
+.trigger_box {
+    .trigger_content{
+        position: relative;
+        min-width: 140px;
+        height: 40px;
+        background: #F6F6F6;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .trigger_content_search {
+
+        }
+        .trigger_content_icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            border-color: #999 transparent transparent;
+            border-style: solid;
+            border-width: 5px 5px 2.5px;
+            display: inline-block;
+            height: 0;
+            width: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+}

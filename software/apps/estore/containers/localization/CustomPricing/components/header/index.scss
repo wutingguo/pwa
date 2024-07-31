@@ -1,0 +1,52 @@
+.CustomPricingHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  .loading {
+    position: fixed;
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    z-index: -1;
+  }
+  &.loadingWrapper, &.hideLoading {
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,.9);
+      z-index: 111;
+      opacity: 1;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  &.hideLoading {
+    .loading {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  
+  .back {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3A3A3A;
+    font-weight: 500;
+    font-size: 20px;
+    img {
+      margin-right: 20px;
+      width: 25px;
+    }
+  }
+  .saveBtn {
+    width: 135px;
+  }
+}

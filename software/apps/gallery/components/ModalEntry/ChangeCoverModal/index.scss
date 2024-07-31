@@ -1,0 +1,56 @@
+.change-cover-modal {
+  width: 484px;
+  height: 246px;
+  &.content {
+    .modal-title {
+      user-select: none;
+      font-size: 20px;
+      margin-bottom: 35px;
+      font-weight: 500;
+    }
+  }
+
+  .modal-body {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    // overflow: hidden;
+    height: 100px;
+    max-height: 130px;
+    .from-collection {
+      width: 364px;
+      height: 40px;
+      background: #3a3a3a;
+      font-size: 16px;
+      color: #ffffff;
+      margin-bottom: 16px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+      img {
+        width: 20px;
+        vertical-align: middle;
+      }
+    }
+    .gallery-change-cover-upload {
+      width: 364px;
+      height: 40px;
+      background: #3a3a3a;
+      font-size: 16px;
+      justify-content: center;
+      .text {
+        font-weight: inherit;
+      }
+    }
+    .error {
+      color: #c0392b;
+      margin: 10px 0;
+    }
+    .x-imgage-loading {
+      height: 100px;
+    }
+  }
+}

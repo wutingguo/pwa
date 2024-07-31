@@ -1,0 +1,10 @@
+.drag-line{
+  position:absolute;
+  z-index: 99999;
+  pointer-events: none;
+  width: 3px;
+  height: 100%;
+  left: 105%;
+  top: 0;
+  background-color: #4CC1FC;
+}

@@ -1,0 +1,10 @@
+.watermark-setting{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(100% - 24px);
+    padding: 12px;
+    :global{
+
+    }
+}

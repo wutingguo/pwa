@@ -1,0 +1,27 @@
+@import '@resource/static/styles/public/mixin';
+
+.global-settings-header-wrapper {
+  @include flex-center(center, space-between);
+  height: 32px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(216,216,216,1);
+  // 左侧
+  .global-settings-header-left {
+    font-size: 26px;
+    color: #3A3A3A;
+  }
+  // 右侧按钮
+  .global-settings-header-view {
+    margin: 0 0.17rem;
+  }
+  .global-settings-header-right {
+    display: flex;
+    white-space: nowrap;
+    @media screen and (max-width: 1080px){
+      .text {
+        display: none;
+      }
+    }
+  }
+}

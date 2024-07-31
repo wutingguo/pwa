@@ -1,0 +1,225 @@
+.view-favorite-list-modal {
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  &.auto {
+    overflow: auto;
+  }
+  .modal-body {
+    .cover {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .icon-list {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 53px;
+      background: linear-gradient(to top, transparent 0, rgba(0, 0, 0, 0.5) 100%);
+      display: flex;
+      align-items: center;
+      span:first-child {
+        margin-left: 8px;
+      }
+      .download-mark {
+        position: relative;
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #a3e9a5;
+          position: absolute;
+          top: -3px;
+          right: 0;
+        }
+      }
+    }
+
+    .wrap {
+      padding: 0 40px;
+    }
+
+    .favorite-view-header {
+      margin: 40px 0;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 1;
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      .pull-right {
+        display: flex;
+        align-items: center;
+        .submitted {
+          font-weight: 500;
+          font-size: 20px;
+          color: #3a3a3a;
+          margin-right: 36px;
+        }
+        .submit-favorites {
+          width: 150px;
+          height: 40px;
+          border: 1px solid #3a3a3a;
+          border-radius: 2px;
+          &.editor {
+            background: #ffffff;
+            color: #3a3a3a;
+            opacity: 0.4;
+          }
+        }
+      }
+      .fa-icon {
+        float: left;
+        .text {
+          color: #000000;
+          font-size: 26px;
+        }
+      }
+
+      .photo-number {
+        font-size: 26px;
+        color: #3a3a3a;
+        font-weight: 400;
+      }
+    }
+
+    .empty-image-wrap {
+      margin: 45px 0 0px;
+      text-align: center;
+      color: #3a3a3a;
+
+      .favorite-content {
+        .favorite-item {
+          .favorite-item-title {
+            margin: 30px;
+            margin-left: 0;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: left;
+          }
+        }
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+      }
+
+      .set-info {
+        margin: 20px 0 120px;
+        &.margin {
+          margin: 20px 0 50px;
+        }
+      }
+      .switch-tabs-wrappr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #ededed;
+        padding-bottom: 16px;
+        margin-bottom: 40px;
+        .tab-item {
+          cursor: pointer;
+          color: #7b7b7b;
+          font-weight: 400;
+          font-size: 18px;
+          margin-right: 80px;
+          &:last-child {
+            margin-right: 0;
+          }
+          &.cur {
+            position: relative;
+            color: #222222;
+            font-weight: 500;
+            &::after {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: -16px;
+              border-bottom: 2px solid #222;
+              width: 100%;
+              height: 1px;
+            }
+          }
+        }
+      }
+
+      .text1 {
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      .line {
+        margin: 0 20px;
+      }
+
+      .text2 {
+        font-size: 14px;
+        font-weight: 300;
+        color: #7b7b7b;
+      }
+
+      .button {
+        margin-top: 16px;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .favorite-image-viewer {
+    background: #fff;
+
+    &.x-image-viewer-container {
+      .image-viewer-body {
+        top: 80px;
+      }
+    }
+
+    .favorite-view-header {
+      padding: 40px 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 1;
+
+      .favorite-view-icon {
+        margin-left: 12px;
+      }
+      .fa-icon {
+        .text {
+          color: #000000;
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+.favorite-card-download-photo-tooltip {
+  width: 256px;
+  height: 64px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #ffffff;
+  line-height: 64px;
+  opacity: 1;
+  z-index: 9999999999;
+  .rc-tooltip-inner {
+    padding: 0;
+    text-align: center;
+  }
+  .rc-tooltip-arrow {
+    left: 5%;
+  }
+}

@@ -1,0 +1,110 @@
+.account-modal {
+  width: 520px!important;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-bottom: 40px;
+  .sub-title {
+    margin-top: 10px;
+    padding: 0 40px;
+    color: #7B7B7B;
+    .highlight {
+      color: #DE3418;
+    }
+  }
+  .form {
+    padding: 40px 40px 48px;
+    .field {
+      overflow: hidden;
+      & + .field {
+        margin-top: 24px;
+      }
+      .label {
+        width: 100px;
+        float: left;
+        line-height: 40px;
+      }
+      .input {
+        width: 340px;
+        float: left;
+        position: relative;
+        &.border {
+          border: 1px solid #aaa;
+          height: 70px;
+          box-sizing: border-box;
+        }
+        textarea {
+          width: 100%;
+          height: 48px;
+          padding: 10px 16px;
+          resize: none;
+          box-sizing: border-box;
+          border: none;
+        }
+        .tip {
+          position: absolute;
+          right: 8px;
+          bottom: 4px;
+          font-size: 12px;
+          color: #ccc;
+        }
+        input {
+          width: 100%;
+          height: 40px;
+          border: 1px solid #aaa;
+          box-sizing: border-box;
+          padding: 10px 16px;
+          display: block;
+        }
+        .toggle-password {
+          width: 15px;
+          height: 10px;
+          background: url(./icons/show.png) center center no-repeat;
+          background-size: 15px 10px;
+          display: block;
+          position: absolute;
+          right: 8px;
+          top: 50%;
+          margin-top: -5px;
+          &.hide {
+            background: url(./icons/hide.png) center center no-repeat;
+            background-size: 15px 10px;
+          }
+        }
+      }
+    }
+  }
+  .btns {
+    text-align: center;
+    position: relative;
+    .error-tips {
+      color: #DE3418;
+      width: 100%;
+      text-align: center;
+      top: -25px;
+      position: absolute;
+      left: 0;
+      font-size: 12px;
+    }
+    a {
+      width: 160px;
+      height: 40px;
+      line-height: 38px;
+      display: inline-block;
+      text-align: center;
+      box-sizing: border-box;
+      &.cancel {
+        border: 1px solid #CCCCCC;
+        background: #fff;
+        color: #222;
+      }
+      &.ok {
+        border: 1px solid #222;
+        background: #222;
+        color: #fff;
+      }
+      & + a {
+        margin-left: 40px;
+      }
+    }
+  }
+}

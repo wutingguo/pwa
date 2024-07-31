@@ -1,0 +1,33 @@
+.print-store-shipping-payment {
+  position: fixed;
+  bottom: 0;
+  min-height: 182px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px -2px 19px 0px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  .btnWrapper {
+    position: relative;
+    margin-top: 15px;
+    .tooltip {
+      position: absolute;
+      right: -60px;
+    }
+  }
+  .alert-message {
+    color: #e32943;
+    font-size: 26px;
+  }
+  .button {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 88px;
+  }
+  .cursor-not-allowed {
+    cursor: not-allowed;
+  }
+}

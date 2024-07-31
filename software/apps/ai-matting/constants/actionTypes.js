@@ -1,0 +1,11 @@
+const actionPrefix = 'AI_MATTING_'
+export const SET_IMAGES = `${actionPrefix}SET_IMAGES`;
+export const UPDATE_MATTING_PROPERTY = `${actionPrefix}PROPERTY`;
+export const UPDATE_RATIO = `${actionPrefix}UPDATE_RATIO`;
+export const SET_PAGE = `${actionPrefix}SET_PAGE`;
+export const UPDATE_PAGE = `${actionPrefix}UPDATE_PAGE`;
+export const CREATE_ELEMENT = `${actionPrefix}CREATE_ELEMENT`;
+export const CREATE_ELEMENTS = `${actionPrefix}CREATE_ELEMENTS`;
+export const UPDATE_ELEMENT = `${actionPrefix}UPDATE_ELEMENT`;
+export const UPDATE_ELEMENTS = `${actionPrefix}UPDATE_ELEMENTS`;
+export const DELETE_ELEMENTS = `${actionPrefix}DELETE_ELEMENTS`;

@@ -1,0 +1,35 @@
+.gllery-collection-detail-collection-settings.selection-setting {
+    .settings-item {
+        .add-charge {
+            display: flex;
+            align-items: baseline;
+
+            .input-container {
+                margin: 0 5px;
+            }
+        }
+
+        .clear-input-num-style {
+            input {
+
+                &[type=number]::-webkit-inner-spin-button,
+                &[type=number]::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                &[type=number] {
+                    -moz-appearance: textfield;
+                }
+            }
+        }
+    }
+
+    .selection-setting-save {
+        .button {
+            width: 120px;
+            height: 32px;
+            line-height: 32px;
+        }
+    }
+}

@@ -1,0 +1,193 @@
+.add-material-modal {
+  width: 1030px!important;
+  box-sizing: border-box;
+  min-height: auto!important;
+  color: #222;
+  padding-bottom: 58px;
+  .title {
+    padding-top: 22px!important;
+    font-size: 24px;
+  }
+  .error-tip {
+    width: 100%;
+    font-size: 12px;
+    color: #ff0808;
+    text-align: center;
+  }
+  .content {
+    overflow: hidden;
+    padding: 32px 40px 40px;
+    font-size: 16px;
+    .m-left {
+      float: left;
+      width: 50%;
+      .field {
+        overflow: hidden;
+        input[type="text"] {
+          width: 100%;
+          height: 30px;
+          border: 1px solid #aaa;
+          box-sizing: border-box;
+          padding: 0 8px;
+          font-size: 14px;
+          color: #7b7b7b;
+          padding-right: 53px;
+        }
+        .label {
+          width: 84px;
+          float: left;
+          line-height: 30px;
+        }
+        .value {
+          width: 316px;
+          float: left;
+          position: relative;
+          .x-radio {
+            margin-top: 5px;
+          }
+          img {
+            width: 100%;
+          }
+          .text-tip {
+            font-size: 14px;
+            color: #ccc;
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translate(0, -50%);
+          }
+        }
+        .image-value {
+          height: 208px;
+        }
+        & + .field {
+          margin-top: 32px;
+        }
+      }
+      .text {
+        font-size: 12px!important;
+        margin-left: 3px;
+      }
+    }
+    .m-right {
+      float: right;
+      width: 50%;
+      box-sizing: border-box;
+      padding-left: 60px;
+      input[type="file"] {
+        position: absolute;
+        left: -99999px;
+      }
+      .upload-box {
+        width: 238px;
+        height: 238px;
+        background: #F6F6F6;
+        position: relative;
+        border: 1px solid #d6d6d6;
+        &.hover {
+          border: 1px solid #222;
+        }
+        .upload-tip {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          text-align: center;
+          transform: translate(-50%, -50%);
+          img  {
+            width: 57px;
+          }
+          .tip {
+            font-size: 12px;
+            color: #7b7b7b;
+            text-align: center;
+            margin-top: 8px;
+            white-space: nowrap;
+          }
+        }
+        .replace-tip {
+          position: absolute;
+          color: #3a3a3a;
+          width: 68px;
+          padding: 3px 0;
+          font-size: 12px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          text-align: center;
+          left: 50%;
+          margin-left: -34px;
+          bottom: 12px;
+          z-index: 9999;
+          cursor: pointer;
+        }
+        .uploading-tip {
+          color: #222;
+          font-size: 12px;
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+        .error-tip {
+          position: absolute;
+          bottom: 8px;
+        }
+        > img {
+          width: 100%;
+          display: block;
+          margin: auto;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      .tips  {
+        p {
+          margin-top: 11px;
+          font-size: 12px;
+          line-height: 17px;
+          &.tit {
+            font-size: 14px;
+          }
+          .bold-font {
+            font-weight: 500;
+            color: #222222;
+            background: #CCCCCC;
+          }
+        }
+      }
+    }
+  }
+  .btns {
+    text-align: center;
+    position: relative;
+    .error-tip {
+      position: absolute;
+      top: -21px;
+      background-color: #fff;
+    }
+    .add-cart {
+      width: 200px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background: #222;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0 auto;
+      border: none;
+      cursor: pointer;
+      display: block;
+    }
+  }
+
+  .x-radio .icon {
+    background-size: 15px 15px;
+  }
+  .x-radio .native-radio:checked + .icon.blue {
+    // background-size: 22px 22px;
+  }
+}

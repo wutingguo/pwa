@@ -1,0 +1,81 @@
+.beforeUploadDom {
+  .bud-content {
+    margin-top: 1.46rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.29rem;
+    color: #3a3a3a;
+    font-weight: 400;
+
+    .bud-watermark-select {
+      width: 5.42rem;
+      margin: 0 0.33rem;
+    }
+
+    .toolTipModal {
+      padding: 0.4rem 0.5rem;
+      font-size: 0.29rem;
+      font-weight: 400;
+      width: 4.5rem;
+      box-sizing: border-box;
+    }
+
+    .toolTipIcon {
+      text-align: center;
+      width: 0.38rem;
+      height: 0.38rem;
+      line-height: 0.38rem;
+      background: #909090;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 0.29rem;
+      color: #ffffff;
+      font-weight: 400;
+    }
+  }
+  .smart-content {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.29rem;
+    color: #3a3a3a;
+    font-weight: 400;
+    .smart-switch {
+      margin: 0 0.33rem;
+      position: relative;
+      top: 17px;
+      .switch-box {
+        position: relative;
+        left: -13px;
+      }
+    }
+  }
+
+  .bud-foot {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      cursor: pointer;
+      position: absolute;
+      bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.33rem;
+      height: 0.81rem;
+      background: #ffffff;
+      border: 0.02rem solid #dcdcdc;
+      font-weight: normal;
+      font-size: 0.29rem;
+      color: #3a3a3a;
+
+      &:hover {
+        background: #f0f0f0;
+      }
+    }
+  }
+}

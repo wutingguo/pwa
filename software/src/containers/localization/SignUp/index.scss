@@ -1,0 +1,162 @@
+.sign-up-form-container{
+  position: relative;
+  padding-top: 128px;
+  padding-bottom: 120px;
+
+  .sign-up-form {
+    margin: 0 auto;
+    width: 400px !important;
+    box-sizing: border-box;
+  
+    box-shadow: none !important;
+  
+    border-radius: 12px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    .instagram-login-button {
+      margin-top: 16px;
+    }
+  
+    .thirdpart-signup-tip {
+      margin-top: 16px;
+      color: #3a3a3a;
+      font-size: 12px;
+      text-align: center;
+    }
+  
+    .split-line {
+      display: flex;
+      font-size: 12px;
+      align-items: center;
+      margin: 20px 0 30px;
+      color: #aaaaaa;
+  
+      &::before {
+        margin-right: 30px;
+      }
+  
+      &::after {
+        margin-left: 30px;
+      }
+  
+      &::before,
+      &::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #cccccc;
+      }
+    }
+  
+    .text-field-container {
+      position: relative;
+      width: 100%;
+  
+      .text-field {
+        border: 1px solid #cccccc;
+        padding: 13px 15px;
+        height: 48px;
+        font-size: 15px;
+        width: 100%;
+        outline: none;
+        display: block;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        
+        &.warning-border {
+          border: 1px solid #ff0000;
+        }
+        
+        &.verify-code-input {
+          width: 360px;
+        }
+  
+        &::placeholder {
+          color: #cccccc;
+        }
+      }
+      .warning-text {
+        font-style: italic;
+        margin-top: 8px;
+        font-size: 12px;
+        color: rgb(222,52,24);
+      }
+      &.first {
+        margin-top: 40px;
+      }
+      & + .text-field-container {
+        margin-top: 24px;
+      }
+  
+      .captcha-image {
+        position: absolute;
+        top: 1px;
+        right: 41px;
+        width: 90px;
+        height: 46px;
+        display: block;
+        cursor: pointer;
+      }
+      .refresh-image {
+        position: absolute;
+        right: 10px;
+        top: 16px;
+        width: 20px;
+        height: 16px;
+        cursor: pointer;
+      }
+    }
+  
+    .signup-tip {
+      width: 600px;
+      margin-left: -100px;
+      margin-top: 48px;
+      font-size: 13px;
+      text-align: center;
+      color: rgb(123, 123, 123);
+  
+      .terms-link {
+        color: #000000;
+        cursor: pointer;
+      }
+    }
+  
+    .sign-up-button {
+      padding: 16px;
+      background-color: #3A3A3A;
+      color: #ffffff;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+  
+      display: block;
+      border: none;
+      &:active {
+        outline: none;
+        border: none;
+      }
+    }
+  
+    .switch-to-signin {
+      text-align: center;
+      margin-top: 42px;
+      font-size: 16px;
+      color: #7B7B7B;
+      a {
+        color: #3A3A3A;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+  
+    .description {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #cccccc;
+    }
+  }
+}

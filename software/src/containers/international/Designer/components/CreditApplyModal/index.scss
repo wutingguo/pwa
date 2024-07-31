@@ -1,0 +1,128 @@
+.credit-apply-modal {
+  width: 560px !important;
+
+  .credit-apply-modal-content {
+    padding: 0 40px 40px;
+
+    .credit-summary {
+      margin-top: 36px;
+      overflow: hidden;
+
+      .credit-summary-item {
+        float: left;
+        min-width: 200px;
+
+        .credit-label {
+          font-size: 14px;
+        }
+
+        .credit-value {
+          margin-top: 12px;
+          font-size: 32px;
+          line-height: 34px;
+        }
+      }
+
+      .credit-summary-item:nth-of-type(1) {
+        margin-right: 12px;
+      }
+    }
+
+    .total-error-message {
+      clear: both;
+      color: red;
+      font-size: 14px;
+      margin-top: 8px;
+      height: 16px;
+      margin-bottom: 12px;
+    }
+
+    .credit-list {
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+
+      .credit-list-header {
+        padding: 10px;
+        margin-top: 20px;
+        font-weight: 500;
+        overflow: hidden;
+      }
+
+      .credit-item-container {
+        padding: 25px 10px;
+        background: #F6F6F6;
+
+        .credit-item {
+          &+.credit-item {
+            margin-top: 24px;
+          }
+
+          .credit-item-content {
+            display: flex;
+            align-items: center;
+
+            input {
+              width: 100px;
+              font-size: 14px;
+              padding: 2px 8px;
+              border: 1px solid #cccccc;
+            }
+          }
+
+          .credit-item-warning {
+            color: red;
+            font-size: 14px;
+            margin-top: 8px;
+            padding-left: 25px;
+          }
+        }
+      }
+
+      .credit-type {
+        width: 200px;
+        float: left;
+
+        .x-radio .text {
+          margin-left: 8px;
+          font-size: 14px;
+        }
+      }
+
+      .credit-avaliable {
+        width: 130px;
+        float: left;
+      }
+
+      .credit-applied {
+        width: 130px;
+        float: left;
+      }
+    }
+
+    .usage-tip {
+      font-size: 12px;
+      line-height: 16px;
+
+      div {
+        margin-top: 12px;
+        text-indent: -10px;
+        margin-left: 10px;
+      }
+    }
+
+    .buttons-container {
+      margin-top: 50px;
+      text-align: center;
+
+      .button {
+        font-size: 13px;
+        line-height: 28px;
+      }
+    }
+
+    .x-input {
+      height: 22px;
+    }
+
+  }
+}

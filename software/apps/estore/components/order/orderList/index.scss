@@ -1,0 +1,37 @@
+.list_wrap {
+  .no_order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 292px);
+    font-size: 16px;
+    font-weight: normal;
+    color: #3a3a3a;
+
+  }
+  .order_item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    .order_no{
+      cursor: pointer;
+    }
+    .view{
+      cursor: pointer;
+    }
+    span {
+      display: inline-block;
+      padding:  34px 0;
+      flex: 1;
+      text-align: center;
+      border-bottom: 1px solid #e5e5e5;
+      color: #3a3a3a;
+      &.ellipsis {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}

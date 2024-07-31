@@ -1,0 +1,33 @@
+.nav_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .nav {
+    width: 91%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+
+    .nav_item {
+      display: inline-block;
+      color: var(--other_font_color);
+      margin-right: 40px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+      width: fit-content;
+    }
+
+    .active {
+      font-weight: 600;
+      color: var(--primary_font_color);
+    }
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+}

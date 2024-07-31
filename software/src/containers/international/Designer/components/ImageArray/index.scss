@@ -1,0 +1,13 @@
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 400px;
+  overflow: scroll;
+
+  .desc {
+    width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

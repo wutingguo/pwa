@@ -1,0 +1,3 @@
+const DASHBOARD = 'DASHBOARD';
+
+export const SHOW_IMAGE_NAME = `${DASHBOARD}/SHOW_IMAGE_NAME`;

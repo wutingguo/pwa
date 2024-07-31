@@ -1,0 +1,125 @@
+.gllery-collection-detail-settings-design {
+  // width: calc(100% - 7.5rem);
+  min-width: 340px;
+  height: 100%;
+  flex: 1;
+
+  .settings-design-content {
+    height: calc(100% - 40px) !important;
+    padding-left: 1.65rem;
+    padding-right: 0.83rem;
+    padding-top: 40px;
+    box-sizing: content-box;
+
+    .collection-design-wrap {
+      height: calc(100% - 43px);
+      // overflow: scroll;
+      display: flex;
+
+      .permutation-and-combination {
+        width: 5.93rem;
+        margin-top: 40px;
+        margin-right: 60px;
+
+        .permutation-and-combination-wrap {
+          width: 100%;
+          font-size: 16px;
+          font-weight: 500;
+          color: #3a3a3a;
+          margin-bottom: 0.83rem;
+
+          .permutation-and-combination-wrap-container {
+            display: flex;
+            margin-top: 14px;
+
+            .combination-icon-content-container {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              .combination-icon-content {
+                // width: 134px;
+                cursor: pointer;
+                height: 60px;
+                background: #fff;
+                border: 1px solid #dcdcdc;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 16px;
+
+                .combination-icon {
+                  width: 20px;
+                  height: 20px;
+                  opacity: 0.4;
+                }
+
+                &.active {
+                  border: 1px solid #3a3a3a;
+                  background: #fff;
+
+                  .combination-icon {
+                    opacity: 1;
+                  }
+                }
+              }
+
+              .combination-icon-name {
+                width: 134px;
+                text-align: center;
+                margin-top: 15px;
+                font-size: 14px;
+                opacity: 0.4;
+                padding-right: 16px;
+                box-sizing: border-box;
+
+                &.active {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .collection-design-wrap-container {
+        width: 19.16rem;
+        height: 14.3rem;
+        background: #f6f6f6;
+        margin-top: 40px;
+
+        .cover-text-item-eventDate {
+          font-size: 0.21rem;
+        }
+
+        .cover-gallery-tabs {
+          display: flex;
+          justify-content: center;
+          margin-top: 25px;
+
+          .cover-tab,
+          .gallery-tab {
+            width: 120px;
+            height: 32px;
+            line-height: 32px;
+            color: #3a3a3a;
+            background-color: #fff;
+            box-sizing: border-box;
+            border: 1px solid #3a3a3a;
+            text-align: center;
+            cursor: pointer;
+
+            &.active {
+              color: #fff;
+              background-color: #3a3a3a;
+            }
+          }
+
+          .gallery-tab {
+            border-left: 0 none;
+          }
+        }
+      }
+    }
+  }
+}

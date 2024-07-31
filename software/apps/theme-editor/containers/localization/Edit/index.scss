@@ -1,0 +1,23 @@
+.theme-editor {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.set-photo-video {
+  position: relative;
+  width: 0;
+  height: 0;
+  .video-box {
+    position: absolute;
+    top: -365px;
+    right: 40px;
+    video {
+      width: 100%;
+    }
+  }
+}
+.step-btn {
+  &.next {
+    font-size: 14px !important;
+  }
+}

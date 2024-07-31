@@ -1,0 +1,53 @@
+.sendPhotoDownloadsModal {
+  width: 496px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.2);
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3A3A3A;
+    line-height: 30px;
+  }
+  .sendCont{
+    margin: 24px 0;
+  }
+  .describe{
+    width: 416px;
+    height: 66px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #7B7B7B;
+    line-height: 22px;
+  }
+    .btns-container {
+      display: flex;
+      justify-content: space-evenly;
+      cursor: pointer;
+  
+      .cancel {
+        width: 140px;
+        height: 32px;
+        font-size: 13px;
+        font-weight: normal;
+        color: #3A3A3A;
+        border: 1px solid #7B7B7B;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .send {
+        width: 140px;
+        height: 32px;
+        background: #3A3A3A;
+        font-size: 13px;
+        font-weight: normal;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+    }
+}

@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#navbar{
+  z-index: 1001;
+  overflow: initial;
+}
+
+.navbar{
+  background: #000;
+  padding: 20px;
+
+  .primary-navigation-link{
+    padding: 0 20px;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+  }
+}

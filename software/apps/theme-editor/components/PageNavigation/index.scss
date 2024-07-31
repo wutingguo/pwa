@@ -1,0 +1,119 @@
+@import '@resource/static/styles/en/common.scss';
+
+.pages-navigation {
+  width: 99%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  padding: 16px 0 0;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  box-sizing: border-box;
+  // background-color: #F0F0F0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  .add-page {
+    position: relative;
+    min-width: 168px;
+    height: 100px;
+    background: #f6f6f6;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #7b7b7b;
+    margin: 0 20px;
+    top: 11px;
+    cursor: pointer;
+    span {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    input[type='file'] {
+      position: absolute;
+      left: -999px;
+      top: -999px;
+    }
+  }
+
+  .page-navigation-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: max-content;
+    margin-top: 10px;
+    padding-bottom: 9px;
+    .sheet-item {
+      position: relative;
+      margin: 0 18px 0 0;
+      vertical-align: bottom;
+      cursor: pointer;
+      border: 1px solid transparent;
+      box-sizing: border-box;
+      padding: 2px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.selected {
+        border: 1px solid #60c8fc;
+      }
+      .delete-page {
+        position: absolute;
+        top: -9px;
+        right: -9px;
+        z-index: 200;
+      }
+    }
+  }
+  .page-number-simple {
+    position: absolute;
+    top: -23px;
+    z-index: 100;
+    height: 15px;
+    cursor: pointer;
+  }
+
+  .book-cover,
+  .photobook-book-cover,
+  .book-sheet {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    vertical-align: bottom;
+    &:hover {
+      .page-number-simple {
+        div {
+          &:not(.active) {
+            span {
+              position: relative;
+              color: #fff;
+              background: #7b7b7b;
+              padding: 0 6px;
+              border-radius: 3px;
+              display: inline-block;
+              &:after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent;
+                border-top: 5px solid #7b7b7b;
+                position: absolute;
+                left: 50%;
+                bottom: -4px;
+                transform: translateX(-50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cover-sheet {
+    overflow: hidden;
+  }
+}

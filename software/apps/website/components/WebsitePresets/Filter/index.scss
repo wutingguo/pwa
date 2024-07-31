@@ -1,0 +1,18 @@
+.zno-website-designer-page-filters {
+  display: flex;
+  align-items: center;
+
+  &-item {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    &-label {
+      display: inline-block;
+      margin-right: 8px;
+      font-size: 14px;
+    }
+
+    &-control {}
+  }
+}

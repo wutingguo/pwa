@@ -1,0 +1,806 @@
+$fontColor: #424242;
+$dateColor: #0077cc;
+$labelColor: #ccc;
+
+.pm {
+    .pm-btn {
+        .icon {
+            margin-right: 2px;
+            position: relative;
+            top: 4px;
+        }
+    }
+
+    .pm-show-btn {
+        .icon {
+            top: 2px;
+        }
+    }
+
+    .pm-download-btn {
+        width: 80px;
+        height: 32px;
+        position: relative;
+
+        .pm-btn-menu {
+            position: absolute;
+            left: -26px;
+            width: 100px;
+            // opacity: 0;
+            z-index: 9;
+            // top: 30px;
+            visibility: hidden;
+            background-color: #fff;
+            border: 1px solid #f0f0f0;
+            &.picker-btn-menu {
+                left: -16px;
+            }
+
+            .pm-menu-btn {
+                width: 100%;
+                margin: 0;
+                font-size: 14px;
+                color: #222222;
+                background-color: #fff;
+            }
+
+            .pm-menu-btn:hover {
+                background-color: #f0f0f0;
+            }
+
+            .pm-menu-btn:first-child {
+                border-radius: 4px 4px 0px 0px;
+            }
+
+            .pm-menu-btn:last-child {
+                border-radius: 0px 0px 4px 4px;
+            }
+        }
+    }
+
+    .pm-download-btn:hover {
+        .pm-btn-menu {
+            // opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .pm-rightcontent {
+        width: 100%;
+        height: 100%;
+        color: $fontColor;
+
+        .pm-filter,
+        .pm-batch {
+            display: flex;
+            justify-content: start;
+            padding: 20px;
+            padding-right: 4px;
+        }
+
+        .pm-batch {
+            align-items: center;
+        }
+
+        .pm-label {
+            // min-width: 110px;
+            flex-shrink: 0;
+            font-size: 14px;
+            color: #7B7B7B;
+        }
+
+        .pm-filter {
+            padding-bottom: 0;
+
+            .pm-filter-right {
+                margin-top: 30px;
+            }
+
+            .pm-label {
+                padding-top: 38px;
+                // font-size: 14px;
+                // color: #7B7B7B;
+            }
+        }
+
+        .pm-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .pm-form-item-select.is-open {
+                .Select-control {
+                    .Select-arrow {
+                        border-color: transparent transparent #222222;
+                    }
+                }
+            }
+
+            .pm-form-item-select {
+                &.en {
+                    width: 120px;
+                }
+            }
+
+            .pm-form-item-select {
+                min-width: 100px;
+
+                .Select-option {
+                    color: #222222;
+                    // 超出隐藏显示...
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                .Select-option.is-focused {
+                    background: #F0F0F0;
+                }
+
+                .Select-control {
+                    height: 30px;
+                    background-color: transparent;
+
+                    .Select-arrow {
+                        border-color: #222222 transparent transparent;
+                    }
+
+                    .Select-value {
+                        line-height: 30px;
+                    }
+
+                    .Select-value-label {
+                        color: #222222;
+                        font-size: 14px;
+
+                    }
+
+                    .Select-input {
+                        height: 30px;
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            .col {
+                .Select-menu-outer {
+                    margin-left: 10px;
+                    // max-width: 60px;
+                }
+            }
+
+            .pm-left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .pm-form-item {
+                    display: inline-block;
+                    margin-right: 10px;
+
+                    .pm-form-item-wrapper {
+                        // display: flex;
+                        // flex-direction: column;
+                        margin-left: 40px;
+                    }
+
+                    .pm-form-item-label {
+                        display: inline-block;
+                        margin-bottom: 10px;
+                        font-size: 12px;
+                        color: #7B7B7B;
+                    }
+
+                    .pm-form-item-select {
+                        .react-datepicker-wrapper {
+                            display: inline-block;
+                        }
+
+                        .react-datepicker__calendar-icon {
+                            padding: 10px 8px;
+                            fill: #424242;
+                        }
+
+                        .react-datepicker__close-icon::after {
+                            width: 12px;
+                            height: 12px;
+                            background-color: transparent;
+                            border: 1px solid #ccc;
+                            color: #424242;
+                        }
+
+                        .pm-date-picker {
+                            display: inline-block;
+                            height: 20px;
+                            background-color: transparent;
+                            color: #424242;
+                            width: 130px;
+                            border-radius: 4px;
+                            border: 1px solid #ccc;
+                            padding-left: 28px;
+                            // border-right: 0px;
+                        }
+
+                        .pm-date-picker-w150 {
+                            width: 160px;
+                        }
+
+                        .pm-date-picker:focus-visible {
+                            outline: none;
+                        }
+
+                        .endTime {
+                            // border-left: 0px solid #ccc;
+                            // padding-left: 10px;
+                        }
+
+                    }
+                }
+
+                .pm-batch-checkbox-box {
+                    display: inline-block;
+                }
+
+                .upload {
+                    display: inline-block;
+
+                    .pm-upload-img {
+                        background: transparent;
+                    }
+
+                    .fa-icon.black {
+                        padding: 0;
+                        margin: 7px 14px;
+                    }
+                }
+
+                .pm-btn {
+                    margin-top: -10px;
+                    margin-right: -4px;
+                    width: 80px;
+                    // padding: 0 15px;
+                    height: 32px;
+                    line-height: 32px;
+                    border-radius: 4px;
+                    &.picker-btn {
+                        width: 100px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .pm-batch-selector-box {
+                    display: inline-block;
+                    margin-right: 10px;
+
+                    .pm-batch-selector {}
+                }
+
+                .pm-replace-btn {
+                    width: 100px;
+                }
+
+                .pm-download-btn,
+                .pm-add-btn,
+                .pm-replace-btn {
+                    background-color: #3A3A3A;
+                }
+
+                .pm-add-btn {
+                    margin-left: -12px;
+                }
+            }
+
+            .pm-right {
+                display: flex;
+                justify-content: flex-end;
+
+                .pm-serach-input {
+                    width: 170px;
+                    height: 32px;
+                    box-sizing: border-box;
+                    // background-color: #444443;
+                    border: 1px solid #cccccc;
+                    outline: none;
+                    padding-left: 10px;
+                    color: $fontColor;
+                    border-radius: 4px 0 0 4px;
+                }
+
+                .pm-serach-input::-webkit-input-placeholder {
+                    color: #bababa;
+                }
+
+                .pm-serach-btn {
+                    width: 70px;
+                    height: 32px;
+                    line-height: 32px;
+                    background: #3A3A3A;
+                    border-radius: 0 4px 4px 0;
+                }
+
+                .pm-form-item-select {
+                    width: auto;
+
+                    /* .Select-menu-outer {
+                        width: auto;
+                    } */
+                }
+            }
+        }
+
+        .pm-list {
+            margin-top: -26px;
+            width: 100%;
+            display: flex;
+            justify-self: start;
+            flex-wrap: wrap;
+        }
+
+        .pm-empty {
+            margin: 0 auto;
+        }
+
+        .pm-refresh {
+            position: fixed;
+            bottom: 100px;
+            right: 40px;
+            width: 60px;
+            height: 60px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            opacity: 0.9;
+            text-align: center;
+            cursor: pointer;
+
+            .pm-refresh-img {
+                width: 20px;
+                height: 20px;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 10px;
+                margin-bottom: 6px;
+            }
+
+            .pm-refresh-btn {
+                width: 28px;
+                height: 14px;
+                font-size: 14px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #0661A2;
+                line-height: 14px;
+            }
+        }
+
+        .pm-page-pagination {
+            bottom: 0px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: end;
+            padding: 10px;
+
+            .pagination-item {
+                color: #555555;
+            }
+
+            .pagination-item.active {
+                color: #afafaf;
+            }
+        }
+    }
+}
+
+.pm-side-menu {
+    width: 220px;
+    height: 100%;
+    background: #2a2a2a;
+    border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+    color: $fontColor;
+
+    .pm-side-menu-title {
+        position: relative;
+        width: calc(100% - 60px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: border-color .3s, background .3s, padding .2s cubic-bezier(.215, .61, .355, 1);
+        height: 40px;
+        line-height: 40px;
+        padding: 0 30px;
+        background-color: #404040;
+
+        .pm-side-menu-img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .pm-side-menu-content {
+            padding-left: 30px;
+            margin-left: -30px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+        }
+
+        .pm-side-menu-arrow {
+            cursor: pointer;
+        }
+
+        .pm-side-menu-arrow::before {
+            transform: rotate(45deg) translateX(2.5px);
+        }
+
+        .pm-side-menu-arrow::before {
+            transform: rotate(-45deg) translateX(-2.5px);
+        }
+    }
+
+    .pm-side-submenu {
+        width: calc(100% - 60px);
+        padding-left: 30px;
+
+        .pm-side-submenu-title {
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            color: $fontColor;
+            margin: 20px 0;
+            font-size: 12px;
+
+            .pm-side-submenu-name {
+                padding-left: 10px;
+                color: $fontColor;
+                font-size: 12px;
+            }
+
+            .pm-side-submenu-number {
+                border-left: transparent;
+                color: $fontColor;
+                font-size: 12px;
+            }
+        }
+
+        .active.pm-side-submenu-title {
+            color: #0077CC;
+
+            .pm-side-submenu-name {
+                color: #0077CC;
+                border-left: 2px solid #0077CC;
+            }
+        }
+    }
+}
+
+.pm-selector {
+    // display: flex;
+    // justify-content: start;
+    padding: 13px 20px 0px;
+    // padding-top: 13px;
+    width: calc(100% - 40px);
+    color: $fontColor;
+    vertical-align: middle;
+    border-bottom: 1px solid #D8D8D8;
+
+    .pm-selector-label {
+        font-size: 14px;
+        color: #7B7B7B;
+        // width: 70px;
+        line-height: 60px;
+        // margin-right: 20px;
+    }
+
+    
+}
+
+.pm-checkbox {
+    display: flex;
+    // height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+    .pm-checkbox-input {
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+        border: 1px solid #CCCCCC;
+        margin-right: 7px;
+        // background: rgba(255,255,255,0.4);
+        cursor: pointer;
+        line-height: 14px;
+        box-sizing: border-box;
+    }
+
+    .checked {
+        color: #fff;
+        background: #0077cc;
+        text-align: center;
+    }
+
+    .pm-checkbox-label {}
+}
+
+.pm-list-item {
+    margin-top: 20px;
+    width: 16.6%;
+    // height: 200px;
+    display: flex;
+    flex-direction: column;
+
+    .pm-checkbox {
+        .pm-checkbox-input {
+            width: 22px;
+            height: 22px;
+            margin: 10px;
+            // margin: 7px;
+            // margin-left: 7px;
+            line-height: 20px;
+
+        }
+    }
+
+    .pm-btn-menu {
+        top: 24px;
+    }
+
+    .image-wrapper {
+        position: relative;
+        width: calc(100% - 16px);
+        height: 164px;
+        margin: 0 10px;
+        cursor: pointer;
+
+        >span {
+            position: absolute;
+            color: #fff;
+            font-size: 12px;
+        }
+
+        .pm-list-item-img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .pm-list-item-checkbox {
+            left: 0;
+            top: 0;
+        }
+
+        // 置顶、取消置顶
+        .pm-list-item-pinned {
+            position: absolute;
+            width: 30px;
+            right: 10px;
+            top: 10px;
+        }
+
+        // 底部图标、图片名称以及AI
+        .pm-list-item-content {
+            position: absolute;
+            bottom: 8px;
+            left: 10px;
+            display: flex;
+            align-items: center;
+            width: calc(100% - 20px);
+            gap: 10px;
+
+            .pm-list-item-top {
+                flex: none;
+                width: 40px;
+            }
+
+            .pm-list-item-middle {
+                flex: auto;
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+                color: #FFFFFF;
+                overflow: hidden;
+                white-space: nowrap;
+
+                .pm-list-item-inner {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .pm-list-item-ai {
+                flex: none;
+                width: 36px;
+            }
+        }
+
+        // 挑图状态背景颜色
+        .fail-picker, .todo-picker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            line-height: 14px;
+        }
+    }
+
+    .action-btns {
+        width: calc(100% - 12px);
+        display: flex;
+        margin: 4px auto;
+        margin-left: 8px;
+        justify-content: space-between;
+
+        .pm-btn {
+            position: relative;
+            display: inline-block;
+            margin: 0px auto;
+            width: 32%;
+            border-radius: 4px;
+            height: 30px;
+            color: #fff;
+            line-height: normal;
+            background: #3A3A3A;
+            flex: 1;
+
+            // 挑图状态
+            &.success-picker {
+                background-color: #00D195;
+                font-size: 12px;
+                font-weight: 400;
+                color: #fff;
+                line-height: 14px;
+                white-space: break-spaces;
+                .pm-btn-menu {
+                    top: 29px;
+                }
+            }
+            &.fail-picker {
+                background-color: #FD4443;
+                font-size: 12px;
+                font-weight: 400;
+                color: #fff;
+                line-height: 14px;
+                white-space: break-spaces;
+                .pm-btn-menu {
+                    top: 29px;
+                }
+            }
+        }
+
+        .bgc-red {
+            background-color: #7B7B7B;
+        }
+
+        .upload {
+            width: 32%;
+            // margin-left: -4px;
+            flex: 1;
+
+            .fa-icon.black {
+                background-color: transparent;
+            }
+
+            .pm-upload-img {
+                padding: 0;
+
+                >span {
+                    width: 100%;
+
+                    .pm-btn {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        // 除了最后一个子元素，其他元素的右边距为4px
+        & > *:not(:last-child) {
+            margin-right: 4px;
+        }
+    }
+}
+
+
+
+// 日历组件
+.react-datepicker {
+    border-radius: 4px;
+    font-size: 14px;
+
+    .react-datepicker__current-month,
+    .react-datepicker-time__header,
+    .react-datepicker-year-header {
+        font-size: 0.4rem;
+    }
+
+    .react-datepicker__day-name,
+    .react-datepicker__day,
+    .react-datepicker__time-name {
+        width: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+    .react-datepicker__current-month,
+    .react-datepicker-time__header,
+    .react-datepicker-year-header {
+        font-weight: normal;
+    }
+
+    .react-datepicker__header {
+        border-bottom: 0px solid #aeaeae;
+    }
+
+    .react-datepicker__current-month {
+        border-bottom: 1px solid #aeaeae;
+    }
+
+    .react-datepicker__header {
+        background-color: #fff;
+    }
+
+    .react-datepicker__day--selected,
+    .react-datepicker__day--in-selecting-range,
+    .react-datepicker__day--in-range,
+    .react-datepicker__month-text--selected,
+    .react-datepicker__month-text--in-selecting-range,
+    .react-datepicker__month-text--in-range,
+    .react-datepicker__quarter-text--selected,
+    .react-datepicker__quarter-text--in-selecting-range,
+    .react-datepicker__quarter-text--in-range,
+    .react-datepicker__year-text--selected,
+    .react-datepicker__year-text--in-selecting-range,
+    .react-datepicker__year-text--in-range {
+        border-radius: 4px;
+        background-color: $dateColor;
+    }
+
+    .react-datepicker__day,
+    .react-datepicker__month-text,
+    .react-datepicker__quarter-text,
+    .react-datepicker__year-text {
+        //    background-color: #fff;
+        border: 1px solid transparent;
+    }
+
+    .react-datepicker__day:hover,
+    .react-datepicker__month-text:hover,
+    .react-datepicker__quarter-text:hover,
+    .react-datepicker__year-text:hover {
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid $dateColor;
+        color: $dateColor;
+    }
+
+    .react-datepicker__year-read-view--down-arrow,
+    .react-datepicker__month-read-view--down-arrow,
+    .react-datepicker__month-year-read-view--down-arrow,
+    .react-datepicker__navigation-icon::before {
+        border-width: 1px 1px 0 0;
+    }
+
+    .react-datepicker__time-container {
+        .react-datepicker__time {
+            .react-datepicker__time-box {
+                ul.react-datepicker__time-list {
+                    li.react-datepicker__time-list-item {
+                        height: 20px;
+                    }
+
+                    li.react-datepicker__time-list-item--selected {
+                        background-color: $dateColor;
+                    }
+                }
+            }
+        }
+    }
+}

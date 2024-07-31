@@ -1,0 +1,47 @@
+@import '@src/styles/rem';
+@import '@resource/static/styles/public/mixin';
+
+.slideshow-editor-sidebar-wrapper {
+  width: 7.5rem;
+  flex: none;
+  height: 100%;
+  .react-tabs {
+    height: 100%;
+    border-right: 1px solid #D8D8D8;
+    background: #F6F6F6
+  }
+  // tab
+  .react-tabs__tab-list {
+    height: 40px;
+    display: flex;
+    margin-bottom: 24px;
+    .react-tabs__tab {
+      @include flex-center();
+      @include fw-book;
+      flex: 1;
+      border-right: 1px solid #D8D8D8;
+      border-bottom: 1px solid #D8D8D8;
+      background: #FFFFFF;
+      cursor: pointer;
+      font-size: 14px;
+      color: #3A3A3A;
+      font-weight: 400;
+      &:last-child {
+        border-right: none;
+      }
+      &--selected {
+        border-bottom-color: transparent;
+        background: #F6F6F6;
+      }
+      @media screen and (max-width: 1470px){
+        .text {
+          display: none;
+        }
+      }
+    }
+  }
+  // panel
+  .react-tabs__tab-panel--selected {
+    height: calc(100% - 64px);
+  }
+}

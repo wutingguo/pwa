@@ -1,0 +1,142 @@
+@import '@resource/static/styles/public/mixin';
+
+.editor-selection-action-bar{
+  @include flex-center(center, space-between);
+  height: 40px;
+  margin: 0.5rem 0;
+  padding-left: 0.33rem;
+  padding-right: 0.42rem;
+  background-color: #F6F6F6;
+  &-no-select {
+    height: 0;
+    margin-bottom: 0.83rem;
+    visibility: hidden;
+  }
+  left {
+    font-size: 14px;
+  }
+  .applyOriginImg {
+    cursor: pointer;
+    color: #0077CC;
+  }
+  .editor-selected-count {
+    color: #262626;
+  }
+  .editor-selected-all {
+    margin-left: 0.9rem;
+    margin-right: 0.83rem;
+  }
+  .editor-selected-all, .editor-selected-clear {
+    color: #0077CC;
+    cursor: pointer;
+  }
+  // 右侧icon
+  .editor-selection-icon-wrapper{
+    margin-left: 0.5rem;
+    i {
+      padding: 0;
+    }
+  }
+  .editor-selection-action-bar-dropdown {
+    margin-left: 0.5rem;
+    .action-disable {
+      cursor: not-allowed;
+    }
+    .dropdown-menu {
+      padding:10px 0;
+      border-radius: 2px;
+      li {
+        a {
+          border-radius: 0;
+        }
+        .text {
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+}
+@mixin cancel-btn {
+  border: 1px solid #7B7B7B;
+  background-color: #fff;
+  color: #3A3A3A;
+}
+@mixin confirm-btn {
+  background-color: #3A3A3A;
+  color: #FFFFFF;
+}
+.confirm-btn-delete-cancel {
+  @include cancel-btn;
+  &:hover {
+    @include cancel-btn;
+  }
+}
+.confirm-btn-delete-confirm {
+  @include confirm-btn;
+  &:hover {
+    @include confirm-btn;
+  }
+}
+
+$color: #C20200;
+.watermark-modal-cont-wrapper {
+  width: 420px;
+  .watermark-cont {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #3A3A3A;
+  }
+  .watermark-important {
+    color: $color;
+  }
+  .watermark-error-tip {
+    color: $color;
+    margin-top: 8px;
+  }
+  .watermark-select-wrapper {
+    height: 42px;
+    position: relative;
+    div[aria-hidden="true"] {
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      transform: rotate(-45deg);
+      border-left: 1px solid #3A3A3A;
+      border-bottom: 1px solid #3A3A3A;
+      svg {
+        display: none;
+      }
+    }
+  }
+  .watermark-apply-all-checkbox {
+    margin-top: 16px;
+  }
+  .Select-menu-outer {
+    .Select-option {
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      width: 420px;
+    }
+  }
+}
+
+.select-water-mark-modal {
+  .set-wate-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0077CC;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+}
+
+.set-water-mark-modal {
+  .modal-body {
+    overflow: auto;
+    max-height: 60vh;
+    padding: 60px 70px;
+  }
+}

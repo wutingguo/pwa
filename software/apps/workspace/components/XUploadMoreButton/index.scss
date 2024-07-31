@@ -1,0 +1,29 @@
+.add-more-btn-container {
+  position: relative;
+  overflow: hidden;
+
+  .tooltip-parent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  > button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  > input[type='file'] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    color: transparent;
+    pointer-events: none;
+  }
+}

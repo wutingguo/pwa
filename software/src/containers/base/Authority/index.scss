@@ -1,0 +1,23 @@
+.bypass-account-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .bypass-account-img {
+    width: 293px;
+    height: 220px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bypass-account-text {
+    margin-top: 39px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #7b7b7b;
+    line-height: 20px;
+  }
+}

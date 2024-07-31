@@ -1,0 +1,71 @@
+.subscribe-to-pro-plan-modal {
+  width: 500px !important;
+
+  > .title {
+    text-align: center;
+    font-size:20px;
+    color:#222222;
+    line-height:24px;
+  }
+
+  .subscribe-to-pro-plan-modal-content {
+    padding: 0 40px 40px;
+    .modal-body {
+      margin-top: 20px;
+
+      .subscribe-to-pro-plan-text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+      }
+
+      .subscribe-to-pro-plan-text2,
+      .subscribe-to-pro-plan-text3 {
+        margin-top: 24px;
+      }
+    }
+    .modal-footer {
+      margin-top: 30px;
+      text-align: center;
+
+      .button {
+        font-size: 13px;
+        line-height: 28px;
+        margin-right: 0px;
+
+        span {
+          position: relative;
+          .loading-icon {
+            position: absolute;
+            left: -22px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            animation: loading 2.5s infinite linear;
+          }
+
+          @keyframes loading {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+
+    .link-part {
+      display: block;
+      margin-top: 16px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: rem(30px);
+      width: 100%;
+      color: #2B2B2B;
+      text-decoration: none;
+      font-weight: 400;
+    }
+  }
+}

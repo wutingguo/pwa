@@ -1,0 +1,8 @@
+@import '@src/styles/rem';
+@import '@resource/static/styles/public/mixin';
+
+.global-settings-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}

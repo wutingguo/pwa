@@ -1,0 +1,23 @@
+.store-table-empty {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+
+  &__options {
+    margin-bottom: 24px;
+  }
+
+  &__desc {
+    text-align: center;
+    width: 960px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #3a3a3a;
+    line-height: 24px;
+    white-space: pre-wrap;
+  }
+}

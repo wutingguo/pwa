@@ -1,0 +1,85 @@
+@import '@src/styles/rem';
+.cascader-new {
+  width: 100%;
+  line-height: rem(48px);
+  font-size: rem(14px);
+  color: #7b7b7b;
+  position: relative;
+  .val {
+    color: #222;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1rem;
+    font-size: rem(14px);
+    padding-left: rem(16px);
+    background-color: white;
+    border-radius: 0px;
+    border: solid 1px #dbdbdb;
+    appearance: none;
+    background: url('select.png') no-repeat calc(100%) center transparent;
+    background-size: 1rem;
+    padding-right: 0.75rem;
+    overflow: hidden;
+    display: block;
+    outline: none;
+  }
+  .select {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 9999999999;
+    box-sizing: border-box;
+    border-top: none;
+    .address-labels {
+      display: flex;
+      width: 100%;
+      li {
+        cursor: pointer;
+        width: 33.33333%;
+        text-align: center;
+        background: #F0F0F0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-left: none;
+        border-top: none;
+        &:last-child {
+          border-right: none;
+        }
+        &.cur {
+          background: #fff;
+        }
+      }
+    }
+    .select-item {
+      width: 100%;
+      height: 5rem;
+      overflow: auto;
+      li {
+        padding: 0 rem(19px);
+        text-align: left;
+        cursor: pointer;
+        &:hover {
+          color: #4a8cff;
+        }
+        &.active {
+          color: #1470cc;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &.support-street {
+    .select {
+      .address-labels {
+        li {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+

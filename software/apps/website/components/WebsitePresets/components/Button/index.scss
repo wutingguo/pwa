@@ -1,0 +1,36 @@
+.zno-website-designer-page-button {
+  appearance: none;
+  outline: none;
+  background-color: transparent;
+
+  cursor: pointer;
+  display: block;
+
+  color: #3a3a3a;
+  border: 1px solid #3a3a3a;
+  transition: all 0.2s;
+
+  &.black {
+    background-color: #3a3a3a;
+    color: #FFF;
+  }
+
+  &.size {
+
+    &-large {
+      padding: 8px 16px;
+      font-size: 15px;
+    }
+
+    &-middle {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+
+    &-small {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+  }
+
+}

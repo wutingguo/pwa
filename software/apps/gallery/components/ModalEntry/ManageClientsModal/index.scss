@@ -1,0 +1,98 @@
+.manage-clients-modal {
+  &.content {
+    width: 527px;
+    min-height: 350px;
+    .modal-title {
+      font-weight: 500;
+      font-size: 20px;
+      color: #3a3a3a;
+      margin-bottom: 32px;
+    }
+    .modal-body {
+      overflow-y: scroll;
+      height: fit-content;
+      width: 440px;
+      max-height: 220px;
+      padding-bottom: 60px;
+      .add-client {
+        margin-top: 8px;
+        font-size: 12px;
+        color: #0077cc;
+        cursor: pointer;
+      }
+      .clients-item {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 99%;
+        height: 40px;
+        border: 1px solid #dcdcdc;
+        margin-bottom: 12px;
+        .error-text {
+          position: absolute;
+          width: 100%;
+          font-size: 11px;
+          color: #ff0000;
+          bottom: -20px;
+          left: 0;
+        }
+        input.clients-input {
+          width: 100%;
+          height: 100%;
+          font-size: 14px;
+          box-sizing: border-box;
+          padding: 13px 60px 13px 15px;
+          border: none;
+        }
+
+        .clients-icon-container {
+          position: absolute;
+          width: 55px;
+          height: 100%;
+          right: 0;
+          top: 0;
+          cursor: pointer;
+          padding: 10px 0;
+          box-sizing: border-box;
+          text-align: center;
+          line-height: 100%;
+          &::before {
+            content: '|';
+            position: absolute;
+            color: #e0e0e0;
+            top: 50%;
+            left: 0;
+            z-index: 1;
+            transform: translateY(-50%);
+          }
+        }
+
+        .delete-icon {
+          width: 11px;
+          height: 12px;
+        }
+      }
+    }
+    .modal-footer {
+      width: 100%;
+      display: flex;
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+      box-sizing: border-box;
+      background-color: #fff;
+      z-index: 1;
+      .button {
+        width: 170px;
+        height: 40px;
+        font-size: 16px;
+        &:first-child {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}

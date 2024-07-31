@@ -1,0 +1,13 @@
+.global-settings-siderbar-contanier {
+  width: 7.5rem;
+  flex: none;
+  height: 100%;
+  border-right: 1px solid #D8D8D8;
+  background: #F6F6F6;
+  .x-menu-list-wrapper {
+    outline-style: none;
+    .rc-menu-item {
+      cursor: pointer;
+    }
+  }
+}

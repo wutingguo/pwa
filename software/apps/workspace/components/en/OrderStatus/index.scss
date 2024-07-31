@@ -1,0 +1,131 @@
+.order-status {
+
+  .iconSteps {
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    margin-left: calc(12.5% - 15px);
+    .icon {
+      .status-icon {
+        width: 30px;
+        height: 30px;
+        background: #cccccc;
+        border-radius: 15px;
+        z-index: 1;
+        &.active {
+          background-image: url(./check.png);
+          background-size: contain;
+        }
+        &.processing {
+          background-image: url(./check-error.png);
+          background-size: contain;
+        }
+        .partial {
+          background: #DE3418;
+        }
+      }
+    }
+
+    .line {
+      width: calc(30% - 55px);
+      .status-line {
+        height: 1px;
+        background: #cccccc;
+
+        .partial {
+          background: #DE3418;
+        }
+        &.active {
+          background: #0077cc;
+        }
+        &.processing {
+          background: #0077cc;
+        }
+      }
+
+      box-sizing: border-box; 
+    }
+  }
+  .steps {
+    margin-top: 15px;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    .status {
+      height: 70px;
+      float: left;
+      width: 25%;
+      text-align: center;
+
+      box-sizing: border-box;
+      &:nth-child(4){
+        border-right: none;
+      }
+      .status-text {
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: 500;
+      }
+
+      .update-time, .partial {
+        font-size: 14px;
+        text-align: center;
+        line-height: 16px;
+        font-weight: 400;
+      }
+      .partial {
+        color: #DE3418;
+      }
+      &.active {
+        color: #0077cc;
+      }
+      &.processing {
+        color: #DE3418;
+      }
+      &+.status {
+        border-left: none;
+      }
+      & {
+        color: #7B7B7B;
+      }
+    }
+  }
+
+  .logs {
+    margin-top: 40px;
+    .log-item {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 24px;
+      >div {
+        line-height: 31px;
+        box-sizing: border-box;
+        & + div {
+          border-left: none;
+        }
+      }
+      .time {
+        font-size:16px;
+        font-weight:500;
+        color:#3A3A3A;
+        float: left;
+        max-width: 25%;
+        text-align: left;
+        padding: 0 0 0 0px;
+        line-height: 19px;
+      }
+      .msg {
+        font-size:16px;
+        color:#3A3A3A;
+        float: left;
+        max-width: 75%;
+        padding: 0 15px;
+        padding: 0 0 0 40px;
+        line-height: 19px;
+      }
+    }
+  }
+}

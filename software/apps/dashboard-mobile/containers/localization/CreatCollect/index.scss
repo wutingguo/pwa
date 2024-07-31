@@ -1,0 +1,68 @@
+.creatCollect {
+    .list {
+        width: 351px;
+        background-color: #fff;
+        margin: 16px auto;
+        font-size: 14px;
+        border-radius: 3px;
+
+        .itemList {
+            border-bottom: 1px solid #EEEEEE;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            margin: 0 12px;
+            box-sizing: border-box;
+            position: relative;
+
+            .rv-dropdown-menu__bar {
+                box-shadow: none;
+                color: #222;
+            }
+
+            .labelClass {
+                color: #222222;
+            }
+
+            input {
+                text-align: right;
+            }
+
+            .right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #BEBEBE;
+
+                span {
+                    margin-left: 5px;
+                }
+            }
+
+            .date-picker-wrap {
+                position: absolute;
+                top: 50px;
+                z-index: 999;
+                right: 0;
+            }
+        }
+    }
+
+    .btn {
+        width: 351px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #FFFFFF;
+        border-radius: 3px;
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #222222;
+    }
+}

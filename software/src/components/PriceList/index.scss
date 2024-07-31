@@ -1,0 +1,101 @@
+@import '../../styles/rem.scss';
+
+.package-container-pwa {
+  padding-bottom: rem(48px);
+  .package-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(100px);
+  
+    .tab_menu {
+      position: relative;
+      .tab-item {
+        font-size: rem(32px);
+        font-weight: 300;
+        line-height: rem(45px);
+        color: #222222;
+        position: relative;
+        margin: 0 30px;
+        cursor: pointer;
+        &.active {
+          font-weight: 500;
+          &:after {
+            content: '';
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+            bottom: rem(-16px);
+            left: 0;
+            border-bottom: 2px solid #222222;
+          }
+        }
+      }
+      .sub_menu {
+        position: absolute;
+        z-index: 1;
+        width: rem(160px);
+        height: rem(40px);
+        background: #eee;
+        border-radius: rem(25px);
+        display: flex;
+        padding: rem(4px);
+        margin-top: rem(6px);
+        left: 50%;
+        transform: translateX(-50%);
+        .sub_menu_item {
+          font-weight: 400;
+          font-size: rem(20px);
+          color: #000;
+          text-align: right;
+          font-style: normal;
+          cursor: pointer;
+          border-radius: rem(20px);
+          flex: 1;
+          line-height: rem(40px);
+          text-align: center;
+        }
+        .active {
+          background-color: #fff;
+        }
+      }
+    }
+   
+  }
+  .package-Tips {
+    margin-left: 3rem;
+    .tip-line {
+      font-size: 18px;
+      font-weight: 300;
+      color: #222222;
+      line-height: 30px;
+      letter-spacing: 2px;
+    }
+  }
+  .modalWrapper {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0, .3);
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    img {
+      width: 10rem;
+    }
+  }
+
+  // 调整有效期的样式
+  .package-Refine {
+    margin-left: rem(10px);
+  }
+
+  // 图片tag变大
+  .package-list .package-box .package-header .package-explain .tagImg{
+    left: 10%;
+    width: 85%;
+  }
+}

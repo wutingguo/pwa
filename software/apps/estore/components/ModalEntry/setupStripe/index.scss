@@ -1,0 +1,29 @@
+.store-modal-setup-stripe {
+  width: 483px;
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  .modal-title {
+    margin-bottom: 40px;
+  }
+
+  .store-modal-setup-stripe__container {
+    &__desc {
+      white-space: nowrap;
+      height: 18px;
+      font-size: 12px;
+      font-weight: 300;
+      color: #3a3a3a;
+      line-height: 18px;
+      .link {
+        margin-left: 8px;
+      }
+      margin-bottom: 32px;
+    }
+
+    &__tips {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 17px;
+      margin-top: 32px;
+    }
+  }
+}

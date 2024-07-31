@@ -1,0 +1,1 @@
+export const INTERNAL_HOOKS = 'INTERNAL_HOOKS';

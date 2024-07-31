@@ -1,0 +1,125 @@
+@import '@resource/static/styles/public/mixin';
+
+.editor-selection-action-bar {
+  @include flex-center(center, space-between);
+  height: 40px;
+  margin: 0.5rem 0;
+  padding-left: 0.33rem;
+  padding-right: 0.42rem;
+  background-color: #f6f6f6;
+  color: #0077cc;
+  // &.no-select {
+  //   color: #7B7B7B;
+  //   cursor: default;
+  // }
+  left {
+    font-size: 14px;
+  }
+  > .left {
+    display: flex;
+    align-items: center;
+    .hide-retoucher-checkbox {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .editor-selected-count {
+    color: #262626;
+  }
+  .editor-selected-all {
+    margin-left: 0.9rem;
+  }
+  .editor-selected-all,
+  .editor-selected-clear {
+    margin-right: 0.83rem;
+    cursor: pointer;
+  }
+  // 右侧icon
+  .editor-selection-icon-wrapper {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    // &.no-select {
+    //   color: #7B7B7B;
+    //   cursor: default;
+    // }
+    i {
+      padding: 0;
+    }
+  }
+  .editor-selection-action-bar-dropdown {
+    margin-left: 0.5rem;
+    .action-disable {
+      cursor: not-allowed;
+    }
+    .dropdown-menu {
+      padding: 10px 0;
+      border-radius: 2px;
+      li {
+        a {
+          border-radius: 0;
+        }
+        .text {
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+}
+@mixin cancel-btn {
+  border: 1px solid #7b7b7b;
+  background-color: #fff;
+  color: #3a3a3a;
+}
+@mixin confirm-btn {
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+.confirm-btn-delete-cancel {
+  @include cancel-btn;
+  &:hover {
+    @include cancel-btn;
+  }
+}
+.confirm-btn-delete-confirm {
+  @include confirm-btn;
+  &:hover {
+    @include confirm-btn;
+  }
+}
+
+$color: #c20200;
+.watermark-modal-cont-wrapper {
+  width: 420px;
+  .watermark-cont {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #3a3a3a;
+  }
+  .watermark-important {
+    color: $color;
+  }
+  .watermark-error-tip {
+    color: $color;
+    margin-top: 8px;
+  }
+  .watermark-select-wrapper {
+    height: 42px;
+    position: relative;
+    div[aria-hidden='true'] {
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      transform: rotate(-45deg);
+      border-left: 1px solid #3a3a3a;
+      border-bottom: 1px solid #3a3a3a;
+      svg {
+        display: none;
+      }
+    }
+  }
+  .watermark-apply-all-checkbox {
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,65 @@
+.order-detail-container {
+  min-height: 500px;
+  padding-top: 24px;
+
+  .order-page-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3a3a3a;
+    background: #ffffff;
+    margin: 0;
+  }
+
+  .order-detail {
+    .back-order {
+      cursor: pointer;
+      display: inline-block;
+    }
+    .section {
+      padding: 40px 0;
+      font-size: 16px;
+      min-width: 1000px;
+      border-bottom: 1px solid #d6d6d6;
+
+      .section-title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 35px;
+      }
+
+      .order-des {
+        li {
+          overflow: hidden;
+          margin: 10px 0;
+
+          .label {
+            float: left;
+            width: 200px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #3A3A3A;
+            line-height: 19px;
+          }
+
+          .value {
+            color: #3A3A3A;
+            font-size: 16px;
+            float: left;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+
+    .section-bottom-line {
+      padding: 0px 0px 40px 0px;
+      font-size: 16px;
+      min-width: 1000px;
+    }
+
+    .back-to-list {
+      font-size: 13px;
+      color: #afafaf;
+    }
+  }
+}

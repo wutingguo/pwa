@@ -1,0 +1,41 @@
+h1 {
+    font-size: 60px;
+    line-height: 90px;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 75px;
+}
+h3 {
+    font-size: 40px;
+    line-height: 60px;
+}
+h4 {
+    font-size: 32px;
+    line-height: 48px;
+}
+h5 {
+    font-size: 28px;
+    line-height: 42px;
+}
+h6 {
+    font-size: 24px;
+    line-height: 36px;
+}
+p {
+    font-size: 32px;
+    line-height: 48px;
+}
+.ql-editor .ql-size-small {
+    font-size: 24px;
+    line-height: 36px;
+}
+.ql-editor .ql-size-large {
+    font-size: 28px;
+    line-height: 42px;
+}
+.ql-editor .ql-size-huge {
+    font-size: 32px;
+    line-height: 48px;
+}

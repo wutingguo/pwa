@@ -1,0 +1,109 @@
+.print-store-page-content-shop-cart {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 60px;
+
+  &--empty {
+    height: 100%;
+    display: grid;
+    place-content: center;
+    font-size: 32px;
+  }
+
+  .shopping-cart-list {
+    padding: 0 32px;
+    box-sizing: border-box;
+    padding-bottom: 212px;
+    overflow: auto;
+    .right-section {
+      display: flex;
+      align-items: center;
+      float: right;
+      .right-section-item {
+        width: 120px;
+        text-align: right;
+        &.bottom-item {
+          width: 120px;
+          margin-left: 40px;
+          text-align: center;
+        }
+      }
+    }
+
+    .shopping-cart-list-header {
+      height: 40px;
+      margin-top: 20px;
+      padding: 0 40px;
+      color: #222222;
+      font-weight: 500;
+      line-height: 40px;
+      background: #f6f6f6;
+    }
+  }
+  .shopcart-bottom-container {
+    position: fixed;
+    bottom: 0;
+    min-height: 182px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px -2px 19px 0px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    .coupon_wrapper {
+      display: flex;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0px -2px 19px 0px rgba(0, 0, 0, 0.1);
+      border-top: 1px solid #DCDCDC;
+      bottom: 182px;
+      left: 0px;
+      right: 0px;
+      height: 150px;
+      &.with_tip {
+        bottom: 214px;
+      }
+      .price_right {
+        position: absolute;
+        font-size: 24px;
+        right: 30px;
+        top: 50px;
+      }
+    }
+    .shopcart-price-addbtn {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .checkout-button-container {
+        overflow: hidden;
+        text-align: right;
+        .button {
+          font-size: 28px;
+          font-weight: 500;
+        }
+
+        .to-shipping-button {
+          display: inline-block;
+          padding: 0 8px;
+          &.disabled {
+            cursor: not-allowed;
+            pointer-events: auto;
+          }
+        }
+      }
+    }
+
+    .message-container {
+      width: 100%;
+      margin-top: 18px;
+      .check-out-disabled-message {
+        width: 100%;
+        display: inline-block;
+        color: #e32943;
+        font-size: 22px;
+      }
+    }
+  }
+}

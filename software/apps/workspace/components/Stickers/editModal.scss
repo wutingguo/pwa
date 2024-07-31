@@ -1,0 +1,17 @@
+.edit-sticker-modal {
+  font-size: 14px;
+  color: #222;
+  padding: 24px 0;
+  background: #fff;
+  width: 132px;
+  margin-left: -54px;
+  li {
+      padding: 0 24px;
+      cursor: pointer;
+      line-height: 40px;
+      box-sizing: border-box;
+     &:hover {
+      background: #f0f0f0;
+     }
+  }
+}

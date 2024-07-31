@@ -1,0 +1,108 @@
+
+
+.upload_image_drawer {
+    position: relative;
+    padding: 60px 0;
+    font-size: 24px;
+    font-weight: 400;
+
+    .upload_image_loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .upload_image_close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .upload_image_content {
+        .upload_image_title {
+            text-align: center;
+            font-weight: 400;
+            font-size: 32px;
+            color: #7B7B7B;
+            line-height: 28px;
+        }
+
+        .upload_image_body {
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .upload_image_avatar {
+                width: 240px;
+                height: 240px;
+            }
+            .upload_image_avatar_msg {
+                width: 326px;
+                font-weight: 400;
+                font-size: 24px;
+                color: #222222;
+                line-height: 36px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .upload_image_btn {
+                padding: 26px 48px;
+                margin-top: 40px;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 28px;
+                &.disabled {
+                    background-color: #d8d8d8;
+                    color: #fff;
+                    pointer-events: none;
+                }
+            }
+
+            .upload_image_clause_line {
+                margin-top: 116px;
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: 28px;
+                color: #222222;
+                line-height: 36px;
+                .upload_image_clause_check {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                }
+                .upload_image_clause_text {
+                    .upload_image_clause_area {
+                        color: #0077CC;
+                    }
+                }
+              
+            }
+
+            .upload_image_clause_line_us {
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: 20px;
+                color: #222222;
+                line-height: 36px;
+                padding: 0px 20px;
+                .upload_image_clause_check {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                }
+                .upload_image_clause_text {
+
+                }
+                .upload_image_clause_area {
+                    color: #0077CC;
+                }
+            }
+        }
+    }
+}

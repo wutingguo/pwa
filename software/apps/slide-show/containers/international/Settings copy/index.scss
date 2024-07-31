@@ -1,0 +1,97 @@
+.settings {
+  display: flex;
+  // height: calc( 100% - 88px);
+  overflow: hidden;
+  .settings-menu {
+    height: 100%;
+    border-right: 1px solid #D8D8D8;
+    @media screen and (max-width: 960px){
+      width: 120px;
+    }
+    .scroll-nav {
+      .nav-list {
+        .nva-link {
+          height: 48px;
+          line-height: 48px;
+          position: relative;
+          padding-left: 19px;
+          font-size: 14px;
+          font-weight: 500;
+          &.active {
+            background-color: #E8E8E8;
+            &:before {
+              content: '';
+              width:4px;
+              height:48px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              background:#3a3a3a;
+            }
+          }
+        }
+      
+      }
+      
+    }
+  }
+  .watermark-wrap {
+    width: 100%;
+    .watermark-header {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #D8D8D8;
+      .watermark-label {
+        color: #262626;
+        font-size: 18px;
+      }
+
+    }
+    .watermark-list {
+      .watermark-item {
+        width: 223px;
+        height: 223px;
+        border: 1px solid #D8D8D8;
+        .watermark-pic {
+          width: 223px;
+          height: 180px;
+          img {
+            width: 100%;
+          }
+        }
+        .watermark-name {
+          height: 43px;
+          line-height: 43px;
+          padding-left: 10px;
+          font-size: 14px;
+          font-weight:500;
+          color: #3A3A3A;
+        }
+      }
+    }
+    .watermark-tip {
+      display: flex;
+      align-items: baseline;
+      margin-top: 40px;
+      .more-link {
+        color: #0077CC;
+        font-size: 12px;
+        margin-left: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+        margin-right: 0.83rem;
+      }
+      .tip-msg {
+        height: 14px;
+        line-height: 14px;
+        font-size: 12px;
+        margin-top: 8px;
+        color: #7B7B7B;
+        display: inline-block;
+        max-width: calc(100% - 88px);
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+@import '@resource/static/styles/en/common';
+
+.element-action-bar {
+  @include action-bar;
+  z-index: 1000;
+
+  .item-upload a {
+    background: url('./icons/upload.png') center center no-repeat;
+  }
+
+  .item-crop a {
+    background: url('./icons/crop.png') center center no-repeat;
+  }
+
+  .item-rich-edit a {
+    background: url('./icons/edit.png') center center no-repeat;
+  }
+
+  .item-rotate a {
+    background: url('./icons/frame-rotate.png') center center no-repeat;
+  }
+
+  .item-flip a {
+    background: url('./icons/flip.png') center center no-repeat;
+  }
+
+  .item-expand a {
+    background: url('./icons/expand.png') center center no-repeat;
+  }
+
+  .item-expand-full a {
+    background: url('./icons/expand-to-full.png') center center no-repeat;
+  }
+
+  .item-expand-left a {
+    background: url('./icons/expand-to-left.png') center center no-repeat;
+  }
+
+  .item-expand-right a {
+    background: url('./icons/expand-to-right.png') center center no-repeat;
+  }
+
+  .item-layer>a {
+    background: url('./icons/layer.png') center center no-repeat;
+  }
+
+  .item-property a {
+    background: url('./icons/properties.png') center center no-repeat;
+  }
+
+  .item-perfectly-clear a {
+    background: url('./icons/perfectly-clear.png') center center no-repeat;
+  }
+
+  .item-clear a {
+    background: url('./icons/clear.png') center center no-repeat;
+  }
+
+  .item-fit-frame-to-image a {
+    background: url('./icons/fit-frame-to-image.png') center center no-repeat;
+  }
+
+  .item-align-horizontal > a {
+    background: url('./icons/align-horizontal.png') center center no-repeat;
+  }
+
+  .item-align-left > a {
+    background: url('./icons/align-left.png') center center no-repeat;
+  }
+
+  .item-align-center > a {
+    background: url('./icons/align-center.png') center center no-repeat;
+  }
+
+  .item-align-right > a {
+    background: url('./icons/align-right.png') center center no-repeat;
+  }
+
+  .item-align-vertical > a {
+    background: url('./icons/align-vertical.png') center center no-repeat;
+  }
+
+  .item-align-top > a {
+    background: url('./icons/align-top.png') center center no-repeat;
+  }
+
+  .item-align-middle > a {
+    background: url('./icons/align-middle.png') center center no-repeat;
+  }
+
+  .item-align-bottom > a {
+    background: url('./icons/align-bottom.png') center center no-repeat;
+  }
+
+  .item-space > a {
+    background: url('./icons/space.png') center center no-repeat;
+  }
+
+  .item-space-horizontal > a {
+    background: url('./icons/space-horizontal.png') center center no-repeat;
+  }
+
+  .item-space-vertical > a {
+    background: url('./icons/space-vertical.png') center center no-repeat;
+  }
+
+  .item-clear-all > a {
+    background: url('./icons/clear-all.png') center center no-repeat;
+  }
+
+  .item-match-size > a {
+    background: url('./icons/match-size.png') center center no-repeat;
+  }
+
+  .item-match-widest-width > a {
+    background: url('./icons/match-widest-width.png') center center no-repeat;
+  }
+
+  .item-match-narrowest-width > a {
+    background: url('./icons/match-narrowest-width.png') center center no-repeat;
+  }
+
+  .item-match-tallest-height > a {
+    background: url('./icons/match-tallest-height.png') center center no-repeat;
+  }
+
+  .item-match-shortest-height > a {
+    background: url('./icons/match-shortest-height.png') center center no-repeat;
+  }
+
+  .item-match-first-select-width-and-height > a {
+    background: url('./icons/match-first-select-width-and-height.png') center center no-repeat;
+  }
+
+  .item-cameostyle a {
+      background: url("./icons/rectHightLight.png") center center no-repeat;
+  }
+
+  .item-edit a {
+    background: url('./icons/edit.png') center center no-repeat;
+  }
+
+  .icon-item:hover {
+    .sub-menu {
+      display: block;
+    }
+  }
+
+  .icon-item.multi-select .sub-menu {
+    margin-left: 4px;
+  }
+
+  li.item-layer .sub-menu {
+    margin-top: 1px;
+    background-color: #393939;
+     a {
+      width: auto!important;
+      color: #fff;
+      text-align: left;
+      font-size: 12px;
+      white-space: nowrap;
+      cursor: pointer;
+      display: block;
+      padding: 0 8px!important;
+    }
+  }
+}

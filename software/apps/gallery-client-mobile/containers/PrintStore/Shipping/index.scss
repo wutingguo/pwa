@@ -1,0 +1,57 @@
+.order-confirm-page {
+  box-sizing: border-box;
+  min-height: 100%;
+  background-color: #fff;
+  padding: 50px 0;
+  width: 100%;
+  overflow: auto;
+  .order-confirm-content {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 28px;
+    color: #3a3a3a;
+    padding: 0 32px;
+    box-sizing: border-box;
+    padding-bottom: 400px;
+    .shipping-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+      background: #f6f6f6;
+      padding-right: 40px;
+      .shipping-header-topic {
+        font-weight: 500;
+        font-size: 28px;
+        color: #222222;
+        &::before {
+          content: '1';
+          display: inline-block;
+          width: 28px;
+          height: 28px;
+          background: #3a3a3a;
+          border-radius: 50%;
+          line-height: 28px;
+          text-align: center;
+          color: #fff;
+          font-size: 24px;
+          margin-right: 16px;
+        }
+      }
+      .shipping-header-handle {
+        font-weight: 300;
+        cursor: pointer;
+      }
+    }
+  }
+}
+// .shipping-number {
+// }
+.footer-rights {
+  height: 76px;
+  line-height: 76px;
+  font-size: 12px;
+  text-align: center;
+  color: #878787;
+  background-color: #f6f6f6;
+}

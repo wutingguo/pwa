@@ -1,0 +1,35 @@
+.manageProductOptions {
+  .labels {
+    display: flex;
+    font-weight: normal;
+    border-bottom: 1px solid #d8d8d8;
+    font-size: 16px;
+    padding-bottom: 10px;
+    .label {
+      cursor: pointer;
+      position: relative;
+      margin-right: 25px;
+      &.cur {
+        font-weight: 500;
+        &::before {
+          content: '';
+          position: absolute;
+          border-bottom: 2px solid #c0c0c0;
+          bottom: -10px;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+  .checksWrapper {
+    padding-top: 20px;
+    .x-checkbox {
+      margin-bottom: 14px;
+    }
+    .text {
+      font-weight: normal!important;
+      font-size: 14px!important;
+    }
+  }
+}

@@ -1,0 +1,314 @@
+$color-3A: #3A3A3A;
+$color-7B: #7B7B7B;
+$color-D8: #D8D8D8;
+$color-97:#979797;
+$color-red: #C20200;
+$color-EA:#EAEAEA;
+$color-white: #fff;
+
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mb24 {
+  margin-bottom: 24px !important;
+}
+
+.ml24 {
+  margin-left: 24px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mb40 {
+  margin-bottom: 40px !important;
+}
+
+.w200 {
+  width: 200px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.icon-star {
+  color: $color-red;
+  display: inline-block;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.ds-box {
+  min-width: 960px;
+  overflow: hidden;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  background-color: $color-white;
+
+  .x-radio {
+    &.customer-radio {
+      .text {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .x-input {
+    width: 400px;
+    height: 32px;
+    box-sizing: border-box;
+  }
+
+  .x-checkbox+.x-input {
+    vertical-align: text-bottom;
+    margin-left: 10px;
+  }
+
+  .x-checkbox {
+    .icon {
+      width: 27px;
+      height: 27px;
+      background-size: cover !important;
+    }
+  }
+
+  .customer-checkbox {
+    display: inline-block;
+    width: 180px;
+  }
+
+  .customer-radio {
+    margin-bottom: 22px;
+    width: 294px;
+  }
+
+  .customer-select {
+    width: 180px;
+    display: inline-block;
+
+    .Select-control {
+      height: 30px;
+
+      .Select-multi-value-wrapper {
+        height: 30px;
+      }
+    }
+
+    .Select-value-label {
+      color: $color-7B !important;
+    }
+  }
+
+  .explain {
+    margin-left: 10px;
+    font-weight: normal;
+    color: $color-7B;
+    height: 32px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 32px;
+  }
+
+  .caption {
+    height: 26px;
+    line-height: 26px;
+    font-size: 26px;
+    font-weight: 500;
+    color: $color-3A;
+  }
+
+  .desc {
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-3A;
+    margin: 0 auto;
+
+    &.blue {
+      color: #0077CC;
+    }
+  }
+
+  .ds-item {
+    .text-area {
+      width: 100%;
+      height: 277px;
+      border: 1px solid $color-D8;
+    }
+
+    .max-width {
+      max-width: 800px;
+    }
+
+  }
+
+  .required-field-box {
+    margin-top: 40px;
+    margin-bottom: 48px;
+
+    .required-field-text {
+      line-height: 14px;
+      font-size: 14px;
+      font-weight: normal;
+      color: $color-3A;
+    }
+  }
+
+  .amount-box {
+    float: right;
+
+    .payment-btn {
+      width: 360px;
+      height: 40px;
+      display: block;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 500;
+      color: $color-white;
+    }
+  }
+
+  .total-amount-box {
+    .title {
+      width: 168px;
+      text-align: right;
+      display: inline-block;
+      font-size: 14px;
+      color: #222;
+    }
+  }
+
+
+  .total-amount,
+  .discount-amount {
+    display: inline-block;
+    width: 170px;
+    text-align: right;
+    line-height: 14px;
+    font-size: 14px;
+    color: $color-7B;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .discount-amount-box {
+    .apply-store-credit {
+      margin-left: 9px;
+      text-align: center;
+      width: 156px;
+      height: 22px;
+      border-radius: 4px;
+      border: 1px solid $color-97;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 500;
+      color: $color-7B;
+
+      &:hover {
+        background-color: $color-EA;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .real-amount-box {
+    margin-top: 16px;
+    margin-bottom: 64px;
+
+    .real-amount {
+      display: inline-block;
+      width: 170px;
+    }
+
+    .real-amount-data {
+      width: 130px;
+      text-align: right;
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: top;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .title,
+    .real-amount-data,
+    .currency {
+      height: 24px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $color-3A;
+      line-height: 18px;
+    }
+
+    .title {
+      width: 168px;
+      text-align: right;
+      display: inline-block;
+    }
+
+    .currency {
+      font-size: 14px;
+      float: right;
+    }
+
+    em {
+      font-style: normal;
+    }
+  }
+
+  .group-btn {
+    width: 96px;
+    height: 32px;
+    line-height: 32px;
+    background: $color-3A;
+    border-radius: 2px;
+    font-size: 14px;
+    color: $color-white;
+
+    &:hover {
+      background-color: #000;
+    }
+  }
+
+  .error-tips {
+    width: 149px;
+    height: 18px;
+    font-size: 14px;
+    font-weight: normal;
+    color: $color-red;
+    line-height: 14px;
+  }
+}
+
+.amount-box {
+  .button {
+    .button-text-wrapper {
+      .loading-icon {
+        position: absolute;
+        height: 70%;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

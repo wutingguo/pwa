@@ -1,0 +1,67 @@
+.slideshow-editor-global-action-bar {
+  .collection-detail-header-left {
+    display: flex;
+    align-items: center;
+
+    .fa-icon {
+      .text {
+        display: inline-block;
+        overflow: hidden;
+        max-width: 20vw;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .time-info {
+      color: #3a3a3a;
+      font-size: 14px;
+
+      &.bold {
+        font-weight: 500;
+        margin-right: 4px;
+      }
+    }
+    .time-info-error {
+      margin-left: 4px;
+      display: inline-block;
+      line-height: 10px;
+    }
+  }
+  .photo-detail-global-action-bar-title {
+    max-width: 6rem;
+  }
+
+  .option-item{
+    font-size: 14px;
+    color: #3a3a3a;
+    padding: 13px 16px;
+    display: block;   
+    cursor: pointer;
+
+    &:hover{
+      background: #F0F0F0;
+    }
+
+    &:first-child{
+      margin-top: 6px;
+    }
+  }
+
+  .add-computer-photo{
+    overflow: hidden;
+    position: relative;
+
+    .add-photo-item{
+      position: absolute;
+      top: -100px;
+    }
+  }
+
+  &-img-only, &-show-filename {
+    margin-left: 0.33rem !important;
+    i {
+      padding: 0 !important;
+    }
+  }
+}

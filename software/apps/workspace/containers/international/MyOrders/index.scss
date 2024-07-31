@@ -1,0 +1,131 @@
+@import '../../../styles/rem';
+
+.my-orders-container {
+  min-height: 500px;
+  .orders-header {
+    height: 76px;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .btn {
+      cursor: pointer;
+      font-size: 18px;
+
+      img {
+        width: 21px;
+        height: 19px;
+        vertical-align: sub;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .my-orders {
+    font-size: 12px;
+    padding-bottom: 50px;
+    .pagination-container {
+      height: 20px;
+      margin-top: 14px;
+      text-align: right;
+    }
+
+    .filter-container {
+      margin-top: 40px;
+
+      .group-item {
+        display: inline-block;
+        margin-right: rem(120px);
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .select-label {
+          font-size: 20px;
+        }
+
+        .select-label,
+        .select-container {
+          margin-top: 0;
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .select-container {
+          margin-left: 16px;
+          width: rem(240px);
+          height: 30px;
+          line-height: 30px;
+
+          .Select-control {
+            height: 30px !important;
+          }
+
+          .Select.is-focused:not(.is-open)>.Select-control {
+            border-color: #DBDBDB;
+            box-shadow: none;
+          }
+
+          .Select-value {
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            padding-left: 8px;
+          }
+
+          .Select-option {
+            padding: 8px;
+            font-size: 12px;
+          }
+
+          .Select-menu-outer {
+            max-height: 500px;
+
+            .Select-menu {
+              max-height: 500px;
+
+              .Select-option {
+                height: 30px;
+                line-height: 30px;
+                padding: 0 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .empty-div {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      width: 100%;
+    }
+
+    .empty {
+      font-weight: 500;
+      margin-top: 74px;
+      text-align: center;
+      color: #3A3A3A;
+      font-size: 40px;
+    }
+
+    .empty-detail {
+      margin-top: 50px;
+      text-align: center;
+      color: #3A3A3A;
+      font-size: 20px;
+    }
+
+    .loading-img {
+      margin: 30px 0;
+    }
+  }
+}

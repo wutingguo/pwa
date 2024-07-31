@@ -1,0 +1,25 @@
+.WithHeaderCompWrapper {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0 16px;
+  padding-left: 56px;
+  .moduleTitle {
+    font-family: PingFangSC-Medium, PingFang SC;
+    box-sizing: border-box;
+    font-weight: 700;
+    color: rgba(0,0,0,0.85);
+    border-bottom: 1px solid #E5E5E5;
+    height: 90px;
+    padding-top: 16px;
+    line-height: 74px;
+    font-size: 22px;
+    display: flex;
+    .moduleTitle_left {
+      flex: 1;
+    }
+    .moduleTitle_right {
+      
+    }
+  }
+}

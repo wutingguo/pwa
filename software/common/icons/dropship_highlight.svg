@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4694.689 3694 21.168 23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3a3a3a;
+      }
+    </style>
+  </defs>
+  <g id="drop_ship_highlight" data-name="drop ship_highlight" transform="translate(4316 3015)">
+    <path id="Path_601" data-name="Path 601" class="cls-1" d="M10.124,17.73,0,23.575V13.062L10.124,7.217Z" transform="translate(389.734 678.425)"/>
+    <path id="Path_602" data-name="Path 602" class="cls-1" d="M.5,9.382,10.624,3.536l4.487,2.592L4.987,11.972Z" transform="translate(384.287 678.718)"/>
+    <path id="Path_603" data-name="Path 603" class="cls-1" d="M11.092,8.57,6.375,5.846,16.5,0l4.717,2.723Z" transform="translate(372.775 679)"/>
+    <path id="Path_604" data-name="Path 604" class="cls-1" d="M12,7.217l10.124,5.845V23.575L12,17.73Z" transform="translate(366.689 678.425)"/>
+  </g>
+</svg>

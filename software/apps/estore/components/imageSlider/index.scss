@@ -1,0 +1,33 @@
+.estore-image-slider{
+    display: flex;
+    flex-direction: row;
+    .prev-next-page{
+        width: 20px;
+        display: flex;
+        align-items: center;
+        &.prev{
+            justify-content: left;
+        }
+        &.next{
+            justify-content: right;
+        }
+        .image{
+            height: 25px;
+            &.disabled {
+                opacity: .35;
+                cursor: auto;
+                pointer-events: none;
+              }
+        }
+
+    }
+    .image-container{
+        height: 160px;
+        width: 720px;
+        .image{
+            width: 160px;
+            height: 160px;
+        }
+    }
+
+}

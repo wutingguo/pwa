@@ -1,0 +1,25 @@
+.bind-email-modal-wrap {
+  width: 480px;
+
+  .modal-body{
+    margin: 20px 0;
+  }
+
+  .email-wrap {
+    position: relative;
+
+    .msg {
+      font-size: 14px;
+      font-weight: 400;
+      color: #3A3A3A;
+      line-height: 18px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .modal-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

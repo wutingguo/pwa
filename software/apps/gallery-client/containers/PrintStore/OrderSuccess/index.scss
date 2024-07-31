@@ -1,0 +1,33 @@
+.print-store-page-oder-success {
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 36px;
+    font-weight: normal;
+    color: #3a3a3a;
+    line-height: 43px;
+  }
+  &__desc {
+    font-size: 16px;
+    font-weight: normal;
+    color: #3a3a3a;
+    line-height: 19px;
+    margin-bottom: 78px;
+  }
+
+  &__actions {
+    .button {
+      margin-right: 44px;
+      // padding: 0 8px;
+      width: 207px;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+}

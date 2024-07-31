@@ -1,0 +1,33 @@
+.doubleCheckAssignModal {
+  width: 600px;
+  &.commonModalWrapper {
+    .modal-title {
+      color: #3A3A3A;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .doubleCheckAssignBody {
+      font-size: 14px;
+      font-weight: normal;
+      color: #3A3A3A;
+      line-height: 22px;
+      .storeStatusBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        .button {
+          text-align: center;
+          margin-right: 0;
+          width: 400px;
+          margin-bottom: 16px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+    
+}

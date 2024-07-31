@@ -1,0 +1,161 @@
+.collectionPresetModalWrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  .confirmBtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 130px;
+    height: 40px;
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+
+    .input-container {
+      margin-right: 12px;
+      width: 120px;
+
+      .input {
+        border-color: #3a3a3a;
+        border-radius: 4px;
+        height: 30px;
+      }
+    }
+
+    span {
+      margin-right: 12px;
+    }
+
+    img {
+      cursor: pointer;
+      width: 15px;
+    }
+  }
+
+  .presetWrapper {
+    height: auto;
+    width: 100%;
+
+    &.gllery-collection-detail-settings-store {
+      height: 100%;
+
+      .content {
+        position: unset;
+        height: 100% !important;
+      }
+    }
+
+    .content {
+      box-shadow: none;
+      width: 100%;
+      height: auto !important;
+      position: relative;
+      padding: 0;
+      left: unset;
+      right: unset;
+      transform: none;
+
+      .common-download-settings-container {
+        .switch-container {
+          .title {
+            height: 22px;
+            line-height: 22px;
+          }
+        }
+      }
+
+      .tip-wrap {
+        .tip-msg {
+          white-space: wrap;
+        }
+      }
+
+      .collection-settings-wrap {
+        .settings-item {
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+      }
+
+      .settings-favorite-wrap {
+        .favorite-item {
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+      }
+
+      .tab-layout,
+      .storeState {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .presetContainer {
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 70px);
+
+    .navWrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 200px;
+      min-width: 200px;
+      margin-right: 20px;
+
+      .navItem {
+        cursor: pointer;
+        color: #3a3a3a;
+        font-weight: 400;
+        line-height: 40px;
+        padding-left: 20px;
+        font-size: 14px;
+        width: 160px;
+        height: 40px;
+        margin-bottom: 20px;
+
+        &:hover {
+          background-color: #f6f6f6;
+        }
+
+        &.cur {
+          position: relative;
+          background-color: #f6f6f6;
+
+          &::before {
+            content: '';
+            position: absolute;
+            background-color: #3a3a3a;
+            height: 100%;
+            width: 2px;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .settingWrapper {
+      overflow: auto;
+      // flex: 1;
+      width: 1100px;
+
+      // max-width: 50%;
+      .settings-design-content {
+        padding: 0;
+      }
+    }
+  }
+}

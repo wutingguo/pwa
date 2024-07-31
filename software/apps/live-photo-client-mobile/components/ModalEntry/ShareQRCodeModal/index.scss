@@ -1,0 +1,88 @@
+.share-qrcode-modal-container {
+  .x-imgage-loading {
+    position: fixed;
+  }
+  
+  .share-qrcode-backdrop {
+    background: rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .share-qrcode-modal-wrap {
+    &.content {
+      padding: 0px 0px;
+      width: auto;
+      background: rgba(0, 0, 0, 0);
+      // box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+    }
+
+    .poster-container {
+      border-radius: 20px;
+      overflow: hidden;
+      .poster-text-warp {
+        position: absolute;
+        width: 200px;
+        text-align: center;
+        bottom: 250px;
+        transform: translate(-50%, 0%);
+        left: 50%;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px;
+      }
+
+      .poster-wrap {
+        background: white;
+        .img-wrap {
+          img{
+            height: auto;
+            max-height: 1000px;
+          }
+        }
+      }
+    }
+
+    .qrcode-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      position: absolute;
+      bottom: 96px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .qrcode-img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+      }
+
+      .button {
+        width: 100%;
+        height: 80px;
+        font-size: 28px;
+        margin: 40px 0 20px;
+      }
+
+      .tip {
+        color: #7B7B7B;
+        font-size: 24px;
+      }
+    }
+
+    .close {
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      width: 75px;
+      height: 75px;
+      transform: translate(-50%, 0%);
+      background-image: url("../../../icons/qrcode-close.png");
+      background-size: 75px 75px;
+      background-repeat: no-repeat;
+    }
+  }
+}

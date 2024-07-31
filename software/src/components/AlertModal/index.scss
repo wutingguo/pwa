@@ -1,0 +1,32 @@
+.alert-modal {
+  width: 600px!important;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  min-height: auto!important;
+  .text {
+    margin: 40px 0 76px;
+    line-height: 34px;
+  }
+  .btns {
+    font-size: 16px;
+    a {
+      display: inline-block;
+      width: 160px;
+      height: 40px;
+      line-height: 40px;
+      box-sizing: border-box;
+      color: #222;
+      border: 1px solid #222222;
+      &.ok {
+        background: #222;
+        border: none;
+        color: #fff;
+      }
+      & + a {
+        margin-left: 40px;
+      }
+    }
+  }
+}

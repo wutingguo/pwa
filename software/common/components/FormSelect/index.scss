@@ -1,0 +1,18 @@
+.dropdownBox {
+    position: relative;
+
+    input {
+        cursor: pointer;
+    }
+
+    .fa-icon {
+        top: 0.2rem;
+        right: 0.33rem;
+        position: absolute;
+
+        .fa-dropdown {
+            width: 6px;
+        }
+    }
+
+}

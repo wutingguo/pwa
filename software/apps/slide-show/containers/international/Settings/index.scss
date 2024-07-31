@@ -1,0 +1,96 @@
+.settings {
+  display: flex;
+  // height: calc( 100% - 88px);
+  overflow: hidden;
+  .settings-menu {
+    height: 100%;
+    border-right: 1px solid #d8d8d8;
+    @media screen and (max-width: 960px) {
+      width: 120px;
+    }
+    .scroll-nav {
+      .nav-list {
+        .nva-link {
+          height: 48px;
+          line-height: 48px;
+          position: relative;
+          padding-left: 19px;
+          font-size: 14px;
+          font-weight: 500;
+          &.active {
+            background-color: #e8e8e8;
+            &:before {
+              content: '';
+              width: 4px;
+              height: 48px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              background: #3a3a3a;
+            }
+          }
+        }
+      }
+    }
+  }
+  .watermark-wrap {
+    width: 100%;
+    .watermark-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #d8d8d8;
+      height: 75px;
+      align-items: center;
+      .react-tabs__tab-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .react-tabs__tab--selected {
+          border-bottom: 1px solid #3a3a3a;
+        }
+        .react-tabs__tab {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 45px;
+          height: 75px;
+          .watermark-label {
+            display: block;
+            color: #3a3a3a;
+            font-size: 18px;
+            font-weight: 500;
+          }
+          .email-label {
+            display: block;
+            color: #3a3a3a;
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .watermark-tip {
+      display: flex;
+      align-items: baseline;
+      margin-top: 40px;
+      .more-link {
+        color: #0077cc;
+        font-size: 12px;
+        margin-left: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+        margin-right: 0.83rem;
+      }
+      .tip-msg {
+        height: 14px;
+        line-height: 14px;
+        font-size: 12px;
+        margin-top: 8px;
+        color: #7b7b7b;
+        display: inline-block;
+        max-width: calc(100% - 88px);
+      }
+    }
+  }
+}

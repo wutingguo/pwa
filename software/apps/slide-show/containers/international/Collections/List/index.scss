@@ -1,0 +1,79 @@
+.collections-list {
+  background-color: #fff;
+  height: calc(100% - 150px);
+  .collection-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D8D8D8;
+    background-color: #fff;
+    height: 75px;
+    align-items: center;
+    .collection-label {
+      font-weight: 500;
+      font-size: 18px;
+      color: #3A3A3A;
+    }
+    .collection-btns {
+      display: flex;
+      align-items: center;
+      .video-btn {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .collection-container {
+    padding: 60px 0.83rem 0;
+    height: calc( 100% - 90px );
+    overflow: scroll;
+    @media screen and (max-width: 960px){
+      .cards-wrap {
+        width: 912px;
+      }
+    }
+  }
+  .video-btn {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0077CC;
+    line-height: 17px;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  .empty-content {
+    .video-btn {
+      margin-top: 17px;
+    }
+    .tip {
+      font-weight: normal;
+      color: #3A3A3A;
+      line-height: 24px;
+      margin-top: 28px;
+    }
+  }
+}
+
+.upgrade-wrap {
+  .upgrade-link {
+    margin-left: 4px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.slideshow-tutorial-wrapper {
+  .switch-video-container {
+    .scroll-wrapper {
+      .item-video {
+        .switch_title {
+          font-size: 13px;
+        }
+      } 
+    }
+  }
+}

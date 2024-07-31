@@ -1,0 +1,27 @@
+.add-website-preset-modal {
+  width: 483px;
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+
+  .modal-title {
+    margin-bottom: 40px;
+  }
+
+  .modal-body {
+    .control-label {
+      color: #7F7F7F;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+  }
+
+
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      margin-right: 0 !important;
+    }
+  }
+}

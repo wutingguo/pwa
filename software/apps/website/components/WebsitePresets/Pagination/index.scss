@@ -1,0 +1,47 @@
+.zno-website-designer-page-pagination {
+  display: flex;
+  align-items: center;
+
+  &-page-number {
+    user-select: none;
+    display: inline-block;
+    font-size: 14px;
+    color: #afafaf;
+    line-height: 20px;
+    padding: 0 5px;
+    cursor: pointer;
+    font-weight: 500;
+
+    &.active {
+      cursor: default;
+      color: #3a3a3a;
+    }
+
+    &.disabled {
+      cursor: default;
+    }
+  }
+
+  &-jump {
+    display: inline-flex;
+    align-items: center;
+
+    margin-left: 16px;
+    color: #3a3a3a;
+    font-size: 12px;
+
+    &>input {
+      appearance: none;
+      outline: none;
+      width: 30px;
+      height: 20px;
+      background: transparent;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+      margin-left: 24px;
+      text-align: center;
+      color: #3a3a3a;
+      margin-right: 8px;
+    }
+  }
+}

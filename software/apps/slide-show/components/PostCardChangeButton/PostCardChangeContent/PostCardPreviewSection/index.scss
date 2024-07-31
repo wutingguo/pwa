@@ -1,0 +1,108 @@
+.post-card-preview-section {
+  width: 324px;
+  height: 210px;
+  position: relative;
+  margin-top: 15px;
+  background: url("./icons/bg.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  .post-card-preview-wrapper {
+    width: 648px;
+    height: 420px;
+    opacity: 0.8;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    background-color: #101010;
+    transform: scale(0.5);
+    .preview-card-content {
+      width: 340px;
+      font-weight: 300;
+      margin: 74px  auto;
+      color: #ffffff;
+      .card-header {
+        position: relative;
+        margin-bottom: 40px;
+        .logo-content {
+          position: absolute;
+          top: 50%;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          transform: translateY(-50%);
+          left: -84px;
+          background-color: #ffffff;
+          img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+          }
+        }
+        .card-detail {
+          text-align: left;
+          .card-name {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 8px;
+          }
+          .card-address {
+            width: 130px;
+            height: 28px;
+            font-size: 14px;
+            line-height: 26px;
+            text-align: center;
+            color: #222222;
+            background-color: #fff;
+            border-radius: 24px;
+          }
+        }
+      }
+      .card-introduction {
+        .label {
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 8px;
+        }
+        .introduction-content {
+          font-size: 14px;
+          line-height: 26px;
+          padding-bottom: 4px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          border-bottom: 1px solid #ffffff;
+        }
+      }
+      .contact {
+        display: flex;
+        justify-content: space-between;
+        .left {
+          .label {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 8px;
+          }
+          .weixin-account, .weibo-account {
+            span {
+              display: inline-block;
+            }
+          }
+
+          .account-icon {
+            width: 22px;
+            height: 18px;
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+        }
+        .right {
+          .qr-code {
+            width: 80px;
+            height: 80px;
+          }
+        }
+
+      }
+    }
+  }
+
+}

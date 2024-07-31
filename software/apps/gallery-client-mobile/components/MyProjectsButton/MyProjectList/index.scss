@@ -1,0 +1,144 @@
+.print-store-my-projects-list {
+  box-sizing: border-box;
+  min-width: 345px;
+  padding: 16px 0;
+  max-height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  &__item {
+    padding: 24px 20px;
+    &:not(:last-child) {
+    }
+
+    .print-store-my-project {
+      display: flex;
+      &__header {
+        margin-right: 16px;
+        width: 58px;
+        height: 58px;
+        overflow: hidden;
+
+        img {
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__body {
+        flex: 1;
+        .title {
+          font-size: 14px;
+          font-weight: 500;
+          color: #3a3a3a;
+          line-height: 17px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-bottom: 15px;
+        }
+        .options {
+          display: flex;
+          &-item {
+            user-select: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: normal;
+            color: #3a3a3a;
+            line-height: 17px;
+            &:first-child {
+              margin-right: 32px;
+            }
+          }
+        }
+      }
+    }
+    .tips {
+      &.error {
+        font-size: 12px;
+        font-weight: normal;
+        color: #cc0200;
+        line-height: 16px;
+      }
+      margin-top: 10px;
+    }
+
+    &.disabled {
+      background: #f7f7f7;
+    }
+  }
+}
+
+.print-store-my-projects-list-other-container {
+  position: relative;
+  padding: 40px 20px;
+  min-width: 345px;
+
+  &.loading {
+    height: 138px;
+    .x-loading {
+      .load-mask {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &.empty {
+    .empty-center {
+      box-sizing: border-box;
+      height: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+      .desc {
+        font-size: 14px;
+        font-weight: 500;
+        color: #3a3a3a;
+        line-height: 17px;
+      }
+    }
+    .empty-footer {
+      text-align: center;
+      .button {
+        width: 80px;
+        display: inline-block;
+        &.width-145 {
+          width: 145px;
+        }
+      }
+    }
+  }
+}
+
+.print-store-delete-my-project-confirm-modal {
+  text-align: center;
+}
+
+.shake {
+  animation: shake 600ms ease-in-out infinite;
+}
+
+@keyframes shake {
+  /* 水平抖动*/
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(+2px, 0, 0);
+  }
+  30%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(+4px, 0, 0);
+  }
+  50% {
+    transform: translate3d(-4px, 0, 0);
+  }
+}

@@ -1,0 +1,226 @@
+.address-modal {
+  width: 660px !important;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 0 40px 40px;
+  .title {
+    padding-left: 0 !important;
+  }
+  .sub-title {
+    margin-top: 10px;
+    padding: 0 40px;
+    color: #7B7B7B;
+    .highlight {
+      color: #DE3418;
+    }
+  }
+  .form {
+    //padding: 40px;
+    position: relative;
+    padding-top: 24px;
+    .field {
+      //overflow: hidden;
+      display: inline-block;
+      &.detaile-address {
+        margin-bottom: 24px;
+      }
+      &.postalCode {
+        // margin-bottom: 24px;
+        .input {
+          width: 180px;
+
+          input {
+            width: 180px;
+            border: 1px solid #DDDDDD;
+          }
+        }
+      }
+      &.street2 {
+        .input {
+          width: 180px;
+          .label {
+            width: 96px;
+            font-size: 12px;
+            color: #7B7B7B;
+          }
+          input {
+            width: 180px;
+            border: 1px solid #DDDDDD;
+          }
+        }
+      }
+
+      & + .field {
+        margin-top: 24px;
+      }
+      .color-red {
+        color: #CC0200;
+      }
+      .label {
+        width: 67px;
+        float: left;
+        margin-right: 16px;
+        text-align: right;
+        line-height: 28px;
+      }
+      .input {
+        width: 496px;
+        float: left;
+        position: relative;
+        &.border {
+          border: 1px solid #aaa;
+          height: 70px;
+          box-sizing: border-box;
+        }
+        textarea {
+          width: 100%;
+          height: 64px;
+          padding: 4px 16px;
+          resize: none;
+          box-sizing: border-box;
+          border: 1px solid #DDDDDD;
+        }
+        .tip {
+          position: absolute;
+          right: 8px;
+          bottom: 4px;
+          font-size: 12px;
+          color: #ccc;
+        }
+        input {
+          width: 100%;
+          height: 28px;
+          //border: 1px solid #aaa;
+          box-sizing: border-box;
+          padding: 10px 16px;
+          display: block;
+        }
+        .toggle-password {
+          width: 15px;
+          height: 10px;
+          background: url(./icons/show.png) center center no-repeat;
+          background-size: 15px 10px;
+          display: block;
+          position: absolute;
+          right: 8px;
+          top: 50%;
+          margin-top: -5px;
+          &.hide {
+            background: url(./icons/hide.png) center center no-repeat;
+            background-size: 15px 10px;
+          }
+        }
+      }
+      .select {
+        .address-labels li {
+          line-height: 30px;
+        }
+        .select-item li {
+          line-height: 40px;
+        }
+      }
+    }
+    .tag-container {
+      .label {
+        width: 100px;
+        margin-right: 8px;
+        display: inline-block;
+        font-size: 12px;
+        color: #7B7B7B;
+      }
+      .tag-wrapper {
+        display: inline-block;
+        .tag {
+          display: inline-block;
+          cursor: pointer;
+          box-sizing: border-box;
+          vertical-align: middle;
+          width: 60px;
+          height: 22px;
+          border: 1px solid #DDDDDD;
+          line-height: 22px;
+          text-align: center;
+          font-size: 12px;
+          &:nth-child(2) {
+            margin: 0 8px;
+          }
+          &:hover {
+            border: 1px solid #222222;
+          }
+        }
+      }
+    }
+    .input-container {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-content: center;
+      margin-bottom: 24px;
+      .field {
+
+        &.accept, &.phone {
+          .input {
+            width: 180px;
+            height: 28px;
+            input {
+              border: 1px solid #DDDDDD;
+            }
+          }
+        }
+        &.phone {
+          margin-top: 0;
+        }
+
+      }
+      .warn-text-container {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        padding-left: 82px;
+        color: #CC0200;
+        font-size: 12px;
+      }
+
+      .input {
+        padding: 0;
+        border: none;
+      }
+    }
+  }
+  .btns {
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+    .error-tips {
+      color: #DE3418;
+      width: 100%;
+      text-align: center;
+      top: -25px;
+      position: absolute;
+      left: 0;
+      font-size: 12px;
+    }
+    a {
+      width: 160px;
+      height: 40px;
+      line-height: 38px;
+      display: inline-block;
+      text-align: center;
+      box-sizing: border-box;
+
+      &.cancel {
+        border: 1px solid #CCCCCC;
+        background: #fff;
+        color: #222;
+      }
+      &.ok {
+        border: 1px solid #222;
+        background: #222;
+        color: #fff;
+      }
+      & + a {
+        margin-left: 40px;
+      }
+    }
+  }
+}

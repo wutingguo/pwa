@@ -1,0 +1,64 @@
+.edit-group-modal {
+  font-size: 14px;
+  color: #222;
+  padding: 32px 40px;
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+  width: 220px;
+  .label {
+    float: none!important;
+    margin-bottom: 16px;
+    font-weight: normal!important;
+    font-size: 14px!important;
+    text-align: left;
+  }
+  .input-grp {
+    position: relative;
+    margin-bottom: 30px;
+    input {
+      width: 100%;
+      height: 30px;
+      color: #7b7b7b;
+      border: 1px solid #aaa;
+      box-sizing: border-box;
+      padding: 0 8px;
+    }
+    .tip {
+      color: #ccc;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      line-height: 14px!important;
+      cursor: auto;
+    }
+  }
+  .btns {
+    position: relative;
+    .error-tip {
+      position: absolute;
+      width: 100%;
+      color: #DE3418;
+      top: -28px;
+      text-align: left;
+      font-size: 10px;
+    }
+    .btn1 {
+      width: 100px;
+      height: 32px;
+      line-height: 32px;
+      color: #fff;
+      background: #222;
+      display: inline-block;
+      text-align: center;
+      box-sizing: border-box;
+      float: left;
+      &.btn1-white {
+        float: right;
+        background: #fff;
+        border: 1px solid #222;
+        color: #222;
+      }
+    }
+  }
+}

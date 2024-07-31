@@ -1,0 +1,17 @@
+.image-sort-action-bar {
+    display: inline-block;
+
+    .btn-white {
+        font-size: 14px;
+        font-weight: normal;
+        padding: 12px 9px;
+        color: #3a3a3a;
+        border-radius: initial;
+        border: none;
+
+        .icon.caret {
+            border-color: #3a3a3a transparent transparent;
+            margin-left: #3a3a3a;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>close</title>
+    <g id="全局样式" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-564.000000, -895.000000)">
+            <g id="编组" transform="translate(560.000000, 891.000000)">
+                <path d="M16,0 L16,16 L0,16 L0,0 L16,0 Z" id="矩形" opacity="0.600000024"></path>
+                <polygon id="Vector-(Stroke)" fill-opacity="0.9" fill="#ffffff" points="4.00484467 4.92412162 4.92408347 4.00488281 7.99999809 7.08079767 11.0759125 4.00488281 11.9951515 4.92412162 8.91923666 8.00003624 11.9951515 11.0759506 11.0759125 11.9951897 7.99999809 8.91927481 4.92408347 11.9951897 4.00484467 11.0759506 7.08075953 8.00003624"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

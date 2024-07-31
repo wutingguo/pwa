@@ -1,0 +1,116 @@
+.shipping-methods-wrap {
+  .shipping-header-topic {
+    font-weight: 500;
+    &::before {
+      content: '2' !important;
+    }
+  }
+  .shipping-methods-content {
+    padding: 32px 40px;
+    position: relative;
+    .methods-items {
+      .method-item {
+        min-width: 9.23rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-right: 4.96rem;
+        cursor: pointer;
+        &:nth-child(2) {
+          margin-right: 0;
+        }
+        .method {
+          display: flex;
+          justify-content: space-between;
+          .method-radio {
+            display: flex;
+            align-items: center;
+            .icon {
+              width: 14px;
+              height: 14px;
+              background-size: 14px 14px;
+              margin-right: 12px;
+            }
+            .text {
+              font-size: 14px;
+            }
+          }
+          .method-cost {
+            display: flex;
+            height: 25px;
+            align-items: center;
+            img {
+              width: 25px;
+              margin-left: 12px;
+            }
+          }
+        }
+        .method-desc {
+          .method-describe {
+            color: #7b7b7b;
+            margin-top: 4px;
+            padding-left: 26px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .method-arrival-estimate {
+            margin-top: 24px;
+            padding-left: 26px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .methods-wrap {
+        display: flex;
+        justify-content: left;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #d6d6d6;
+        position: relative;
+        flex-wrap: wrap;
+        .holiday-message {
+          color: #de3418;
+          font-size: 12px;
+          font-style: italic;
+          position: absolute;
+          bottom: 10px;
+          left: 26px;
+        }
+        .method-item{
+          margin-bottom: 25px;
+        }
+      }
+      .drop-ship-service {
+        display: flex;
+        padding-top: 30px;
+        height: 25px;
+        .drop-ship-checkbox {
+          display: flex;
+          align-items: center;
+          height: 24px;
+          font-size: 14px;
+          color: #7b7b7b;
+          input[type='checkbox'] {
+            -webkit-appearance: checkbox;
+          }
+          .checkbox-name {
+            margin-left: 12px;
+            font-size: 500;
+          }
+        }
+        .method-checkbox {
+          display: flex;
+          .icon {
+            filter: unset;
+          }
+        }
+        .drop-service-cost {
+          font-weight: 500;
+          margin-left: 1.67rem;
+        }
+      }
+    }
+  }
+}

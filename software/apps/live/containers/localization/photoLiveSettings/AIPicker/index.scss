@@ -1,0 +1,127 @@
+.AI__picker__container {
+  padding-top: 40px;
+  padding-bottom: 100px;
+
+  .AI__picker__content {
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 18px;
+      font-weight: 600;
+      color: #222;
+      line-height: 18px;
+      margin-top: 32px;
+      width: 100%;
+      &.switch {
+        font-size: 16px;
+        font-weight: 400;
+        color: #222;
+        line-height: 16px;
+        margin-top: 0;
+        justify-content: flex-start;
+        .label {
+          margin-right: 6px;
+        }
+        .switch-box .switch-label {
+          margin-bottom: 0;
+        }
+      }
+      .rc-checkbox {
+        margin-right: 0;
+      }
+    }
+
+    .AI__picker__tips {
+      margin-top: 16px;
+      p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        color: #7b7b7b;
+        line-height: 16px;
+        &:first-child {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .AI__picker__setting {
+      margin-top: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #222;
+      line-height: 16px;
+      width: 340px;
+
+      .header-title {
+        width: 100%;
+        display: flex;
+        padding-bottom: 10px;
+        justify-content: space-between;
+        border-bottom: 1px solid #222;
+      }
+    }
+
+    .item-content {
+      margin-top: 16px;
+      width: 100%;
+      padding: 20px;
+      background-color: #f6f6f6;
+      font-weight: 400;
+      font-size: 14px;
+      color: #222;
+      line-height: 14px;
+      box-sizing: border-box;
+
+      p {
+        margin: 0 0 20px 0;
+      }
+
+      .rc-checkbox {
+        margin-right: 8px;
+        .rc-checkbox-inner {
+          transform: scale(0.875);
+        }
+      }
+
+      .radio_box {
+        margin-right: 40px;
+      }
+
+      .commonLabel {
+        display: flex;
+        .common-select {
+          width: 108px;
+          margin: -4px 4px 0;
+          &.contrast-range {
+            width: 80px;
+          }
+
+          .Select-control {
+            height: 24px;
+            border-radius: 0;
+            .Select-placeholder,
+            .Select-value {
+              line-height: 24px;
+            }
+            .Select-input {
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .AI__picker__footer {
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 204px;
+    background-color: #fff;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 76px;
+  }
+}

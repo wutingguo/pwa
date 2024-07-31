@@ -1,0 +1,19 @@
+$color-3A: #3A3A3A;
+
+.title {
+  height: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  color: $color-3A;
+  white-space: nowrap;
+}
+
+.sub-title {
+  white-space: nowrap;
+  height: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 14px;
+  color: $color-3A;
+}

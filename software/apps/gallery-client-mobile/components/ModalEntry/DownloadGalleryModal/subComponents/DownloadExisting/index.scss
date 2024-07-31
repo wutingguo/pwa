@@ -1,0 +1,29 @@
+.download-existing-container {
+  display: flex;
+  flex-direction: column;
+  .download-existing-title {
+    height: 36px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #3A3A3A;
+    line-height: 36px;
+  }
+  .download-existing-desc {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #3A3A3A;
+    line-height: 40px;
+  }
+  .download-existing-btn-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    .download-existing-btn {
+      width: 280px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 22px;
+    }
+  }
+}

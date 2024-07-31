@@ -1,0 +1,64 @@
+.AIRetoucherWrapper {
+  .content {
+    .button {
+      width: 100px;
+      height: 32px;
+      line-height: 32px;
+    }
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 0;
+      .label {
+        font-family: PingFangSC-Regular, PingFang SC;
+        color: #222222;
+        font-weight: 400;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      .switch-box {
+        margin-right: 75px;
+        .switch-label {
+          margin-bottom: 0px;
+        }
+      }
+      .button {
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+  .retouchControlsWrapper {
+    .retouchModified {
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;      
+      background: #F6F6F6;
+      padding: 20px;
+      margin-bottom: 10px;
+      max-width: 600px;
+      height: 60px;
+      .label {
+        color: #7B7B7B;
+        font-weight: 400;
+        font-size: 16px;
+        margin-right: 135px;
+        width: 100px;
+      }
+      .adjustRetouch {
+        width: 150px;
+        .Select-control {
+          cursor: pointer;
+          background: transparent;
+          border: 0;
+          box-shadow: none;
+          .Select-input {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}

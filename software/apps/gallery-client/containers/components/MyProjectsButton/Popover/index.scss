@@ -1,0 +1,59 @@
+.print-store-popover {
+  & > * {
+    box-sizing: border-box;
+  }
+  position: absolute;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: 30px;
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: rotate(135deg);
+    // height: 0;
+    // width: 0;
+    // border-style: solid;
+    // transition: 0.3s;
+    // will-change: opacity;
+    // left: calc(50% - 6px);
+    // bottom: calc(100% + 12px - 5px);
+    // border-width: 6px 6px 0 6px;
+    // border-color: #fff transparent transparent transparent;
+    // display: block;
+    // position
+    // transform: translateY(${offset.y || 0})
+  }
+
+  &__inner {
+    position: relative;
+    background-color: #fff;
+    min-width: 100px;
+    min-height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      // background-color: #fff;
+      position: absolute;
+      // right: 30px;
+      // top: -2.1px;
+      // display: block;
+      // height: 2.1px;
+      // width: 10px;
+      right: 29px;
+      top: -6px;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      border-width: 0 6px 6px 6px;
+      border-color: transparent transparent #fff transparent;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.image_operator_overlay {
+    background: #fff;
+
+    .rc-tooltip-content {
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.14);
+
+        .rc-tooltip-arrow {
+            border-bottom-color: #fff;
+
+        }
+
+        .rc-tooltip-inner {
+            background: #fff;
+
+            .overlay_menu {
+                color: #3a3a3a;
+                .overlay_item {
+                    display: flex;
+                    align-items: center;
+                    padding: 4px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    &:hover {
+                        background-color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+
+}

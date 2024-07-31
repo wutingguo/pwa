@@ -1,0 +1,135 @@
+.addRule {
+    .ruleContainer {
+        width: fit-content;
+        min-width: 7.92rem;
+        background: #F6F6F6;
+        padding: 0.83rem;
+        box-sizing: border-box;
+
+        .p1 {
+            font-size: 0.38rem;
+            font-weight: 400;
+            color: #222222;
+        }
+
+        .p2 {
+            font-size: 0.38rem;
+            font-weight: 400;
+            color: #0077CC;
+            cursor: pointer;
+        }
+
+        .p3 {
+            font-size: 0.29rem;
+            font-weight: 400;
+            color: #7B7B7B;
+        }
+
+        .p4 {
+            margin-left: 0.24rem;
+        }
+
+        .p5 {
+            // margin-bottom: 0.33rem;
+            font-size: 0.29rem;
+            font-weight: 400;
+            color: #7B7B7B;
+        }
+
+        .p6 {
+            font-size: 0.29rem;
+            font-weight: 400;
+            color: #222222;
+        }
+
+        .comboList {
+            border-radius: 0.08rem;
+            border: 0.02rem solid #222222;
+            justify-content: flex-start;
+            display: flex;
+            padding-left: 0.42rem;
+            padding-right: 0.77rem;
+            box-sizing: border-box;
+            font-size: 0.29rem;
+            font-weight: 400;
+            color: #222222;
+            padding-bottom: 0.20rem;
+            padding-top: 0.10rem;
+            margin-bottom: 0.21rem;
+
+            div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: baseline;
+                flex-wrap: nowrap;
+            }
+
+            .comboListPrice {
+                // flex-grow: 1;
+                // width: 50%;
+
+                // div {
+                //     flex-shrink: 0;
+                // }
+            }
+        }
+
+        .payWay {
+            .payWayTitle {
+                font-weight: 400;
+                font-size: 0.29rem;
+                color: #7B7B7B;
+                margin-top: 0.79rem;
+            }
+
+            .payWayDesc {
+                font-weight: 400;
+                font-size: 0.25rem;
+                color: #A6A6A6;
+                margin-top: 0.17rem;
+                margin-bottom: 0.48rem;
+
+                a {
+                    text-decoration: none;
+                    color: #0077CC;
+                }
+            }
+
+            .payWayList {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-weight: 400;
+                font-size: 0.29rem;
+                color: #3A3A3A;
+
+                &>div {
+                    display: flex;
+                    align-items: center;
+
+                    .fa-icon .fa {
+                        width: 0.63rem;
+                        height: 0.63rem;
+                        margin-right: 0.12rem;
+                    }
+                }
+
+                .offLine {
+                    margin-right: 0.83rem;
+                }
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .boldSize {
+        font-size: 0.5rem;
+        color: #222222;
+        font-style: italic;
+        margin: 0 0.1rem;
+    }
+}

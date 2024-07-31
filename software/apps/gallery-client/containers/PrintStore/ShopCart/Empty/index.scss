@@ -1,0 +1,28 @@
+.empty-shopping-cart-container {
+  color: #3a3a3a;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  text-align: center;
+  .empty-shopping-cart-title {
+    font-size: 34px;
+  }
+  .empty-shopping-cart-message {
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .empty-shopping-cart-button-container {
+    display: block;
+    margin-top: 60px;
+
+    .empty-shopping-cart-button {
+      padding: 0 8px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}

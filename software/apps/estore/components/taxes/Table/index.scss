@@ -1,0 +1,81 @@
+.store-tax-table {
+  .col {
+    &-1 {
+      width: 450px;
+    }
+    &-2 {
+      text-align: center;
+      width: 150px;
+    }
+    &-3 {
+      text-align: center;
+      width: 250px;
+    }
+    &-4 {
+      text-align: center;
+      width: 150px;
+    }
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    height: 60px;
+  }
+
+  .store-tax-table__header {
+    background: #f9f9f9;
+    &-cell {
+      height: 16px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #3a3a3a;
+      line-height: 19px;
+    }
+  }
+  .store-tax-table__item {
+    background: #fff;
+    border-bottom: solid 1px #e5e5e5;
+
+    &-cell {
+      height: 14px;
+      font-size: 14px;
+      font-weight: normal;
+      color: #3a3a3a;
+      line-height: 17px;
+    }
+  }
+
+  .store-tax-table__multi-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #e5e5e5;
+    &__title {
+      font-size: 14px;
+      font-weight: normal;
+      color: #3a3a3a;
+      line-height: 17px;
+    }
+    &__sub-row {
+      &-cell {
+        height: 14px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #3a3a3a;
+        line-height: 17px;
+      }
+    }
+  }
+
+  .store-tax-table-actions {
+    img {
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

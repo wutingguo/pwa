@@ -1,0 +1,14 @@
+.dateBox {
+    // position: relative;
+
+    .horizontal {
+        width: 3.17rem;
+        flex: none !important;
+    }
+
+    .date-picker-container {
+        position: absolute;
+        max-width: none;
+        z-index: 99;
+    }
+}

@@ -1,0 +1,149 @@
+.slide-show-collection-detail-setting {
+    .content {
+        .setting-head {
+            color: #3A3A3A;
+            font-size: 26px;
+            font-weight: normal;
+            border-bottom: 1px solid #D8D8D8;
+            padding-bottom: 8px;
+        }
+
+        .download-status {
+            &-text {
+                font-size: 18px;
+                color: #3A3A3A;
+                font-weight: normal;
+                margin-top: 39px;
+            }
+
+            .trun-on-off {
+                margin-top: 24px;
+            }
+
+            .down-tips-info {
+                // color: red;
+                margin-top: 12px;
+                color: #7b7b7b;
+                font-size: 12px;
+            }
+
+            .download-about-wrap {
+                padding-left: 39px;
+                // border-left: 1px solid #D8D8D8;
+                border-left: dashed #d8d8d8 1px;
+
+            }
+
+            .selceted-wrap {
+                &-top {
+
+
+                    margin-top: 28px;
+
+                    .size-text {
+                        font-size: 14px;
+                        color: #3A3A3A;
+
+                    }
+
+                    .select-content {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 288px;
+                        height: 33px;
+                        background: #D8D8D8;
+                        color: #3A3A3A;
+                        margin-top: 20px;
+                        border-left: 1px solid #D8D8D8;
+
+                        &-left {
+                            display: flex;
+                            align-items: center;
+
+                            .icon {
+                                width: 14px;
+                                height: 12px;
+                                // background: red;
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                background-size: cover;
+                                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAFKADAAQAAAABAAAAEgAAAAA9nQVdAAAB80lEQVQ4EbVUTUtCQRR9Hxmv0AcSRELRogjCaFEbe34k0SqIKLCiXRC1iWoRLYKgbb+gRURtQkohqFWLTPBjl+CiICgQQn9AWMHzqZ0Rr4zhC0oaGM7cc+eeOXPfqCg0OQKBQFsulwuWy2UPpPbkJvUEu91+CLEl6LRjjknNCHq93kWIrZCGKIopkYLfoqZpfahJYarV2jfgyJ8com+tcHPOiQmIV5PJ5MufBPERDnDV0aozQZKko0QiwQ4QJCRE9GLY7XbbaMNP6PF4plGzRXvg7MHhcGxSLGHDabFYTIN48vv9Q5RohMh3l0qlEy73AXfzoVDokzh25TkW4FSHruu3Pp9vkJI8om9yoVAIgusgHu42YrHYI8UMmeAZR3TCbQSuBziussxms/s4lD1eGkH07ZgCQslisawjCBOBoi5cK4Lr9RMH1xNY71IMfIa7NS6uLSvvEMUtuM4FxGYpg4JXWZbHFUV5x0izg6o5HX3T4vH4Pe3lsfJsotGo4XQ6FyByRUkI9BiGcZfP59lBJMaeyI6ZGKut+6WwB4s3dgmBKRLmkR2Ivs3w3Pd1xSGR+Py6qqrsq98QR8haYLValyk2wzqHtAk9VdDTazidZBzEiph+XDVOe8yw4d9XJpMxXC5XGP3rhZANcxtatf6aif0L/wX1oLwmDhmC+wAAAABJRU5ErkJggg==);
+                            }
+
+                            .name {}
+                        }
+
+                        &-right {
+                            margin-right: 10px;
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+
+                &-bot {
+                    color: #787878;
+                    font-size: 12px;
+                    // padding-left: 30px;
+                    margin-top: 28px;
+                }
+            }
+
+
+            .selceted-wrap-pin {
+                &-top {
+
+
+                    margin-top: 28px;
+
+                    .size-text {
+                        font-size: 14px;
+                        color: #3A3A3A;
+
+                    }
+
+                    .select-content {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 288px;
+                        height: 33px;
+                        background: #D8D8D8;
+                        color: #3A3A3A;
+                        margin-top: 20px;
+                        border-left: 1px solid #D8D8D8;
+
+                        &-left {
+                            display: flex;
+                            align-items: center;
+                            .name {
+                                
+                            }
+                           
+
+                            .pin{
+                                margin-left: 10px;
+                            }
+                        }
+
+                        &-right {
+                            margin-right: 10px;
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+
+                &-bot {
+                    color: #787878;
+                    font-size: 12px;
+                    // padding-left: 30px;
+                    margin-top: 28px;
+                }
+            }
+
+        }
+    }
+
+}

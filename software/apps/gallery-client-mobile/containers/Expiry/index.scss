@@ -1,0 +1,21 @@
+.main-container-expiry {
+  .page-wrap {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img{
+      width: 86px;
+    }
+
+    .text {
+      font-size: 34px;
+      font-weight: 300;
+      color: #3a3a3a;
+      margin-top: 96px;
+      width: 600px;
+    }
+  }
+}

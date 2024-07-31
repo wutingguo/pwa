@@ -1,0 +1,14 @@
+.editor-global-action-bar {
+  .collection-detail-header-left {
+    display: flex;
+  }
+  .photo-detail-global-action-bar-title {
+    max-width: 6rem;
+  }
+  &-img-only, &-show-filename {
+    margin-left: 0.33rem !important;
+    i {
+      padding: 0 !important;
+    }
+  }
+}

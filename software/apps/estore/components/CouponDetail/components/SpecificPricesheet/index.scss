@@ -1,0 +1,101 @@
+.SpecificPricesheet {
+  padding-top: 33px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  box-sizing: border-box;
+  width: 570px;
+
+  .SpecificPricesheetBox {
+    border-left: 1px dashed #DCDCDC;
+    padding-left: 30px;
+
+    .dropdown {
+      display: block;
+
+      .dropdown-menu {
+        width: 100%;
+      }
+
+      .drop-down-content {
+        max-height: 260px;
+        height: fit-content;
+        overflow-y: auto;
+      }
+
+      .dropdownBox {
+        input {
+          height: 40px;
+          font-weight: 400;
+          font-size: 14px;
+          color: #3A3A3A;
+        }
+
+        .fa-icon {
+          top: 9px;
+        }
+      }
+    }
+
+    .addBtn {
+      font-weight: normal;
+      font-size: 14px;
+      color: #0077CC;
+      cursor: pointer;
+    }
+
+    .listBox {
+      overflow-y: auto;
+      max-height: 230px;
+      margin-top: 24px;
+
+      .printList {
+        padding-bottom: 24px;
+        justify-content: space-between;
+
+        .plLeft {
+          .imgBox {
+            width: 50px;
+            height: 50px;
+            background-color: #eee;
+
+            img {
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+
+          .printName {
+            font-weight: 500;
+            font-size: 14px;
+            color: #3A3A3A;
+            margin-left: 16px;
+          }
+
+          .printDesc {
+            font-weight: normal;
+            font-size: 14px;
+            color: rgba(58, 58, 58, 0.4);
+            margin-left: 16px;
+          }
+        }
+
+        .plRight {
+          width: 55px;
+          justify-content: space-between;
+
+          .edit {
+            .fa {
+              width: 12px;
+            }
+          }
+
+          .delete {
+            .fa {
+              width: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

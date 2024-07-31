@@ -1,0 +1,214 @@
+.gllery-collection-detail-settings-download {
+  width: calc(100% - 7.5rem);
+  min-width: 340px;
+  height: 100%;
+  flex: 1;
+
+  .content {
+    height: calc(100% - 40px) !important;
+    padding-left: 1.65rem;
+    padding-right: 0.83rem;
+    box-sizing: content-box;
+    color: #3a3a3a;
+    overflow-y: hidden;
+
+    .download-setting-header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #d8d8d8;
+
+      .collection-detail-header-wrapper {
+        border: none;
+      }
+
+      .collection-detail-header-activities {
+        height: 40px;
+        background: #f6f6f6;
+        display: flex;
+        justify-content: center;
+
+        .text {
+          color: #222222;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .tab-layout {
+      display: flex;
+      color: #7b7b7b;
+      font-weight: 500;
+      font-size: 18px;
+      height: 38px;
+      margin-top: 41px;
+      border-bottom: 1px solid #d8d8d8;
+
+      .tab-item {
+        display: block;
+        margin-right: 60px;
+        cursor: pointer;
+
+        &.active {
+          color: #3a3a3a;
+          border-bottom: 2px solid #3a3a3a;
+        }
+      }
+    }
+
+    .common-download-settings-container {
+      height: calc(100% - 43px - 0.83rem);
+      overflow-y: scroll;
+
+      .setting-group {
+        padding-bottom: 60px;
+
+        &.resolution-container {
+          padding-bottom: 0;
+          display: flex;
+          height: 30px;
+
+          .checkbox-container {
+            margin-right: 40px;
+            cursor: pointer;
+
+            // .x-checkbox {
+            //   pointer-events: none;
+            // }
+            .options {
+              display: inline-block;
+            }
+          }
+        }
+
+        .switch-container {
+          margin-bottom: 48px;
+
+          .pin-content-container {
+            width: 463px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            box-sizing: border-box;
+            background-color: #f6f6f6;
+            color: #7b7b7b;
+            font-size: 12px;
+
+            .pin {
+              font-size: 14px;
+              color: #3a3a3a;
+              font-weight: 500;
+              margin-left: 3px;
+              flex-grow: 1;
+            }
+
+            .reset-pin-btn {
+              display: inline-block;
+              height: 100%;
+              line-height: 40px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .title {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 16px;
+        }
+
+        .desc {
+          font-size: 12px;
+          color: #7b7b7b;
+          margin-top: 16px;
+        }
+
+        .sub-item-wrapper {
+          padding-left: 39px;
+          border-left: dashed #d8d8d8 1px;
+          box-sizing: border-box;
+
+          &.hidden {
+            display: none;
+          }
+
+          &.photoSize {
+            display: flex;
+
+            .setting-group {
+              margin-right: 20px;
+            }
+          }
+
+          .setting-group {
+            padding: 0;
+          }
+
+          .sub-item-wrapper {
+            border: none;
+            padding: 0;
+          }
+
+          .title {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .advanced-options-container {
+      margin-top: 40px;
+      height: calc(100% - 43px - 5.3125rem);
+      overflow-y: scroll;
+
+      .download-sets-container {
+        color: #3a3a3a;
+        font-size: 14px;
+
+        .download-sets-title {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 16px;
+        }
+
+        .set-item-list {
+          max-height: 400px;
+          overflow-y: scroll;
+          display: inline-block;
+          padding-right: 20px;
+        }
+
+        .set-item {
+          display: flex;
+          align-items: center;
+          padding: 0 16px;
+          background-color: #f6f6f6;
+          width: 610px;
+          height: 60px;
+          margin-bottom: 8px;
+          box-sizing: border-box;
+
+          .x-radio {
+            margin-left: 40px;
+          }
+
+          .set-name {
+            display: inline-block;
+            flex-grow: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 0;
+          }
+        }
+
+        .desc {
+          color: #7b7b7b;
+          font-size: 12px;
+          width: 610px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+# dependencies
+/node_modules
+/software/dist
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+
+/resource
+/designer
+
+# local settings
+/.vscode
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.cache
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.idea
+package-lock.json
+test.js
+.v
+.install
+/saas-portal
+/saas-portal-zno
+
+whistle.log
+.package.cache.json
+/deploy
+._*

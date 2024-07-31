@@ -1,0 +1,61 @@
+.productOptionWrapper {
+  .selectionTitle {
+    display: flex;
+    justify-content: space-between;
+    .addProductOptions {
+      cursor: pointer;
+      color: #0077CC;
+      font-size: 14px;
+      &.disabled {
+        cursor: no-drop;
+        color: #7b7b7b;
+      }
+    }
+  }
+  .tips {
+    font-weight: normal;
+    color: #3A3A3A;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .optWrapper {
+    display: flex;
+    justify-content: space-between;
+    .content {
+      display: flex;
+      margin-bottom: 30px;
+      .label {
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #3A3A3A;
+        font-weight: 500;
+        font-size: 14px;
+        margin-right: 20px;
+        min-width: 120px;
+        width: 120px;
+      }
+      .values {
+        font-weight: normal;
+        color: #3A3A3A;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+    .editWrapper {
+      display: flex;
+      margin-left: 20px;
+      img {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        margin-right: 25px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

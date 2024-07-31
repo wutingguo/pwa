@@ -1,0 +1,32 @@
+
+
+.watermark_tip_modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+    .watermark_tip_content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 590px;
+        .watermark_tip_img {
+            width: 100%;
+        }
+
+        .watermark_tip_close {
+            position: absolute;
+            top: 30px;
+            right: 38px;
+            height: 28px;
+            width: 28px;
+            cursor: pointer;
+        }
+    }
+}

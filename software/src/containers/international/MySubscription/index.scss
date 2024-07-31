@@ -1,0 +1,135 @@
+.my-subscription-page {
+  padding: 128px;
+  background: #fff;
+  font-size: 13px;
+
+  .my-subscription-page-content {
+    width: 30rem;
+    margin: 0 auto;
+
+    .subscription-header {
+      position: relative;
+
+      .upgrade-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0 40px;
+      }
+    }
+
+    .my-subscription-title {
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+
+    .sub-title {
+      font-size: 20px;
+    }
+
+    .title-desc {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    .subscription-form {
+      margin-top: 16px;
+
+      .subscription-item-line {
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 60px;
+
+        &.subscription-form-header {
+          background: #F6F6F6;
+          line-height: 48px;
+          font-weight: 500;
+        }
+
+        &.none-any-plan {
+          text-align: center;
+          display: block;
+          padding: 45px 60px;
+          color: #7B7B7B;
+        }
+
+        .subscription-item {
+          &.plan_type {
+            display: flex;
+            align-items: center;
+
+            .gallery-icon {
+              width: 30px;
+              height: 30px;
+              margin-right: 16px;
+            }
+          }
+
+          .storage-info {
+            width: 70%;
+
+            .storage-desc,
+            .storage-precent {
+              line-height: 20px;
+            }
+          }
+        }
+
+        >div {
+          width: 30%;
+        }
+
+        >div:nth-of-type(4) {
+          width: 130px;
+          text-align: right;
+        }
+      }
+
+      .subscription-form-total {
+        display: flex;
+        padding: 0 60px;
+        line-height: 48px;
+        font-weight: 500;
+        background: #E8E8E8;
+        justify-content: space-between;
+
+        .grow-full {
+          flex-grow: 9;
+          text-align: center;
+        }
+      }
+    }
+    .guide-content {
+      height: 14px;
+      font-size: 14px;
+      font-family: Gotham-Book, Gotham;
+      font-weight: normal;
+      color: #393939;
+      line-height: 17px;
+      margin-top: 60px;
+
+      &::before {
+        content: '';
+        display: block;
+        border: 1px solid #D6D6D6;
+        margin-bottom: 60px;
+        width: 200%;
+        transform: scale(0.5);
+        position: relative;
+        left: -50%;
+      }
+    }
+  }
+
+  .zd-nav {
+    color: #0077CC;
+
+    &.default {
+      color: #000;
+    }
+  }
+
+}

@@ -1,0 +1,32 @@
+.download-msg-wrap {
+  width: 480px;
+
+  .modal-body{
+    margin: 20px 0;
+    .desc-content{
+      color: #3A3A3A;
+      font-size: 14px;
+      font-weight: normal;
+      &.red-text{
+        color: red;
+      }
+
+    }
+    .btn-ok{
+      width: 121px;
+      height: 36px;
+      background: #000;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      line-height: 36px;
+      margin: 63px auto 0;
+      cursor: pointer;
+
+    }
+
+  }
+
+  
+}

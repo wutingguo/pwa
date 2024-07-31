@@ -1,0 +1,24 @@
+.cxPopover{
+    .dropdown{
+        .dropdown-menu{
+            top: calc(100% - 9px)!important;
+            .drop-down-content{
+                li>a{
+                    padding: 4px 8px;
+                    height: 30px;
+                    .fa-icon{
+                        font-size: 12px!important;
+                    }
+                }
+                li:first-child>a{
+                    border-top-right-radius: 0px;
+                    border-top-left-radius: 0px;
+                }
+                li:last-child>a{
+                    border-bottom-right-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                }
+            }
+        }
+    }
+}

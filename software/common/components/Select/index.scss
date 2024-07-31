@@ -1,0 +1,14 @@
+.pwa-select-container {
+  .pwa-select {
+    .Select-control {
+      border-radius: unset;
+      .Select-arrow-zone {
+        vertical-align: unset;
+        .Select-arrow {
+          vertical-align: sub;
+          border-color: #3a3a3a transparent transparent;
+        }
+      }
+    }
+  }
+}

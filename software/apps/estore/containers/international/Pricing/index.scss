@@ -1,0 +1,323 @@
+.estore-pricing-wrapper {
+    padding: 40px;
+    height: 100%;
+    min-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    .estore-pricing-container {
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .back-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                .back-img {
+                    background-image: url("./icons/Back.png");
+                    width: 25px;
+                    height: 15px;
+                    background-size: 25px 15px;
+                    background-repeat: no-repeat;
+                }
+
+                .back-text {
+                    font-size: 20px;                    
+                    font-weight: 500;
+                    color: #3A3A3A;
+                    line-height: 24px;
+                    margin-left: 20px;
+                }
+            }
+
+            .save-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 130px;
+                height: 41px;
+                background: #222222;
+                font-size: 16px;
+                font-weight: 500;
+                color: #FFFFFF;
+                line-height: 19px;
+                cursor: pointer;
+                &.disabled {
+                    opacity: .35;
+                    cursor: auto;
+                    pointer-events: none;
+                  }
+            }
+        }
+
+        .product-content{
+            display: flex;
+            justify-content: center;
+        .product-container {
+            overflow-y: auto;
+            width: 1100px;
+            .section-container {
+                display: flex;
+                flex-direction: column;
+                padding: 40px 0px;
+
+                .title-container {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+
+                    .section-btns {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .info-container {
+                    display: flex;
+                    margin-top: 40px;
+                    align-items: center;
+
+                    .info-text {
+                        margin-left: 35px;
+                    }
+
+                    .info-lab-container {
+                        display: contents;
+
+                        .info-lab {
+                            margin-left: 150px;
+                        }
+
+                        .select-container {
+                            width: 220px;
+                            margin-left: 32px;
+                        }
+                    }
+
+                }
+
+                .prompt-cont{
+                    margin-top: 32px;
+                    display: flex;
+                    .prompt {
+                        width: 12px;
+                        height: 15px;
+                    }
+                    .info-text {
+                        margin-top: -3px;
+                        margin-left: 15px;
+                        color: #7B7B7B;
+                        line-height: 22px;
+                    }
+                }
+
+                .options-container {
+                    margin-top: 24px;
+
+                    &.top {
+                        margin-top: 50px;
+                    }
+
+                    .grid {
+                        // display: table;
+                        width: 100%;
+                        table-layout: auto;
+
+                        // Add `.col` for the table cells, or columns
+                        .row {
+                            display: table-row;
+                        }
+
+                        .cell {
+                            display: table-cell;
+                            padding: 16px 40px 16px 0px;
+                        }
+                    }
+
+                    .pricing {
+                        display: flex;
+                        min-width: 1000px;
+                        .pricing-title {
+                            font-size: 14px;
+                            color: #3A3A3A;
+                            font-weight: 500;
+                            width: 100px;
+                        }
+
+                        .pricing-title-container {
+                            display: flex;
+                            justify-content: space-around;
+                            margin-left: 230px;
+
+                            .a {
+                                display: flex;
+                                justify-content: center;
+                                width: 100px;
+                                margin-left: 100px;
+                            }
+
+                            .b {
+                                display: flex;
+                                justify-content: center;
+                                width: 100px;
+                                margin-left: 100px;
+                            }
+
+                            .c {
+                                display: flex;
+                                justify-content: center;
+                                width: 130px;
+                                margin-left: 100px;
+                            }
+                        }
+
+
+                        .self-pricing-title-container {
+                            display: flex;
+                            justify-content: space-around;
+                            margin-left: 333px;
+
+                            .price {
+                                display: flex;
+                                justify-content: center;
+                                width: 130px;
+                                margin-left: 100px;
+                            }
+
+                            .shipping {
+                                display: flex;
+                                justify-content: center;
+                                margin-left: 115px;
+                                width: 200px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                .ReactCollapse--collapse {
+                    margin-left: 30px;
+                    transition: height 200ms;
+                }
+
+                .light {
+                    width: 15px;
+                    height: 20px;
+                    margin-left: 10px;
+                    margin-right: 15px;
+                }
+
+                &.extra {
+                    padding: 24px 0px;
+                    flex-direction: row;
+                    align-items: center;
+                }
+
+                &.border-bottom {
+                    border-bottom: 1px solid #d8d8d8;
+                }
+            }
+
+            .pricing-container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
+                border-bottom: 1px solid #d8d8d8;
+                height: 475px;
+                align-items: center;
+            }
+
+            .section-btn {
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &.check {
+                    margin-right: 38px;
+                    .tips-alert {
+                        .estore-alert-tip__image-container {
+                            position: relative;
+                            width: 15px;
+                            top: 2px;
+                            height: 15px;
+                            margin-left: 7px;
+                        }
+                    }
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                        background-size: 20px 20px; 
+                    }
+                }
+                .icon {
+                    width: 12px;
+                    height: 12px;
+                    background-size: 12px 12px;
+                    background-repeat: no-repeat;
+                    display: block;
+                    &.info {
+                        background-image: url("./icons/ProductInfo.png");
+                    }
+
+                    &.option {
+                        background-image: url("./icons/ManageOptions.png");
+                    }
+
+                    &.markup {
+                        width: 7px;
+                        background-size: 7px 12px;
+                        background-image: url("./icons/ApplyBulkMarkup.png");
+                    }
+
+                    &.collaspe {
+                        margin-left: 38px;
+                        width: 8px;
+                        background-size: 8px 12px;
+                        background-image: url("./icons/CollaspeAll.png");
+                    }
+
+                    &.active {
+                        rotate: 90deg;
+                    }
+                }
+
+                .text {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #0077CC;
+                    margin-left: 7px;
+                }
+            }
+
+            .text {
+                font-size: 14px;
+                color: #3A3A3A;
+                font-weight: 400;
+                &.section-title {
+                    font-size: 20px;
+                    margin-right: 5px;
+                    font-weight: 400;
+                }
+
+                &.title {
+                    font-weight: 500;
+                }
+
+                &.extra {
+                    color: #7B7B7B;
+                }
+            }
+        }
+        }
+    }
+}

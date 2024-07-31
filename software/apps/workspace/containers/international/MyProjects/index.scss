@@ -1,0 +1,338 @@
+@import '../../../styles/rem';
+
+.projects-content-wrapper-saas {
+  overflow: hidden;
+  background-color: #fff;
+
+  // .upgrade-info{
+  //   height: 80px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   border-bottom: 1px solid #E5E5E5;
+  //   &-left{
+  //     font-size: 20px;
+  //     font-weight: 500;
+  //     color: #222222;
+  //     .more-btn{
+  //       display: inline-block;
+  //       color: #058DD5;
+  //       margin-left: 10px;
+  //       cursor: pointer;
+  //     }
+
+  //   }
+  //   &-right{
+  //     width: 166px;
+  //     height: 32px;
+  //     color: white;
+  //     font-size: 16px;
+  //     font-weight: 500;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     background: #222222;
+  //     cursor: pointer;
+  //   }
+  // }
+  .my-projects-header {
+    height: 74px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .btns {
+      font-size: 14px;
+      display: flex;
+
+      .item {
+        min-width: 124px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        padding: 0 10px;
+        border: 1px solid #222222;
+        border-radius: 2px;
+        margin-left: 16px;
+        cursor: pointer;
+        color: #222222;
+
+        &.black {
+          background-color: #222222;
+          color: #ffffff;
+        }
+      }
+
+      .video-btn {
+        font-size: 14px;
+        font-weight: 500;
+        color: #0077cc;
+        line-height: 32px;
+        opacity: 1;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .my-projects-cnpage-title {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+    color: #262626;
+  }
+
+  .pagination-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: right;
+  }
+
+  .filter-container {
+    position: relative;
+    margin-top: 50px;
+
+    .group-item {
+      display: inline-block;
+      margin-right: rem(120px);
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .select-label {
+        font-size: 20px;
+      }
+
+      .select-label,
+      .select-container {
+        margin-top: 0;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .select-container {
+        margin-left: 16px;
+        width: rem(240px);
+        height: 32px;
+        line-height: 32px;
+
+        .Select-control {
+          border-radius: 0;
+          height: 32px !important;
+
+          .Select-input {
+            height: 32px;
+          }
+        }
+
+        .Select.is-focused:not(.is-open) > .Select-control {
+          border-color: #dbdbdb;
+          box-shadow: none;
+        }
+
+        .Select-value {
+          height: 32px;
+          line-height: 32px;
+          font-size: 12px;
+          padding-left: 8px;
+        }
+
+        .Select-option {
+          padding: 8px;
+          font-size: 12px;
+        }
+
+        .Select-menu-outer {
+          max-height: 500px;
+
+          .Select-menu {
+            max-height: 500px;
+
+            .Select-option {
+              height: 32px;
+              line-height: 32px;
+              padding: 0 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .search-container {
+      position: absolute;
+      display: inline-block;
+      vertical-align: middle;
+      width: rem(240px);
+      height: 32px;
+      border: 1px solid #dbdbdb;
+      right: 0;
+
+      input.search-input {
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 0 28px 0 8px;
+        border: none;
+      }
+
+      .search-icon-container {
+        position: absolute;
+        width: 28px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+      }
+
+      .search-icon {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        right: 8px;
+        top: 9px;
+      }
+    }
+
+    .search-container-with-create {
+      display: block;
+      width: rem(255px);
+      height: 32px;
+      border: 1px solid #dbdbdb;
+      float: right;
+
+      input.search-input {
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 0 28px 0 8px;
+        border: none;
+      }
+
+      .search-icon-container {
+        position: relative;
+        width: 28px;
+        height: 100%;
+        right: 0;
+        top: -300px;
+        cursor: pointer;
+      }
+
+      .search-icon {
+        width: 12px;
+        height: 12px;
+        right: -215px;
+        top: 9px;
+      }
+
+      .search-icon-container {
+        position: relative;
+        width: 28px;
+        height: 100%;
+        top: -33px;
+        left: 4.5rem;
+        cursor: pointer;
+      }
+
+      .search-icon {
+        width: 12px;
+        height: 12px;
+        margin-top: 9px;
+        margin-left: 9px;
+      }
+    }
+
+    .make-new-btn {
+      position: absolute;
+      right: 0;
+      display: inline-block;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        color: white;
+        background: #3a3a3a;
+        padding: 14px 27px;
+      }
+    }
+  }
+
+  .projects-content {
+    position: relative;
+    min-height: 500px;
+
+    &.no-border {
+      border: none;
+    }
+
+    .content-loading {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+
+      .my-projects-loading {
+        width: 100px;
+        height: 100px;
+        margin-top: 100px;
+      }
+    }
+
+    .empty-project-list {
+      padding-top: 100px;
+      font-size: 24px;
+      text-align: center;
+      color: #3a3a3a;
+    }
+
+    .empty-project-container {
+      margin-top: 120px;
+
+      .empty-tip {
+        color: #3a3a3a;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+      }
+
+      .make-new-btn {
+        // margin-top: 54px;
+        text-align: center;
+
+        a {
+          display: inline-block;
+          color: white;
+          background: #3a3a3a;
+          padding: 14px 27px;
+        }
+        .video-btn {
+          font-size: 14px;
+          font-weight: 500;
+          color: #0077cc;
+          line-height: 32px;
+          opacity: 1;
+          cursor: pointer;
+          transition: opacity 0.3s;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

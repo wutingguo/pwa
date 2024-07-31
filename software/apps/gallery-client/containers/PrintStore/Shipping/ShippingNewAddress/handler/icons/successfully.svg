@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #3a3a3a;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill: #3a3a3a;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1106" data-name="Group 1106" transform="translate(-476 -333)">
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-1" transform="translate(476 333)">
+      <circle class="cls-3" cx="25" cy="25" r="25"/>
+      <circle class="cls-4" cx="25" cy="25" r="24.25"/>
+    </g>
+    <path id="成功_1_" data-name="成功 (1)" class="cls-2" d="M92.742,176.455,89.6,178.969l12.359,11.94a71.475,71.475,0,0,1,16.968-23.042l-1.047-1.466a99.244,99.244,0,0,0-18.015,15.5Z" transform="translate(398.305 179.972)"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+
+.group_box {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.radio_box {
+  display: inline-block;
+  margin-right: 20px;
+  .rc-radio-checked {
+    .rc-radio-inner {
+      background: radial-gradient(#3a3a3a 3px, #fff 60%)
+    }
+
+    .rc-radio-inner {
+      border-color: #3a3a3a;
+    }
+  }
+
+  .rc-radio-inner {
+    border-color: #d8d8d8;
+    border-width: 2px;
+    width: 14px;
+    height: 14px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .rc-radio:hover {
+    .rc-radio-inner {
+      border-color: #3a3a3a;
+    }
+  }
+
+  .rc-radio-input:focus+.rc-radio-inner {
+    border-color: #3a3a3a;
+  }
+}

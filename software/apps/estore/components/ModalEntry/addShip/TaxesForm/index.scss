@@ -1,0 +1,29 @@
+.store-form-add-taxes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  .error{
+    color: #e92525;
+    font-size: 12px;
+  }
+  &__item {
+    &-label {
+      width: 168px;
+      height: 14px;
+      font-size: 14px;
+      font-family: 'Gotham SSm A', 'Gotham SSm B';
+      font-weight: normal;
+      color: #3a3a3a;
+      line-height: 17px;
+      margin-bottom: 16px;
+    }
+    input {
+      width: 100%;
+      height: 40px;
+      box-sizing: border-box;
+    }
+    .Select {
+      flex: 1;
+    }
+  }
+}

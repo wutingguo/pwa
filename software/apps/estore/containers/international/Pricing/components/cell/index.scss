@@ -1,0 +1,64 @@
+.estore-pricing-collapse-cell {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    .collapse-cell-title-container {
+        display: flex;
+        flex-direction: row;
+        width: 1000px;
+        align-items: center;
+        padding-top: 10px;
+        .title {
+            width: 200px;
+            .unavailable{
+                color: #DE3418;
+                font-size: 14px;
+            }
+        }
+    
+        .first-price {
+            display: flex;
+            justify-content: center;
+            width: 100px;
+            margin-left: 200px;
+        }
+    
+        .second-price {
+            display: flex;
+            justify-content: center;
+            width: 100px;
+            margin-left: 100px;
+        }
+    
+        .input-price-container {
+            width: 130px;
+            margin-left: 100px;
+            border: 1px solid #D8D8D8;
+            font-size: 14px;
+            font-weight: normal;
+            color: #3A3A3A;
+            height: 32px;
+            display: flex;
+            .price-symbol {
+                display: flex;
+                width: 20px;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .input-price {
+                text-align: right;
+                outline-style: none;
+                border: 0px;
+                width: 100px;
+            }
+        }
+    }
+    .hint{
+        display: flex;
+        justify-content: right;
+        width: 930px;
+        color: #DE3418;
+        font-size: 14px;
+    }
+}

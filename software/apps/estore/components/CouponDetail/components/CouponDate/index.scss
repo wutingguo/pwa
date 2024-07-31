@@ -1,0 +1,25 @@
+.dateBox {
+
+    // position: relative;
+    .date-picker-container {
+        position: absolute;
+        max-width: none;
+        z-index: 99;
+    }
+
+    .timeBox {
+        width: fit-content;
+        position: relative;
+
+        img {
+            right: 0.20rem;
+            top: 10px;
+            position: absolute;
+            width: 16px;
+        }
+    }
+
+    .react-calendar__tile--hasActive {
+        color: #fff;
+    }
+}

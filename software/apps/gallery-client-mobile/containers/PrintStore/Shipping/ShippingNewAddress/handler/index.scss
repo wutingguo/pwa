@@ -1,0 +1,20 @@
+.shipping-address-wrap {
+  .shipping-address-content {
+    padding: 40px;
+    .address-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      margin-bottom: 8px;
+      .detail-address {
+        margin-right: 24px;
+      }
+      .edit-address {
+        cursor: pointer;
+        font-weight: 500;
+        color: #0077CC;
+      }
+    }
+  }
+}

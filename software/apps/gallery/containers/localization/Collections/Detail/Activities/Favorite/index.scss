@@ -1,0 +1,207 @@
+@import '@resource/static/styles/public/mixin';
+
+.editor-activities-favorite-container {
+  .content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .collection-detail-header-wrapper {
+    margin-left: 1.65rem;
+    margin-right: 0.83rem;
+  }
+  .editor-activities-favorite-table-wrapper {
+    position: relative;
+    height: calc(100% - 88px);
+    padding: 0 0.83rem 0 1.65rem;
+    margin-top: 40px;
+    overflow: scroll;
+    .favorite-show-empty-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 3.75rem;
+      text-align: center;
+      font-size: 18px;
+      color: #424242;
+      img {
+      }
+    }
+    .content-loading {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      .my-projects-loading {
+        width: 100px;
+        height: 100px;
+        margin-top: 100px;
+      }
+    }
+  }
+  .editor-activities-favorite-all-table {
+    .rc-table-container {
+      text-align: left;
+      table {
+        width: 100%;
+        border-spacing: 0;
+        border: 1px solid #e8e8e8;
+      }
+      .rc-table-thead tr {
+        @include fw-medium;
+        height: 48px;
+        color: #222222;
+        background-color: #f6f6f6;
+      }
+      .rc-table-tbody {
+        @include fw-book;
+        .rc-table-row {
+          height: 80px;
+        }
+      }
+      th.rc-table-cell,
+      td.rc-table-cell {
+        min-width: 90px;
+        max-width: 200px;
+        padding: 5px 20px;
+        word-wrap: break-word;
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+    // image table cell
+    .favorite-list-image-wrapper {
+      display: flex;
+      align-items: center;
+      .favorite-list-image {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+      .favorite-list-name {
+        margin-left: 20px;
+        white-space: nowrap;
+        font-size: 14px;
+        color: #0077cc;
+        cursor: pointer;
+      }
+    }
+    // operations
+    .favorite-all-table-action {
+      display: flex;
+      justify-content: space-between;
+      width: 84px;
+      .setTable {
+        cursor: pointer;
+      }
+      .favorite-edit-icon {
+        .fa {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .favorite-more-icon {
+        margin-left: 10px;
+        .fa {
+          width: 20px;
+          height: 5px;
+        }
+      }
+      .actionbar-item {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        line-height: 18px;
+        cursor: pointer;
+        color: #222222;
+        width: 120px;
+        margin-left: -36px;
+        > img {
+          height: 19px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+
+// edit-favorite-modal-cont-wrapper
+.edit-favorite-modal-cont-wrapper {
+  width: 420px;
+  padding-top: 20px;
+  color: #3a3a3a;
+  .edit-favorite-modal-cont-item {
+    margin-bottom: 40px;
+    .edit-favorite-item-label {
+      display: block;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    .edit-favorite-item-info {
+      display: block;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+// copy-collection-modal-cont-wrapper
+.copy-collection-modal-cont-wrapper {
+  width: 320px;
+  color: #3a3a3a;
+  .copy-collection-item-label {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+}
+
+// favorite-dropdown-wrapper
+.favorite-dropdown-wrapper {
+  .dropdown-menu > li > a {
+    padding-left: 15px;
+    .fa-icon {
+      margin-right: 8px;
+    }
+    .fa-icon .fa {
+      padding: 0;
+    }
+  }
+}
+
+.favorite-dropdown-icon {
+  .fa-icon {
+    margin-left: 4px;
+  }
+}
+
+.setModalMessage {
+  display: flex;
+  justify-content: space-evenly;
+  .message {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.alreadyExportModal {
+  text-align: left;
+  .title {
+    color: #222;
+    margin-bottom: 24px;
+  }
+  .tips {
+    color: #222;
+    font-size: 14px;
+  }
+}

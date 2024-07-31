@@ -1,0 +1,88 @@
+.third-party-email-binding-form-container {
+  position: relative;
+  padding-top: 128px;
+  
+  .third-party-email-binding-form {
+    width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  
+    display: flex;
+    flex-direction: column;
+  
+    .binding-email-title-wrap {
+      width: 600px;
+      margin-left: -100px;
+      text-align: center;
+      .binding-email-title {
+        color: #333333;
+        font-size: 40px;
+        line-height: 48px;
+      }
+      .binding-email-tip {
+        color: #7b7b7b;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 24px;
+      }
+    }
+  
+    .select-currency-section {
+      margin-top: 40px;
+    }
+  
+    .text-field-container {
+      position: relative;
+      width: 100%;
+  
+      .text-field {
+        border: 1px solid #cccccc;
+        padding: 13px 15px;
+        height: 48px;
+        font-size: 15px;
+        width: 100%;
+        outline: none;
+        display: block;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        
+        &.warning-border {
+          border: 1px solid #ff0000;
+        }
+  
+        &::placeholder {
+          color: #cccccc;
+        }
+      }
+      .warning-text {
+        margin-top: 8px;
+        font-size: 12px;
+        font-style: italic;;
+        color: rgb(222,52,24);
+      }
+      &.first {
+        margin-top: 48px;
+      }
+      & + .text-field-container {
+        margin-top: 26px;
+      }
+    }
+  
+    .confirm-button {
+      padding: 16px;
+      background-color: #111111;
+      color: #ffffff;
+      font-size: 16px;
+      margin-top: 40px;
+      cursor: pointer;
+      user-select: none;
+  
+      display: block;
+      border: none;
+      &:active {
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}

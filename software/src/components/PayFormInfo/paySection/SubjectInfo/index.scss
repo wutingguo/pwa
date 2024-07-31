@@ -1,0 +1,40 @@
+.subjectInfo {
+    .dateFormBox {
+        padding-left: 0.83rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .middleText {
+            margin: 0 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+
+        .payFileCommonBox {
+            padding-left: 0;
+            width: fit-content;
+        }
+
+        .startDate,
+        .endDate {
+            label.horizontal {
+                flex: none;
+            }
+
+            div.horizontal {
+                width: 3.17rem;
+                flex: none;
+            }
+        }
+
+        .longEndDate {
+            margin-left: 1rem;
+        }
+
+        // .dateRightLabel {
+        //     position: relative;
+        //     top: -0.14rem;
+        //     margin-left: 0.3rem;
+        // }
+    }
+}

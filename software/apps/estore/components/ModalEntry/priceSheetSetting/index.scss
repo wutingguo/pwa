@@ -1,0 +1,39 @@
+.priceSheetSettingModal {
+  width: 450px;
+  .modal-title {
+    font-weight: 400 !important;
+  }
+}
+.priceSheetSettingModalContent {
+  margin-bottom: 30px;
+  .contentLabel {
+    font-weight: normal;
+    color: #3A3A3A;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .componentWrapper {
+    display: flex;
+    height: 40px;
+    input {
+      flex: 1;
+      height: 100%;
+    }
+    .Select {
+      flex: 1;
+    }
+  }
+  .errMsg {
+    color: #C20200;
+    margin-top: 10px;
+    line-height: 14px;
+    font-size: 12px;
+  }
+  .description {
+    color: #3A3A3A;
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

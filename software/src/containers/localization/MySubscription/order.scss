@@ -1,0 +1,90 @@
+@import '@resource/static/styles/public/mixin';
+
+.my-order-content {
+  // table
+  .order-detail-container {
+    height: calc(100% - 48px - 80px - 64px);
+    margin-top: 20px;
+    overflow: scroll;
+    .show-empty-content {
+      padding-top: 20px;
+      font-size: 18px;
+      text-align: center;
+      color: #424242;
+    }
+    .pagenation-container {
+      text-align: right;
+      margin-top: 20px;
+    }
+    .rc-table {
+      .rc-table-container {
+        .rc-table-thead {
+          .rc-table-cell-fix-right {
+            background-color: #F6F6F6;
+          }
+        }
+        .rc-table-tbody {
+          .rc-table-cell-fix-right {
+            background-color: #fff;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16)
+          }
+        }
+      }
+    }
+  }
+  .order-detail-table {
+    .rc-table-container {
+      text-align: left;
+      table {
+        width: 100%;
+        border-spacing: 0;
+        border: 1px solid #E8E8E8;
+        border-bottom: 0;
+      }
+      .rc-table-thead tr {
+        @include fw-medium;
+        height: 40px;
+        color: #222222;
+        background-color: #F6F6F6;
+      }
+      .rc-table-tbody {
+        @include fw-book;
+        .rc-table-row {
+          height: 50px;
+        }
+      }
+      th.rc-table-cell, td.rc-table-cell {
+        padding-left: 20px;
+        padding-right: 20px;
+        &:last-child {
+          text-align: right;
+        }
+      }
+      td.rc-table-cell {
+        border-bottom: 1px solid #E8E8E8;
+      }
+    }
+    .handleWrapper {
+      display: flex;
+      justify-content: center;
+      button {
+        cursor: pointer;
+        border: 1px solid #979797;
+        height: 22px;
+      }
+      .cancel {
+        background-color: #fff;
+        color: #222;
+        margin-right: 10px;
+      }
+      .conPay {
+        background-color: #222;
+        color: #fff;
+      }
+    }
+    .note-column {
+      padding: 24px 0;
+      box-sizing: border-box;
+    }
+  }
+}

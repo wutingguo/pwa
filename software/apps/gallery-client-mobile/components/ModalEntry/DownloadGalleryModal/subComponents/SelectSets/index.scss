@@ -1,0 +1,157 @@
+.select-sets-container {
+  .checkout--disable-item {
+    pointer-events: none !important;
+    .x-checkbox {
+      &.black-theme {
+        .icon {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .options {
+        .text {
+          height: 40px;
+          line-height: 40px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .select-sets-choose-photos {
+    margin-bottom: 40px;
+    padding-top: 12px;
+    .select-sets-choose-photos-title {
+      height: 26px;
+      font-size: 36px;
+      font-weight: 500;
+      color: #3a3a3a;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+    .select-sets-wrapper {
+      .checkout-item {
+        .x-checkbox {
+          &.black-theme {
+            .icon {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          .options {
+            .text {
+              height: 40px;
+              line-height: 40px;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .select-sets-choose-photos-desc {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+      .select-sets-choose-photos-tip {
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #222222;
+      }
+      .select-sets-choose-photos-info {
+        font-size: 24px;
+        font-weight: 300;
+        color: #222222;
+        line-height: 24px;
+        position: relative;
+        transition: all 0.3s;
+        margin-left: 2px;
+        cursor: pointer;
+        width: 124px;
+        &:after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          bottom: -2px;
+          left: 0;
+          background-color: #3a3a3a;
+        }
+        &:hover {
+          color: #3a3a3a;
+        }
+      }
+    }
+    .select-sets-unchoose-sets-wrapper {
+      padding-top: 12px;
+      .item {
+        margin: 12px 0;
+      }
+    }
+    .select-sets-msg {
+      display: block;
+      height: 14px;
+      font-size: 14px;
+      font-weight: 300;
+      color: #cc0200;
+      line-height: 12px;
+      margin-top: 10px;
+    }
+  }
+  .select-sets-download-size {
+    .select-sets-download-title {
+      height: 36px;
+      font-size: 26px;
+      font-weight: 500;
+      color: #3a3a3a;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+    .select-resolution-wrapper {
+      .select-resolution-item {
+        .x-radio {
+          .icon {
+            width: 40px;
+            height: 40px;
+          }
+          .native-radio:checked + .icon.black-theme {
+            background-size: 40px 40px;
+          }
+
+          .text {
+            height: 40px;
+            line-height: 40px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .download_limited-info {
+    margin-bottom: 41px;
+    .download_limited-info-title {
+      font-size: 26px;
+      font-weight: 500;
+      color: #3a3a3a;
+    }
+    .download_limited-info-content {
+      font-size: 26px;
+      font-weight: 300;
+      color: #3a3a3a;
+      margin-top: 24px;
+    }
+  }
+  .download-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    .start-download-btn {
+      width: 100%;
+      height: 77px;
+      line-height: 77px;
+      font-size: 24px;
+    }
+  }
+}

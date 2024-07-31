@@ -1,0 +1,75 @@
+@import '@resource/static/styles/public/mixin';
+
+.gllery-editor-sidebar-photos-wrapper {
+  @include flex-center(normal, space-between);
+  height: 100%;
+  flex-direction: column;
+  // list
+  :focus {
+    outline: none;
+  }
+  
+  .gllery-editor-sidebar-photos-sets {
+    height: calc(100% - 5.88rem);
+    .x-menu-list-wrapper {
+      .rc-menu-item {
+        position: relative;
+      }
+    }
+    .add-set-btn {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      justify-content: left;
+      font-weight: 500;
+      padding: 0 20px;
+      height: 48px;
+      color: #7B7B7B;
+      cursor: pointer;
+      .text {
+        margin-left: 6px;
+      }
+      &:hover {
+        .text {
+          color: #3a3a3a;
+        }
+      }
+    }
+  }
+
+
+  .rc-menu-item {
+    cursor: pointer;
+    &.photo-sets-item {
+      .icon-display {
+        display: none;
+      }
+      &:hover {
+        .icon-display {
+          display: block;
+        }
+      }
+      .icon-wrap {
+        display: flex;
+
+      }
+    }
+  }
+  .photos-set-item {
+    display: flex;
+    align-items: center;
+    &-title {
+      display: inline-block;
+      margin: 0 8px 0 6px;
+      max-width: calc(7.5rem - 150px);
+    }
+  }
+  // cover
+  .gllery-editor-sidebar-photos-cover {
+    height: 5.88rem;
+    padding: 0.5rem 0.42rem 0.83rem;
+    box-sizing: border-box;
+    background: #E8E8E8;
+  }
+}

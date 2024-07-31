@@ -1,0 +1,21 @@
+.store-shipping-table-empty {
+  box-sizing: border-box;
+  height: calc(100vh - 240px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  &__options {
+    margin-bottom: 25px;
+  }
+
+  &__desc {
+    width: 800px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #3a3a3a;
+    line-height: 24px;
+    text-align: center;
+  }
+}

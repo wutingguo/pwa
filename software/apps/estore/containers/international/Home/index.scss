@@ -1,0 +1,62 @@
+.estore-wrapper {
+  width: 100%;
+  .estore-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8;
+    height: 75px;
+    align-items: center;
+    .react-tabs__tab-list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .react-tabs__tab--selected {
+        border-bottom: 1px solid #3a3a3a;
+      }
+      .react-tabs__tab {
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 45px;
+        height: 75px;
+        .estore-label {
+          display: block;
+          color: #3a3a3a;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .estore-tutorial {
+      font-size: 14px;
+      font-weight: 500;
+      color: #0077cc;
+      line-height: 17px;
+      cursor: pointer;
+      margin-right: 16px;
+    }
+  }
+}
+
+.estore-tutorial-menu {
+  padding: 4px 0;
+  &-item {
+    cursor: pointer;
+    padding: 18px 28px;
+    text-align: center;
+    transition: background 0.2s;
+    &:hover {
+      background: #f0f0f0;
+    }
+  }
+}
+.store-step {
+  font-size: 20px;
+  color: #3a3a3a;
+  line-height: 24px;
+  margin-bottom: 20px;
+}

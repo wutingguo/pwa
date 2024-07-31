@@ -1,0 +1,226 @@
+$color-3A: #3A3A3A;
+$color-F6: #F6F6F6;
+$color-7B: #7B7B7B;
+$color-FF: #FFFFFF;
+$color-D8: #D8D8D8;
+$color-CC: #CCCCCC;
+$color-66: #666666;
+$color-F3: #f3f3f3;
+
+.fw-medium {
+  font-weight: 500;
+}
+.fw-book {
+  font-weight: 400;
+}
+.disabled-style {
+  color: $color-66;
+  background-color: $color-F3;
+  opacity: 0.72;
+}
+
+// custom products page 
+.custom-product-page-container {
+  width: 100%;
+  height: 100%;
+  // 空页面
+  .empty-custom-products-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .empty-page-text {
+      font-size: 18px;
+      color: $color-3A;
+    }
+    .create-btn {
+      width: 160px;
+      height: 40px;
+      margin-top: 20px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      color: $color-FF;
+      background-color: $color-3A;
+    }
+  }
+  // 自定义配置页面
+  .custom-product-page-wrapper {
+    height: 100%;
+    display: flex;
+    .custom-product-tree-wrapper {
+      width: 360px;
+      height: 100%;
+      position: relative;
+      flex: none;
+      background-color: $color-F6;
+      .custom-product-title {
+        margin-top: 24px;
+        padding-left: 20px;
+      }
+      .custom-product-tree {
+        margin-top: 24px;
+        padding-left: 20px;
+        height: calc( 100% - 180px);
+        overflow-y: auto;
+        .rc-tree-list-holder-inner {
+          .rc-tree-treenode {
+            .rc-tree-node-content-wrapper {
+              width: 80%;
+            }
+            .rc-tree-title {
+              @extend .fw-book;
+              font-size: 14px;
+              color: $color-3A;
+              width: 100%;
+              display: inline-block;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            &:first-child .rc-tree-title {
+              @extend .fw-medium;
+            }
+          }
+        }
+        .rc-tree-indent-unit {
+          padding-left: 0;
+        }
+      }
+      .custom-product-btn-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 80px;
+        .custom-product-btn {
+          width: 120px;
+          height: 32px;
+          margin-right: 0;
+          line-height: 32px;
+          text-align: center;
+          font-size: 13px;
+          cursor: pointer;
+          &.custom-product-delete {
+            border: 1px solid $color-7B;
+            color: $color-3A;
+          }
+          &.custom-product-create {
+            margin-left: 20px;
+            background-color: $color-3A;
+            color: $color-FF;
+          }
+        }
+      }
+    }
+    .custom-product-empty-content {
+      padding: 0 20px;
+      margin: auto;
+      font-size: 18px;
+      color: $color-3A;
+    }
+    .custom-setting-form-container {
+      flex: 1;
+      padding-left: 80px;
+      padding-right: 40px;
+      .custom-setting-header {
+        @extend .fw-medium;
+        margin: 40px 0;
+        display: flex;        
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-D8;
+        &-title {
+          font-size: 26px;
+          color: $color-3A;
+          max-width: 400px;
+        }
+        .custom-setting-header-save-btn {
+          width: 96px;
+          height: 32px;
+          line-height: 32px;
+          border-radius: 2px;
+          text-align: center;
+          background: $color-3A;
+          .text {
+            margin-left: 7px;
+            color: $color-FF;
+          }
+        }
+      }
+      .custom-setting-fields {
+        width: 640px;
+        .x-form-item-label {
+          @extend .fw-medium;
+          width: 160px;
+          height: 40px;
+          line-height: 40px;
+          white-space: nowrap;
+          font-size: 14px;
+          color: $color-3A;
+        }
+        & > .x-form-item {
+          margin-bottom: 24px;
+          .x-form-item-control-input {
+            width: 480px;
+            height: 40px;
+          }
+        }
+        .x-input, .rc-input-number {
+          width: 100%;
+          height: 40px;
+          box-sizing: border-box;
+        }
+        .x-input, .x-textarea {
+          &[disabled] {
+            @extend .disabled-style;
+          }
+        }
+        .rc-input-number {
+          border-radius: 0;
+          &-disabled input {
+            cursor: default;
+          }
+        }
+        .x-labs-select {
+          outline: none;
+          &.Select.is-focused:not(.is-open) > .Select-control {
+            border-color: $color-D8;
+            box-shadow: none;
+          }
+          .Select-control {
+            border-radius: 0;
+            border-color: $color-D8;
+          }
+          .Select-multi-value-wrapper {
+            height: 38px;
+            .Select-placeholder, .Select-value {
+              line-height: 38px;
+            }
+            .Select-placeholder {
+              color: $color-CC;
+            }
+          }
+          &.is-disabled .Select-value{
+            @extend .disabled-style;
+          }
+        }
+        input::-webkit-input-placeholder {
+          color: $color-CC;
+        }
+        // fields
+        .custom-setting-height .x-form-item-control{
+          margin-left: 160px;
+        }
+        .custom-setting-description .x-form-item-control .x-textarea {
+          width: 480px;
+          height: 160px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.billing-info {
+  .grid {
+    border-collapse: collapse;
+    .col {
+      border: 1px solid #d6d6d6;
+      height: 74px;
+      vertical-align: middle;
+      padding: 0 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+      .address {
+        float: left;
+        line-height: 74px;
+      }
+      .edit-address {
+        float: right;
+        width: 10%;
+        height: 74px;
+        line-height: 74px;
+        text-align: left;
+        color: #7b7b7b;
+      }
+      &:first-child {
+        background: #f8f8f8;
+        text-align: right;
+      };
+    }
+    &+.grid {
+      margin-top: -1px;
+    }
+  }
+}

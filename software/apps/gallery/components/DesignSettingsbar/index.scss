@@ -1,0 +1,106 @@
+.cover-gallery-handler-wrap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  padding-right: 24px;
+  .design-handle {
+    margin-right: 24px;
+    margin-bottom: 10px;
+    .dropdown-label {
+      height: 29px;
+      color: #3a3a3a;
+      line-height: 29px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      padding: 0 26px 0 11px;
+      text-align: left;
+      font-size: 14px;
+      display: inline-block;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        // top: 50%;
+        top: 12px;
+        right: 11px;
+        height: 0;
+        width: 0;
+        border-color: #000 transparent transparent;
+        border-style: solid;
+        border-width: 5px 5px 2.5px;
+        vertical-align: bottom;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &.not-allowed {
+      cursor: not-allowed;
+      .disable {
+        border-color: #aaaaaa;
+        .text {
+          color: #aaaaaa;
+        }
+      }
+      .dropdown-label {
+        color: #aaaaaa;
+        border-color: #aaaaaa;
+        &:after {
+          border-color: #aaaaaa transparent transparent;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      // max-width: 214px;
+      padding: 7px;
+      .item-wrap {
+        width: 100px;
+        float: left;
+        .design-option {
+          min-width: unset;
+          text-align: center;
+          position: relative;
+          .item {
+            display: flex;
+            flex-direction: column;
+            .label {
+              margin-top: 10px;
+            }
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 2px;
+            background: #3a3a3a;
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+          }
+          &.active {
+            background-color: #fff;
+            &:before {
+              opacity: 1;
+            }
+          }
+          &:hover {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .typography {
+    .typography-handler {
+      .dropdown-menu {
+        width: 200px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import '@resource/static/styles/public/mixin';
+
+.slideshow-collection-detail-header-wrapper {
+  @include flex-center(center, space-between);
+  height: 32px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(216,216,216,1);
+ 
+  // 左侧
+  .collection-detail-header-left {
+    font-size: 26px;
+    color: #3A3A3A;
+  }
+
+  // 右侧按钮
+  .fa-icon {
+    margin: 0 0.17rem;
+  }
+
+  .collection-detail-header-right {
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    .fa-icon, .transition-change-button {
+      margin-right: 0;
+    }
+    .revert-btn-wrapper {
+      position: absolute;
+      right: 0;
+      top: -28px;
+      cursor: pointer;
+      .revert-btn-text {
+        width: 87px;
+        height: 14px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #222222;
+        line-height: 17px;
+      }
+    }
+    @media screen and (max-width: 1080px){
+      .text {
+        display: none;
+      }
+    }
+  }
+}

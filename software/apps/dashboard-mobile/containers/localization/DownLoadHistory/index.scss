@@ -1,0 +1,97 @@
+.DownLoadHistory {
+    font-size: 12px;
+    color: #7A7A7A;
+    margin: 0px 12px;
+    padding-top: 12px;
+
+    .commonFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .packageListCard {
+        border-radius: 3px;
+        padding: 16px 12px;
+        background-color: #fff;
+        margin-bottom: 12px;
+
+        .middle {
+            color: #222222;
+            font-size: 16px;
+            margin: 8px 0px;
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .bottom {
+            justify-content: space-between;
+
+            .diot {
+                margin: 0px 5px;
+                position: relative;
+                top: -7px;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .imgListCard {
+        border-radius: 3px;
+        padding: 16px 12px;
+        background-color: #fff;
+        margin-bottom: 12px;
+
+
+        .imgBox {
+            width: 115px;
+            height: 125px;
+            border-radius: 3px;
+            overflow: hidden;
+
+            .lazyload-container,
+            .x-img-loading {
+                height: 100%;
+            }
+        }
+
+        .right {
+            flex-grow: 1;
+            font-size: 12px;
+            color: #828281;
+            align-self: flex-start;
+            margin-top: 7px;
+            margin-left: 12px;
+
+            .title {
+                justify-content: flex-start;
+            }
+
+            .diot {
+                margin: 0px 5px;
+                position: relative;
+                top: -7px;
+                font-size: 24px;
+            }
+
+            .phone {
+                color: #222;
+                font-size: 16px;
+                margin-top: 8px;
+                margin-bottom: 12px;
+            }
+
+            .imgName {
+                font-size: 11px;
+                color: #A7A7A6;
+                margin-top: 8px;
+                width: 190px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap
+            }
+        }
+    }
+}

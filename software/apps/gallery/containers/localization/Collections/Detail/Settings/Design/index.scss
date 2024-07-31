@@ -1,0 +1,46 @@
+.gllery-collection-detail-settings-design {
+  width: calc(100% - 7.5rem);
+  min-width: 340px;
+  height: 100%;
+  flex: 1;
+
+  .content {
+    height: calc(100% - 40px) !important;
+    padding-left: 1.65rem;
+    padding-right: 0.83rem;
+    box-sizing: content-box;
+
+    .collection-design-wrap {
+      height: calc(100% - 43px);
+
+      // overflow: scroll;
+      .cover-gallery-tabs {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.85rem;
+
+        .cover-tab,
+        .gallery-tab {
+          width: 120px;
+          height: 32px;
+          line-height: 32px;
+          color: #3A3A3A;
+          background-color: #fff;
+          box-sizing: border-box;
+          border: 1px solid #3A3A3A;
+          text-align: center;
+          cursor: pointer;
+
+          &.active {
+            color: #fff;
+            background-color: #3A3A3A;
+          }
+        }
+
+        .gallery-tab {
+          border-left: 0 none;
+        }
+      }
+    }
+  }
+}

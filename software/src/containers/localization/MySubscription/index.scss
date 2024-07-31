@@ -1,0 +1,313 @@
+@import '../../../styles/rem.scss';
+
+.my-subscription-page {
+  padding: 128px;
+  background: #fff;
+  font-size: 13px;
+
+  .my-subscription-page-content {
+    width: 30rem;
+    margin: 0 auto;
+
+    .subscription-header {
+      position: relative;
+      .subscription_checkout {
+        position: relative;
+        text-align: center;
+        .subscript_item {
+          cursor: pointer;
+          display: inline-block;
+          border: 1px solid #e5e5e5;
+          color: #3a3a3a;
+          width: 140px;
+          height: 36px;
+          line-height: 38px;
+          &.cur {
+            font-weight: bold;
+            background-color: #e5e5e5;
+            color: #333;
+          }
+        }
+        .my-coupon,
+        .my-order {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 140px;
+          height: 36px;
+          background-color: #222;
+          color: #fff;
+          font-size: 14px;
+          text-align: center;
+          line-height: 36px;
+          cursor: pointer;
+        }
+        .my-coupon {
+          right: 150px;
+        }
+      }
+      .upgrade-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0 40px;
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+      }
+    }
+
+    .my-coupon-content,
+    .my-order-content {
+      > .tabs {
+        display: flex;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e8e8e8;
+        position: relative;
+        .item {
+          font-size: 16px;
+          font-weight: 400;
+          color: #222222;
+          box-sizing: border-box;
+          padding-bottom: 7px;
+          margin-right: 40px;
+          cursor: pointer;
+          &.active {
+            font-weight: 500;
+            border-bottom: 2px solid #222222;
+          }
+        }
+        .coupon-back,
+        .coupon-rights {
+          width: 80px;
+          height: 24px;
+          background: #ffffff;
+          border-radius: 2px;
+          border: 1px solid #d8d8d8;
+          line-height: 24px;
+          text-align: center;
+          cursor: pointer;
+          font-weight: 400;
+          color: #222222;
+          position: absolute;
+          right: 0;
+        }
+        .coupon-rights {
+          width: 140px;
+          background: #222;
+          border: 1px solid #222;
+          color: #fff;
+          right: 90px;
+        }
+      }
+
+      > .list {
+        margin: 0 -24px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 12px;
+        height: rem(450px);
+        min-height: 300px;
+        overflow-y: auto;
+        .item {
+          height: rem(100px);
+          min-height: 80px;
+          margin: rem(12px);
+          box-sizing: border-box;
+          display: flex;
+          border-radius: 2px;
+          color: #222222;
+          border: 1px solid #e8e8e8;
+          .intro {
+            width: rem(280px);
+            min-width: 232px;
+            height: 100%;
+            padding: rem(24px);
+            box-sizing: border-box;
+            font-size: 12px;
+            font-weight: 400;
+            .title {
+              margin-bottom: rem(8px);
+            }
+            .time {
+              font-weight: 500;
+            }
+          }
+          .amount {
+            width: rem(160px);
+            height: 100%;
+            background-color: #fff7ec;
+            text-align: center;
+            font-weight: normal;
+            padding-top: rem(24px);
+            box-sizing: border-box;
+            .totel {
+              font-size: rem(16px);
+              .unit {
+                font-size: 12px;
+                margin-right: 4px;
+              }
+            }
+            .condition {
+              font-size: 14px;
+              margin: rem(10px) auto;
+            }
+          }
+        }
+
+        &.disabled {
+          .item {
+            color: #aaaaaa;
+            .amount {
+              background-color: #f6f6f6;
+            }
+            &.is-use {
+              background: url('./images/is-sue.png') no-repeat;
+              background-position: 95% 50%;
+              background-size: 65px 40px;
+            }
+            &.is-time {
+              background: url('./images/is-time.png') no-repeat;
+              background-position: 95% 50%;
+              background-size: 65px 40px;
+            }
+          }
+        }
+      }
+      > .list-empty {
+        padding-top: 300px;
+        text-align: center;
+        img {
+          height: 125px;
+        }
+        .text {
+          font-size: 14px;
+          font-weight: 400;
+          color: #7b7b7b;
+          line-height: 33px;
+          margin-top: 10px;
+        }
+      }
+      > .coupon-intro {
+        .title {
+          font-size: 16px;
+          font-weight: 500;
+          color: #222222;
+          border-bottom: 1px solid #e8e8e8;
+        }
+        .content {
+          font-size: 14px;
+          font-weight: 400;
+          color: #2b2b2b;
+          line-height: 20px;
+          list-style-type: disc;
+          > li {
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+
+    .my-subscription-title {
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    .sub-title {
+      font-size: 20px;
+    }
+    .title-desc {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    .subscription-form {
+      margin-top: 16px;
+
+      .subscription-item-line {
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 60px;
+        &.subscription-form-header {
+          background: #f6f6f6;
+          line-height: 48px;
+          font-weight: 500;
+        }
+
+        &.none-any-plan {
+          text-align: center;
+          display: block;
+          padding: 45px 60px;
+          color: #7b7b7b;
+        }
+
+        .subscription-item {
+          &.plan_type {
+            display: flex;
+            align-items: center;
+
+            .gallery-icon {
+              width: 16px;
+              height: 16px;
+              margin-right: 8px;
+            }
+          }
+
+          .storage-info {
+            width: 70%;
+
+            .storage-desc,
+            .storage-precent {
+              line-height: 20px;
+            }
+          }
+          .upgrade-btn {
+            width: 100px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 14px;
+            margin-top: 0;
+          }
+
+          .link-btn {
+            display: inline-block;
+            cursor: pointer;
+            color: #0077cc;
+          }
+        }
+
+        > div {
+          width: 12%;
+        }
+        > div:nth-of-type(1) {
+          width: 15%;
+        }
+        > div:nth-of-type(3) {
+          width: 15%;
+        }
+        > div:nth-of-type(4) {
+          width: 23%;
+        }
+        > div:nth-of-type(6) {
+          width: 9%;
+        }
+      }
+      .subscription-form-total {
+        display: flex;
+        padding: 0 60px;
+        line-height: 48px;
+        font-weight: 500;
+        background: #e8e8e8;
+        justify-content: space-between;
+
+        .grow-full {
+          flex-grow: 9;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

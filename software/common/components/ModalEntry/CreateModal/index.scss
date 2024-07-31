@@ -1,0 +1,58 @@
+.x-create-wrap {
+  width: 400px;
+
+  .add-name-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .input-with-clear {
+      margin-bottom: 20px;
+      position: relative;
+
+      .date-picker-wrap {
+        position: absolute;
+        top: 44px;
+        z-index: 999;
+      }
+    }
+
+    .sub_wrap {
+      display: flex;
+      justify-content: space-between;
+
+      .link {
+        color: #0077cc;
+        font-size: 12px;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .msg {
+      height: 18px;
+      font-size: 14px;
+      font-weight: normal;
+      color: #3A3A3A;
+      line-height: 18px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      margin-right: 0 !important;
+    }
+  }
+
+}
+
+.modal-title {
+  color: red;
+}

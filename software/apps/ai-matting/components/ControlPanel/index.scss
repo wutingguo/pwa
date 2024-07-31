@@ -1,0 +1,19 @@
+$prefixCls: 'ai-matting-control-panel';
+.#{$prefixCls} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 288px;
+    height: 100%;
+    padding: 49px 24px 40px 24px; 
+    box-sizing: border-box;
+    background-color: white;
+    &-footer {
+        display: flex;
+        justify-content: space-between;
+        .button {
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.zno-website-designer-page-select {
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  color: #3a3a3a;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+}

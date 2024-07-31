@@ -1,0 +1,84 @@
+.view-favorite-list-modal {
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  overflow: auto;
+
+  .modal-body {
+    .cover {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .icon-list {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+
+    .wrap {
+      padding: 0 40px;
+    }
+
+    .favorite-view-header {
+      margin: 40px 0;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 1;
+      text-align: center;
+      overflow: hidden;
+
+      .fa-icon {
+        float: left;
+        .text {
+          color: #000000;
+          font-size: 26px;
+        }
+      }
+
+      .photo-number{
+        font-size: 26px;
+        color: #3A3A3A;
+        font-weight: 400;
+      }
+    }
+
+    .empty-image-wrap {
+      margin: 45px 0 380px;
+      text-align: center;
+      color: #3A3A3A;
+
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+      }
+
+      .set-info {
+        margin: 20px 0 120px;
+      }
+
+      .text1 {
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      .line {
+        margin: 0 20px;
+      }
+
+      .text2 {
+        font-size: 14px;
+        font-weight: 300;
+        color: #7B7B7B;
+      }
+
+      .button {
+        margin-top: 16px;
+        padding: 0 20px;
+      }
+    }
+  }
+}

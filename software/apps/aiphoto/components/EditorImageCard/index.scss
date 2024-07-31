@@ -1,0 +1,74 @@
+$itemMargin: 0.42rem;
+$itemMarginBottom: 0.42rem;
+$itemWidth: 4.65rem;
+$itemHeight: 4.65rem;
+
+.editor-image-card {
+  padding-right: $itemMargin;
+  margin-bottom: $itemMargin;
+  // width: $itemWidth;
+  width: 16.66%;
+  // height: $itemHeight;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  &:nth-child(6n) {
+    padding-right: 0;
+  }
+  .ai-status {
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    width: 50px;
+    z-index: 1;
+  }
+  .editor-image-cover {
+    width: 100%;
+    user-select: none;
+    height: $itemHeight;
+    line-height: unset;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 200ms ease-out;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    position: relative;
+    &.selected {
+      border-color: #3a3a3a;
+    }
+    .lazyload-wrap {
+      height: $itemHeight;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      // line-height: $itemHeight;
+      // text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .editor-image-detail {
+    height: 19px;
+    margin-top: 0.17rem;
+    line-height: 19px;
+    font-size: 0.25rem;
+    color: #7b7b7b;
+    .image-name {
+      text-align: center;
+      max-width: 4.65rem;
+    }
+  }
+}

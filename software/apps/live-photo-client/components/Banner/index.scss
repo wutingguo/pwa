@@ -1,0 +1,15 @@
+.live-photo-banner {
+    .swiper-items {
+        height: 420px;
+        .swiper-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            .swiper-bg-image {
+                width: 100%;
+            }
+        }
+    }
+}

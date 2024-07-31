@@ -1,0 +1,13 @@
+.ai-matting-main-panel {
+    height : calc(100% - 34px);
+    display: flex;
+
+    &-page-container {
+        flex-grow      : 1;
+        height         : 100%;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        background-color: #F6F6F6;
+    }
+}

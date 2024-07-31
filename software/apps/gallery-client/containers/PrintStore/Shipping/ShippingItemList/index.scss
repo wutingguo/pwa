@@ -1,0 +1,87 @@
+.shipping-items-wrap {
+  .shipping-header-topic {
+    font-weight: 500;
+    &::before {
+      content: '3' !important;
+    }
+  }
+  .shipping-items-content {
+    padding: 16px 40px 32px;
+
+    .shipping-cart-project-item-container {
+      display: flex;
+      padding: 0;
+      margin-top: 16px;
+
+      .shopping-cart-project-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .project-img-container {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          flex-grow: 0;
+          flex-shrink: 0;
+          align-items: center;
+          justify-content: center;
+          background: #f0f0f0;
+          margin-right: 16px;
+          .project-img {
+            max-width: 40px;
+            max-height: 40px;
+          }
+        }
+        .project-detail {
+          flex-grow: 9;
+          .project-right-section {
+            margin-top: 16px;
+            height: 40px;
+            width: 7.67rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            float: right;
+            .project-item-price-container {
+              position: relative;
+              display: inline-block;
+            }
+          }
+
+          .project-summary {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            .project-item-title {
+              margin-top: 0;
+              margin-right: 16px;
+            }
+            .project-item-desc-container {
+              margin-top: 0;
+              .project-item-count {
+                display: none;
+              }
+            }
+          }
+          .project-additional-items-container {
+            margin-top: 20px;
+            .project-additional-item {
+              // .right-section {
+              //   display: none;
+              // }
+            }
+          }
+
+          .clear {
+            clear: both;
+          }
+        }
+      }
+    }
+    .sub-projects-container {
+      position: relative;
+      padding-left: 40px;
+    }
+  }
+}

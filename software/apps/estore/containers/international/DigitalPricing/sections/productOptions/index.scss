@@ -1,0 +1,65 @@
+.digitalProductOptionWrapper {
+  .selectionTitle {
+    display: flex;
+    justify-content: space-between;
+    .addProductOptions {
+      cursor: pointer;
+      color: #0077CC;
+      background-image: url("../../icons/ManageOptions.png");
+      background-repeat: no-repeat;
+      font-size: 14px;
+      padding-left: 30px;
+      background-position: 0px 3px;
+      background-size: 18px;
+      &.disabled {
+        cursor: no-drop;
+        color: #7b7b7b;
+      }
+    }
+  }
+  .tips {
+    font-weight: normal;
+    color: #3A3A3A;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .optWrapper {
+    display: flex;
+    justify-content: space-between;
+    .content {
+      display: flex;
+      margin-bottom: 30px;
+      .label {
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #3A3A3A;
+        font-weight: 500;
+        font-size: 14px;
+        min-width: 80px;
+        width: 80px;
+      }
+      .values {
+        font-weight: normal;
+        color: #3A3A3A;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+    .editWrapper {
+      display: flex;
+      margin-left: 20px;
+      img {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        margin-right: 25px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

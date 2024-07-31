@@ -1,0 +1,52 @@
+.payFileCommon {
+    .dropdown {
+        display: block;
+
+        .dropdown-menu,
+        .drop-down-content {
+            min-width: 100%;
+            width: fit-content;
+
+        }
+
+        .drop-down-content {
+            max-height: 6rem;
+            height: fit-content;
+            overflow-y: auto;
+        }
+    }
+
+    label.horizontal {
+        display: flex;
+        flex: none;
+        width: 2.9rem;
+
+        .text {
+            font-size: 0.33rem;
+            font-weight: 400;
+            order: 1;
+            color: #3A3A3A;
+            line-height: 0.46rem;
+        }
+
+        .star {
+            order: 0;
+        }
+    }
+
+
+}
+
+.payFileCommonBox {
+    // padding-top: 0.4rem;
+    width: 16.63rem;
+    padding-left: 0.83rem;
+    box-sizing: border-box;
+
+    .descBox {
+        font-size: 0.33rem;
+        color: #A6A6A6;
+        margin-left: 3.1rem;
+        padding-bottom: 0.4rem;
+    }
+}

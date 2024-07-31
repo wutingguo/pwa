@@ -1,0 +1,49 @@
+.clause_drawer_article {
+  position: relative;
+  padding: 0 40px 40px;
+  overflow: hidden; // 变成BFC
+
+  // 关闭按钮
+  .clause_drawer_close {
+    position: absolute;
+    right: 19px;
+    top: 20px;
+  }
+
+  // 文章标题
+  .clause_drawer_title {
+    font-weight: 400;
+    font-size: 32px;
+    color: #7b7b7b;
+    line-height: 28px;
+    margin: 60px auto 40px;
+    text-align: center;
+  }
+
+  // 文章内容
+  .clause_drawer_content {
+    height: calc(100vh - 524px);
+    overflow-y: auto;
+    background-color: #f6f6f6;
+    font-weight: 400;
+    font-size: 28px;
+    color: #222;
+    padding: 40px 28px 8px 40px;
+
+    .item {
+      p {
+        margin: 0 0 17px 0;
+        padding: 0;
+        line-height: 48px;
+      }
+      ul {
+        list-style: none;
+        li {
+          margin-bottom: 20px;
+          line-height: 42px;
+          word-break: break-word;
+        }
+      }
+    }
+  }
+}

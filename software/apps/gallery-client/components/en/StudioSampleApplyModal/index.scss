@@ -1,0 +1,83 @@
+.studio-sample-apply-modal {
+  width: 680px !important;
+
+  .studio-sample-apply-modal-content {
+    padding: 0 40px 40px;
+    .modal-body {
+      margin-top: 20px;
+      .notes {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+      }
+
+      table {
+        width: 100%;
+        margin-top: 25px;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        table-layout: fixed;
+        text-align: center;
+
+        thead {
+          height: 26px;
+          background: #f8f8f8;
+          line-height: 26px;
+        }
+        tr {
+          .first {
+            width: 90px;
+          }
+          td {
+            border: 1px solid #D6D6D6;
+            vertical-align: middle;
+
+            .x-radio {
+              display: inline-block;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              padding: 10px;
+            }
+            .second {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    .modal-footer {
+      margin-top: 30px;
+      text-align: center;
+
+      .button {
+        font-size: 13px;
+        line-height: 28px;
+
+        span {
+          position: relative;
+          .loading-icon {
+            position: absolute;
+            left: -22px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            animation: loading 2.5s infinite linear;
+          }
+
+          @keyframes loading {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

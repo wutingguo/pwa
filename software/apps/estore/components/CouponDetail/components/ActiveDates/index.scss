@@ -1,0 +1,28 @@
+.ActiveDates {
+    .title {
+        font-weight: 500;
+        font-size: 14px;
+        color: #3A3A3A;
+        margin-top: 24px;
+    }
+
+    .myTimeBox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .couponFileCommonBox .couponFileCommon .vertical {
+            margin-top: 16px;
+            font-weight: normal;
+        }
+
+        .couponFileCommon {
+            width: 240px;
+            margin-right: 16px;
+
+            .timeBox {
+                width: 100%;
+            }
+        }
+    }
+}

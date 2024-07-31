@@ -1,0 +1,109 @@
+.account-container {
+
+  input,
+  textarea {
+    outline: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .account-info {
+    .section-content {
+      padding: 40px;
+
+      li {
+        overflow: hidden;
+        margin: 10px 0;
+        line-height: 20px;
+        position: relative;
+
+        &+li {
+          margin-top: 25px;
+        }
+
+        >div {
+          float: left;
+        }
+
+        .label {
+          width: 120px;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        .value {
+          font-size: 14px;
+          position: relative;
+
+          &.name {
+            width: 180px;
+
+            span {
+              width: 100%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              display: inline-block;
+            }
+          }
+
+          input {
+            border: 1px solid #d6d6d6;
+            padding: 3px;
+            height: 22px;
+            font-size: 14px;
+            box-sizing: border-box;
+          }
+
+          .tip {
+            font-size: 12px;
+            color: #f00;
+            margin-left: 20px;
+          }
+
+          .edit {
+            position: absolute;
+            width: 30px;
+            display: block;
+            left: 240px;
+            top: 0;
+            text-decoration: underline #222222 solid;
+            color: #222222;
+            cursor: pointer;
+          }
+        }
+
+        .edit-name {
+          position: absolute;
+          width: 30px;
+          display: block;
+          left: 360px;
+          top: 0;
+          text-decoration: underline #222222 solid;
+          color: #222222;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .personal-modal {
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+}
+
+.rc-tooltip-inner {
+  background-color: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.17);
+  font-size: 14px;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+.rc-tooltip-arrow {
+  border-top-color: #fff !important;
+}

@@ -1,0 +1,138 @@
+.apply_coupon_btn {
+  position: relative;
+  height: 45px;
+  &.mobile {
+    padding-top: 25px;
+    padding-left: 30px;
+    .btn {
+      width: 320px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 24px;
+    }
+    .tips {
+      position: relative;
+      bottom: -10px;
+      font-size: 24px;
+    }
+    .coupon_modal_mask {
+      .coupon_modal_content {
+        width: 80%;
+        .close {
+          width: 26px;
+        }
+        .title {
+          font-size: 32px;
+        }
+        .input_wrapper {
+          height: max-content;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          .err_tip {
+            font-size: 18px;
+          }
+          .x-input {
+            height: 60px;
+            font-size: 24px;
+          }
+        }
+        .btns_wrapper {
+          .button {
+            font-size: 28px;
+            height: 80px;
+            line-height: 80px;
+          }
+        }
+      }
+    }
+  }
+  span {
+    transition: all 0.3s;
+    font-size: 12px;
+    display: inline-block;
+    width: 130px;
+    height: 14px;
+    color: #7B7B7B;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    line-height: 14px;
+    margin-right: 0px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #7b7b7b;
+
+    &:hover {
+      background-color: #eaeaea;
+    }
+  }
+  .tips {
+    position: absolute;
+    white-space: nowrap;
+    color: #0077CC;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+  }
+  .coupon_modal_mask {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0, .4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    .coupon_modal_content {
+      position: relative;
+      box-sizing: border-box;
+      background-color: #fff;
+      width: 25%;
+      min-width: 450px;
+      padding: 40px 50px;
+      .close {
+        cursor: pointer;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        width: 15px;
+      }
+      .title {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
+      .input_wrapper {
+        position: relative;
+        margin-bottom: 30px;
+        height: max-content;
+        .err_tip {
+          text-align: left;
+          padding-top: 10px;
+          color: #c20200;
+        }
+        .x-input {
+          box-sizing: border-box;
+          height: 40px;
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+      .btns_wrapper {
+        display: flex;
+        justify-content: center;
+        .button {
+          width: 200px;
+          height: 40px;
+          line-height: 40px;
+        }
+        .white {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+

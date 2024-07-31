@@ -1,0 +1,9 @@
+.store-components-tabs {
+  display: flex;
+  &__tab {
+    cursor: pointer;
+    &.active {
+     cursor: default;
+    }
+  }
+}

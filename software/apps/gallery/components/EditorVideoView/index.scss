@@ -1,0 +1,105 @@
+.editor-list {
+  position: relative;
+  margin-bottom: 30px;
+  .gallery-video-container {
+    position: relative;
+    width: 398px;
+    height: 224px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #d8d8d8;
+    padding: 12px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    &.editor-selected {
+      border-color: #3a3a3a;
+    }
+    .preview-container {
+      width: 356px;
+    }
+    .slideshow-preview-container {
+      width: 100%;
+      height: 100%;
+      background-image: var(--background-image);
+      background-position: center center;
+      background-repeat: no-repeat;
+      img {
+        opacity: 0;
+      }
+      .video-overlay-color {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      .play-icon {
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border-style: solid;
+        border-width: 16px 0 16px 26px;
+        border-color: transparent transparent transparent white;
+      }
+    }
+    .not-found {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      .not-found-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .not-found-text-desc {
+        font-size: 14px;
+        font-weight: 500;
+        color: #3a3a3a;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+    .video-overlay-color {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: var(--overlay-color);
+      opacity: var(--overlay-opacity);
+    }
+    .play-icon {
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border-style: solid;
+      border-width: 16px 0 16px 26px;
+      border-color: transparent transparent transparent white;
+      //margin-left: 7px;
+    }
+  }
+}

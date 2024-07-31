@@ -1,0 +1,37 @@
+.delete-modal {
+  font-size: 14px;
+  color: #222;
+  padding: 32px 40px;
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+  width: 220px;
+  margin-left: -134px;
+  line-height: 14px;
+  .text {
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 20px;
+    font-weight: normal;
+  }
+  .btns {
+    .btn1 {
+      width: 100px;
+      height: 32px;
+      line-height: 32px;
+      color: #fff;
+      background: #222;
+      display: inline-block;
+      text-align: center;
+      box-sizing: border-box;
+      &.btn1-white {
+        background: #fff;
+        border: 1px solid #222;
+        color: #222;
+      }
+      & + .btn1 {
+        margin-left: 20px;
+      }
+    }
+  }
+}

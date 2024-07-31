@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4664.778 3587 24.585 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3a3a3a;
+      }
+    </style>
+  </defs>
+  <g id="standard-highlight" transform="translate(4664.778 3587.1)">
+    <g id="Group_219" data-name="Group 219" transform="translate(0 -0.1)">
+      <path id="Path_40" data-name="Path 40" class="cls-1" d="M2.081,4.453.65,6.014A2.089,2.089,0,0,0,0,7.445V12H0a1.722,1.722,0,0,0,1.691,1.691h.26a2.865,2.865,0,0,1,5.724,0h9.236a2.865,2.865,0,0,1,5.724,0h.26A1.722,1.722,0,0,0,24.585,12V1.591A1.722,1.722,0,0,0,22.894-.1L7.154.03A1.722,1.722,0,0,0,5.463,1.721V3.933H3.642A1.673,1.673,0,0,0,2.081,4.453Z" transform="translate(0 0.1)"/>
+    </g>
+    <g id="Group_222" data-name="Group 222" transform="translate(2.732 11.737)">
+      <g id="Group_220" data-name="Group 220" transform="translate(14.959)">
+        <ellipse id="Ellipse_42" data-name="Ellipse 42" class="cls-1" cx="2.081" cy="2.081" rx="2.081" ry="2.081"/>
+      </g>
+      <g id="Group_221" data-name="Group 221">
+        <ellipse id="Ellipse_43" data-name="Ellipse 43" class="cls-1" cx="2.081" cy="2.081" rx="2.081" ry="2.081"/>
+      </g>
+    </g>
+  </g>
+</svg>

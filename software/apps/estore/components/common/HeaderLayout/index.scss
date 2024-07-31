@@ -1,0 +1,23 @@
+.store-common-header {
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 0px 16px 16px;
+
+  &__title {
+    display: inline-block;
+    height: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3a3a3a;
+    line-height: 19px;
+  }
+
+  &__options {
+    display: flex;
+    column-gap: 16px;
+    // 最小保持一个large按钮的高度
+    min-height: 39px;
+  }
+}

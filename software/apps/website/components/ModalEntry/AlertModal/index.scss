@@ -1,0 +1,23 @@
+.website-alert-modal {
+  width: 483px;
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+
+  .modal-title {
+    margin-bottom: 40px;
+  }
+
+  .modal-body {
+    padding: 16px 40px;
+    text-transform: capitalize;
+  }
+
+
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      margin-right: 0 !important;
+    }
+  }
+}

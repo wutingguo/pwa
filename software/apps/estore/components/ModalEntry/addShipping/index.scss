@@ -1,0 +1,103 @@
+.estore-edit-shipping-wrapper {
+  width: 610px;
+  .shipping-container {
+    display: flex;
+    flex-direction: column;
+    .shipping-input{
+      margin-top: 15px;
+      input{
+        border: 1px solid #ccc;
+        width: 510px;
+        height: 34px;
+        padding: 0px 10px;
+        font-size: 14px;
+        color: #3A3A3A;
+      }
+    }
+    .shipping-hint{
+      margin-top: 5px;
+      color: #DE3418;
+      font-size: 12px;
+      font-family: 'Gotham SSm A';
+    }
+    .select-container{
+      margin-top: 15px;
+      margin-bottom: 16px;
+    }
+    .input-content{
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      margin-top: 33px;
+      input{
+        accent-color: #3A3A3A
+      }
+    }
+  }
+  .checkbox-item{
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .text {
+    font-size: 14px;
+    color: #3A3A3A;
+
+    &.title {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    
+    &.margin-top24 {
+      margin-top: 24px;
+    }
+    &.margin-left5 {
+      margin-left: 5px;
+    }
+    &.book {
+      margin-top: 30px;
+      font-family: 'Gotham SSm A';
+      font-weight: 400;
+    }
+    &.light{
+      margin-top: 18px;
+      font-size: 12px;
+      font-weight: 300;
+    }
+    &.percent {
+      margin-left: 12px;
+      font-weight: 300;
+    }
+  }
+
+  .btns-container {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    .cancel {
+      width: 140px;
+      height: 32px;
+      font-size: 13px;
+      font-weight: normal;
+      color: #3A3A3A;
+      border: 1px solid #7B7B7B;
+      background: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .confirm {
+      width: 140px;
+      height: 32px;
+      background: #3A3A3A;
+      font-size: 13px;
+      font-weight: normal;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+}

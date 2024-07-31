@@ -1,0 +1,8 @@
+[submodule "resource"]
+	path = resource
+	url = http://git.artisanstate.com/front/H5/shared.git
+
+
+[submodule "saas-portal"]
+	path = saas-portal
+	url = http://gitlab.artisanstate.com/front/H5/saas-portal.git

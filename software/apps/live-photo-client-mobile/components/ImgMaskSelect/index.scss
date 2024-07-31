@@ -1,0 +1,38 @@
+.imgSelectMask {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    // top: 8px;
+    // left: 8px;
+
+    .selectMask {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        // background-color: red;
+        display: flex;
+        justify-content: flex-end;
+
+        .selectCircle {
+            width: 44px;
+            height: 44px;
+            background: rgba(34, 34, 34, 0.1);
+            border: 2px solid #FFFFFF;
+            margin: 10px;
+            padding: 0;
+            border-radius: 50%;
+            color: rgba(34, 34, 34, 0.1);
+        }
+    }
+
+    .maskSelectActive {
+        background: rgba(34, 34, 34, 0.2);
+
+        .selectCircle {
+            background: #222222;
+            font-size: 24px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+    }
+}

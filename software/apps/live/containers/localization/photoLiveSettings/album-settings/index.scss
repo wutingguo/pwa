@@ -1,0 +1,116 @@
+// .live-photoLiveSettings-album-settings-wrapper {
+// }
+.country-city-address-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .location-item-select {
+        width: 49% !important;
+        font-size: 14px;
+
+        .Select-control {
+            .Select-multi-value-wrapper {
+                .Select-value {
+                    max-width: calc(100% - 15px);
+                }
+            }
+            .Select-arrow-zone .Select-arrow {
+                vertical-align: middle;
+                border-color: #222222 transparent transparent;
+            }
+        }
+
+        &.is-open {
+            .Select-control {
+                .Select-arrow-zone .Select-arrow {
+                    border-color: transparent transparent #222222;
+                }
+            }
+        }
+    }
+}
+
+// CN-直播增加隐藏字段
+.hidden-field {
+    position: relative;
+
+    .cascader-new {
+        .val {
+            background: none;
+        }
+    }
+
+    .clearBtn {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border: 1px solid #222;
+        color: #222;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 12px;
+        line-height: 1;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        right: 10px;
+        top: 10px;
+        font-family: Arial;
+    }
+}
+
+// 活动时间样式
+.activity-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: -10px;
+
+    // 设置width-修复float浮动导致样式问题
+    .react-datepicker-popper {
+        width: max-content;
+    }
+
+    .separator {
+        font-weight: 500;
+        font-size: 14px;
+        color: #222;
+        width: 9px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin: 0 10px;
+    }
+}
+
+.activity-time-field .msg:not(.activity-time .msg) {
+    display: none;
+}
+
+// 直播间排序方式下拉框样式
+.sort-type-select {
+    font-size: 14px;
+
+    .Select-control {
+        .Select-multi-value-wrapper {
+            .Select-value {
+                max-width: calc(100% - 15px);
+            }
+        }
+        .Select-arrow-zone .Select-arrow {
+            vertical-align: middle;
+            border-color: #222222 transparent transparent;
+        }
+    }
+
+    &.is-open {
+        .Select-control {
+            .Select-arrow-zone .Select-arrow {
+                border-color: transparent transparent #222222;
+            }
+        }
+    }
+}

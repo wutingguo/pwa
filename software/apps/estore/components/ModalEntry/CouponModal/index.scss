@@ -1,0 +1,16 @@
+.CouponFormModal {
+    transform: none !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    padding: 0 !important;
+    overflow-y: auto;
+    background-color: #FFF !important;
+    padding: 0.83rem 5rem 2.08rem !important;
+    font-weight: normal;
+
+    .x-imgage-loading {
+        position: fixed;
+    }
+}

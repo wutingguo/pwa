@@ -1,0 +1,51 @@
+.info-box {
+  color: #222222;
+  padding: 24px 24px 0px 0px;
+
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .sub-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+
+  }
+
+  .info-items {
+    font-size: 18px;
+    font-weight: 400;
+    color: #7B7B7B;
+    padding: 24px 0px 16px 0px;
+
+    .items {
+      display: flex;
+      align-items: baseline;
+      padding: 10px 0px;
+
+      .items-label {
+        min-width: 90px;
+        padding: 0;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .description {
+        word-break: break-word;
+        white-space: pre-wrap;
+      }
+
+      div {
+        padding: 0px 10px
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+.x-upload-modal {
+  width: 880px!important;
+  height: 474px;
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  .title {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .sub-title {
+    color: #7b7b7b;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 8px;
+  }
+
+  .upload-list {
+    .column-file,
+    .column-size,
+    .column-progress {
+      height: 38px;
+      float: left;
+      padding: 10px;
+      margin: 8px 0 0 0;
+      box-sizing: border-box;
+    }
+
+    .column-file {
+      white-space: nowrap;
+      width: 30%;
+    }
+    .column-size {
+      white-space: nowrap;
+      width: 12%;
+    }
+    .column-progress {
+      width: calc(58% - 32px);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .list-row {
+      font-size: 14px;
+      color: #3a3a3a;
+    }
+
+    .list-head {
+    }
+
+    .list-body {
+      width: 100%;
+      height: 230px;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .column-file,
+      .column-size,
+      .column-progress {
+        background-color: #f5f5f5;
+      }
+
+      .progress-container {
+        white-space: nowrap;
+        .progress {
+          background-color: #ffffff;
+          width: 320px;
+          border-radius: 6px;
+          display: inline-block;
+
+          .progress-bar {
+            width: 0;
+            background-color: #3a3a3a;
+            height: 10px;
+            border-radius: 6px;
+            transition: width 0.3s ease;
+          }
+        }
+
+        .progress-label {
+          display: inline-block;
+          margin-left: 10px;
+          width: 40px;
+        }
+      }
+
+      .error-text {
+        color: #de3418;
+        font-style: italic;
+      }
+
+      .fatal-error {
+        color: #de3418;
+      }
+
+      .help-button {
+        cursor: pointer;
+      }
+
+      .control-btns {
+        line-height: 20px;
+
+        .icon {
+          margin-left: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+
+        .icon-delete {
+          width: 10px;
+          height: 10px;
+          background: url('icon-delete.png') center no-repeat;
+        }
+
+        .icon-retry {
+          width: 20px;
+          height: 20px;
+          background: url('icon-retry.svg') center no-repeat;
+        }
+      }
+    }
+  }
+
+  .modal-foot {
+    margin-top: 20px;
+
+    .upload-summary {
+      font-size: 14px;
+      line-height: 40px;
+      float: left;
+      .complete-num {
+        margin-right: 15px;
+        color: #3a3a3a;
+      }
+
+      .failed-num {
+        color: #de3418;
+      }
+    }
+  }
+
+  .add-more-btn-container {
+    float: right;
+    display: inline-block;
+
+    > button {
+      background: #fff;
+      color: #000;
+      border: 1px solid #cbcbcb;
+      width: 160px;
+    }
+  }
+}

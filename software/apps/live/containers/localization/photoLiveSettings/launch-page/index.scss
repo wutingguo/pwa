@@ -1,0 +1,201 @@
+.launchPageWrapper {
+  .content {
+    display: flex;
+    border-bottom: 1px dashed #D8D8D8;
+    padding-top: 20px;
+    padding-bottom: 120px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    .lunch-section {
+      display: flex;
+      .actionBar {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+  
+        .actionWrapper {
+          font-family: PingFangSC-Regular, PingFang SC;
+          display: flex;
+          // align-items: center;
+          margin-bottom: 40px;
+  
+          .label {
+            color: #222222;
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 20px;
+            white-space: nowrap;
+          }
+  
+          .control {
+            // padding-top: 20px;
+  
+            .upload-button {
+              justify-content: center;
+              background-color: #fff;
+              border: 1px solid #3A3A3A;
+              width: 140px;
+              height: 40px;
+              line-height: 40px;
+              margin-bottom: 8px;
+  
+              .text {
+                color: #3a3a3a;
+              }
+  
+              .fa-add-upload {
+                width: 12px;
+                height: 16px;
+                margin-right: 8px;
+              }
+            }
+  
+            .desc {
+              color: #7B7B7B;
+              font-weight: 400;
+              font-size: 12px;
+              white-space: nowrap;
+            }
+            .text_item {
+              // margin-top: -20px;
+              .text_title {
+                font-weight: 400;
+                font-size: 16px;
+                color: #222222;
+                line-height: 16px;
+                text-align: left;
+                font-style: normal;
+              }
+              .text_input {
+                // margin-top: 20px;
+                // padding-left: 75px;
+              }
+            }
+
+            .switch-box {
+              margin-left: -12px;
+            }
+          }
+        }
+        
+      }
+  
+      .instantEffect {
+        background: #F6F6F6;
+        margin-left: 48px;
+        width: 220px;
+        height: 320px;
+        border-radius: 4px;
+        padding: 30px;
+  
+        .title {
+          color: #222222;
+          font-size: 14px;
+          margin-bottom: 20px;
+          font-weight: 400;
+        }
+  
+        .tabWrpper {
+          display: flex;
+          position: relative;
+          top: 1px;
+  
+          .tab {
+            cursor: pointer;
+            text-align: center;
+            background: #FFFFFF;
+            color: #7B7B7B;
+            border: 1px solid #D8D8D8;
+            border-radius: 4px 4px 0px 0px;
+            line-height: 40px;
+            font-size: 16px;
+            width: 100px;
+            height: 40px;
+            margin-right: 5px;
+  
+            &.cur {
+              color: #222222;
+              border-bottom: 1px solid #fff;
+            }
+          }
+        }
+  
+        .effectContent {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          background: #FFFFFF;
+          border: 1px solid #D8D8D8;
+          width: 207px;
+          height:240px;
+  
+          .imgRender {
+            overflow: hidden;
+            background: #F6F6F6;
+            // width: 200px;
+            height: 188px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              height: 100%;
+              // object-fit: contain;
+              
+            }
+  
+            .upload {
+              height: 100%;
+            }
+  
+            .effectUpload {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              background-color: transparent;
+              color: #222;
+              height: 100%;
+  
+              .fa-add-upload {
+                margin-bottom: 16px;
+              }
+  
+              .text {
+                color: #222;
+                font-size: 16px;
+              }
+            }
+          }
+  
+          .tips {
+            color: #7B7B7B;
+            font-size: 12px;
+            margin-top: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .line_between {
+    margin-top: 40px;
+    }
+  }
+
+  .saveSetting {
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 204px;
+    background-color: #FFF;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 76px;
+
+    .button {
+      width: 200px;
+      height: 40px;
+      // background: #3A3A3A;
+    }
+  }
+}
